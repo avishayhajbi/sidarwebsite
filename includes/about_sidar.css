@@ -1,0 +1,175 @@
+/* Main section style */
+
+
+/* 3x2 side bar */
+.three_on_two 
+{
+	float: right;
+	width: 59%;
+	height: 386px;
+	background: #D8D8D8;
+	border: 1px solid #000000;
+	margin-left: 2%;
+	margin-bottom: 2%;
+}
+
+
+/* 1x2 side bar */
+.one_on_two
+{
+	float: right;
+	width: 18.2%;
+	height: 386px;
+	background: #D8D8D8;
+	border: 1px solid #000000;
+	margin-left: 2%;
+	margin-bottom: 2%;
+}
+
+.one_on_two ul
+{
+	width: 100%;
+	height: 386px;
+	float: right;
+	font-size: 10px;
+	list-style: none;
+}
+
+.one_on_two ul li 
+{
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #000000;
+	height: 8%;
+}
+
+.one_on_two ul li:hover
+{
+	background-color: #C0C0C0;
+}
+
+.one_on_two ul li a 
+{
+	display: block;
+	text-decoration: none;
+}
+
+
+/* 2x2 side bar */
+.two_on_two
+{
+	float: right;
+	width: 38.6%;
+	height: 386px;
+	/*background-color: gray;*/
+	border: 1px solid #000000;
+	margin-left: 2%;
+	margin-bottom: 2%;
+}
+
+.two_on_two ul
+{
+	width: 100%;
+	height: 386px;
+	float: right;
+	font-size: 10px;
+	list-style: none;
+}
+
+.two_on_two ul li 
+{
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #000000;
+	height: 8%;
+	overflow: visible;
+}
+
+/*aside.two_on_two ul li:hover
+{
+	background-color: #C0C0C0;
+}
+
+aside.two_on_two ul li a 
+{
+	display: block;
+	text-decoration: none;
+}*/
+
+.three_on_one
+{
+	float: right;
+	width: 59%;
+	height: 182px;
+	background-color: #D8D8D8;
+	border: 1px solid #000000;
+	margin-left: 2%;
+	margin-bottom: 2%;
+}
+
+.three_on_one ul
+{
+	width: 100%;
+	height: 186px;
+	float: right;
+	font-size: 10px;
+	list-style: none;
+}
+
+.three_on_one ul li 
+{
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #000000;
+	height: 8%;
+	overflow: visible;
+}
+
+/* 1x3 */
+#one_on_three
+{
+	float: right;
+	width: 18.2%;
+	height: 590px;
+	/*border: 1px solid #000000;*/
+	margin-left: 2%;
+	margin-bottom: 2%;
+	background: #FFFFFF;
+}
+
+#one_on_three ul
+{
+	list-style: none;
+	display: block;
+}
+
+#one_on_three ul li 
+{
+	position: relative;
+	margin: 0;
+	display: block;
+	text-align: right;
+}
+
+#one_on_three ul li a:link, #one_on_three ul li a:visited 
+{
+	width: 95%;
+	height: 20px;
+	color: #FFFFFF;
+	display: block;
+	text-decoration: none;
+	padding: 0.3em 5% 0 0;
+	margin-bottom: 4.48%;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+/* 2x1 */
+.two_on_one
+{
+	float: right;
+	width: 38.6%;
+	height: 182px;
+	background: #D8D8D8;
+	border: 1px solid #000000;
+	margin-left: 2%;
+	margin-bottom: 2%;	
+}
