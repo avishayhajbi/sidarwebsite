@@ -2,4 +2,4 @@
 האתר נכתב ע"י שימי כחלון.
 האתר עוצב ע"י ראובן כהן.
 
-ניתן לצפות באתר בכתובת http://shimikahlon.github.io/Sidar-Website/.
+ניתן לצפות באתר בכתובת http://shimikahlon.github.io/sidarwebsite.
