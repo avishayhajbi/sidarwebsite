@@ -8,8 +8,8 @@
  {
  	width: 1004px;
  	margin: 0px auto;
- 	border-left: 1px solid black;
- 	border-right: 1px solid black;
+ 	border-left: 1px solid #D0D0D0;
+ 	border-right: 1px solid #D0D0D0;
  }
 
  body
@@ -30,6 +30,7 @@
  	padding-top: 1%;
  	float: right;
  	margin-right: 2%;
+ 	border: 0;
  }
 
  .sidar_header span.hebrew
@@ -74,7 +75,6 @@
 {
 	list-style-type: none;
 	padding: 0;
-	/*margin: 0;*/
 	margin-right: 2%;
 	z-index: 10;
 }
@@ -100,7 +100,7 @@
 
 #right_menu ul li a:hover
 {
-	background-color: #C0C0C0;
+	background-color: #E8E8E8;
 }
 
 #right_menu ul li ul 
@@ -108,13 +108,15 @@
 	position: absolute;
 	display: none;
 	margin: 0;
-	padding-top: 0.5em;
+	padding-top: 0.7em;
+
 }
 
 #right_menu ul li ul li 
 {
 	float: none;
 	margin: 0;
+
 }
 
 #right_menu ul li:hover ul
@@ -127,20 +129,55 @@
 	display: block;
 	padding-right: 0.6em;
 	padding-top: 0.4em;
+	padding-left: 1em;
 	color: #000000;
 	text-decoration: none;
 	border: 1px solid #F0F0F0;
 	border-radius: 0;
-	font-size: 11px;
-	/*font-weight: normal;*/
+	font-size: 12px;
+	font-weight: normal;
 }
 
 #right_menu ul li ul li a:hover
 {
-	background-color: #F0F0F0; 
+	background-color: #E8E8E8; 
 }
 
+/* Design areas colors */
+#right_menu ul li ul li a.fashion_design
+{
+	color: #026CB9;
+}
 
+#right_menu ul li ul li a.graphic_design
+{
+	color: #80ACE9;
+}
+
+#right_menu ul li ul li a.textile_design
+{
+	color: #77AA50;
+}
+
+#right_menu ul li ul li a.environmental_design
+{
+	color: #9D6397;
+}
+
+#right_menu ul li ul li a.ceramic_design
+{
+	color: #D78EB8;
+}
+
+#right_menu ul li ul li a.jewelry_design
+{
+	color: #FC513F;
+}
+
+#right_menu ul li ul li a.industrial_design
+{
+	color: #FCA649;
+}
 
 /* Left menu NavBar */
 #left_menu ul
@@ -171,7 +208,7 @@
 
 #left_menu ul li a:hover
 {
-	background-color: #C0C0C0;
+	background-color: #E8E8E8;
 }
 
 #left_menu ul li ul 
@@ -179,7 +216,7 @@
 	position: absolute;
 	display: none;
 	margin: 0;
-	padding-top: 0.5em;
+	padding-top: 0.7em;
 }
 
 #left_menu ul li ul li 
@@ -198,16 +235,18 @@
 	display: block;
 	padding-right: 0.6em;
 	padding-top: 0.4em;
+	padding-left: 1em;
 	color: #000000;
 	text-decoration: none;
 	border: 1px solid #F0F0F0;
 	border-radius: 0;
-	font-size: 11px;
+	font-size: 12px;
+	font-weight: normal;
 }
 
 #left_menu ul li ul li a:hover
 {
-	background-color: #F0F0F0; 
+	background-color: #E8E8E8; 
 }
 
 
@@ -235,7 +274,7 @@ ul#breadcrumbs
 #breadcrumbs li
 {
 	float: right;
-	color: #C0C0C0;
+	color: #A0A0A0;
 }
 
 #breadcrumbs li a:link, #breadcrumbs li a:visited
@@ -295,31 +334,50 @@ ul#secondery_menu
 	width: 100%;
 }
 
-.main_section a:link, .main_section a:visited
+.main_section p
 {
 	width: 17.4%;
 	height: 175px;
-	background-color: #D8D8D8;
 	float: right;
 	margin-right: 2%;
 	margin-bottom: 2%;
-	border: 1px solid black;
+	border: 1px solid #D0D0D0;
+}
+
+.main_section a:link, .main_section a:visited
+{
+	/*width: 17.4%;
+	height: 175px;
+	background: #F8F8F8;
+	float: right;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	border: 1px solid #D0D0D0;*/
+	width: 96%;
+	height: 96%;
+	background: #E8E8E8;
+	margin: 2%;
+	float: right;
 }
 
 .main_section a:hover
 {
-	opacity: 0.7;
+	opacity: 0.6;
 }
 
 .main_section input
 {
-	width: 17.6%;
+	/*width: 17.6%;
 	height: 175px;
-	background-color: #D8D8D8;
+	background-color: #F8F8F8;
 	float: right;
 	margin-right: 2%;
 	margin-bottom: 2%;
-	border: 1px solid black;
+	border: 1px solid #D8D8D8;*/
+	width: 96%;
+	height: 96%;
+	background: #E8E8E8;
+	margin: 2%;
 }
 
 .clear
@@ -335,6 +393,12 @@ ul#secondery_menu
 {
 	float: right;
 	font-size: 9px;
+	margin-right: 2%;
+}
+
+.links nav 
+{
+	margin-left: 1.2%;
 }
 
 .links a:link, .links a:visited
@@ -354,6 +418,9 @@ ul#secondery_menu
 	height: 18px;
 	border-radius: 0.2em;
 	margin-left: 0.2em;
+	border: 0;
 }
 
 /* End footer */
+
+
