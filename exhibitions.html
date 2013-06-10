@@ -6,6 +6,15 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="stylesheet" type="text/css" href="includes/style.css">
                 <link rel="stylesheet" type="text/css" href="includes/boxes-size.css">
+
+                <script type="text/javascript">
+                    function resize(p_id)
+                    {
+                        document.getElementById("p_id").style.width="480px;"
+                        document.getElementById("p_id").style.height="480px;"
+                    }
+                </script>
+
         </head>
         <body>
                 <div id="wrapper">
@@ -111,7 +120,7 @@
                                                 <li><a href="#">עריכה 3</a></li>
                                         </ul>
                                 </li>
-                                <li><a href="#" style="margin-right:0;">חיפוש מתקדם</a></li>
+                                <li><a href="advanced_search.html" style="margin-right:0;">חיפוש מתקדם</a></li>
                         </ul> 
                 </section>
                 
@@ -141,7 +150,7 @@
 
         <!-- Main section -->
         <section class="main_section">
-        	<aside class="one_on_two">
+        	<aside class="two_on_two">
                         <h4 class="headline">תערוכות ציונות ויהדות</h4>
                         <ul>
                                 <li>אוצר</li>
@@ -153,13 +162,11 @@
                                 <li>מספר פריטים</li>
                         </ul>
                 </aside>
-        	<p><a href="#"></a></p>
+        	    <p><a href="#"></a></p>
                 <p><a href="#"></a></p>
                 <p><a href="#"></a></p>
                 <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
+                <p><a href="#" id="exm1"><img src="images/front/exhibition1.bmp"  onclick="resize(this)"></a></p>
                 <p><a href="#"></a></p>
                 <p><a href="#"></a></p>
                 <p><a href="#"></a></p>
