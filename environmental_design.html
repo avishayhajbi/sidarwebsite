@@ -3,9 +3,13 @@
         <head>
                 <title>מכון שנקר לתיעוד וחקר העיצוב בישראל</title>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="stylesheet" type="text/css" href="includes/style.css">
                 <link rel="stylesheet" type="text/css" href="includes/boxes-size.css">
+                <script type="text/javascript" src="includes/modernizr-2.6.2.min.js"></script>
+                <script src="includes/jquery-1.10.1.min.js"></script>
+                <script src="includes/Functions.js"></script>
+
         </head>
         <body>
                 <div id="wrapper">
@@ -46,13 +50,13 @@
                                 </li>
                                 <li><a href="#">תחומי עיצוב</a>
                                         <ul>
-                                                <li><a href="#" class="fashion_design">עיצוב אופנה</a></li>
-                                                <li><a href="#" class="graphic_design">תקשורת חזותית</a></li>
-                                                <li><a href="#" class="textile_design">עיצוב טקסטיל</a></li>
-                                                <li><a href="#" class="environmental_design">עיצוב מבנה</a></li>
-                                                <li><a href="#" class="ceramic_design">עיצוב קרמי</a></li>
-                                                <li><a href="#" class="jewelry_design">עיצוב תכשיטים</a></li>
-                                                <li><a href="#" class="industrial_design">עיצוב תעשייתי</a></li>
+                                                <li><a href="fashion_design.html"><img src="images/fashion.jpg">עיצוב אופנה</a></li>
+                                                <li><a href="graphic_design.html"><img src="images/graphic.jpg">תקשורת חזותית</a></li>
+                                                <li><a href="textile_design.html"><img src="images/textile.jpg">עיצוב טקסטיל</a></li>
+                                                <li><a href="environmental_design.html"><img src="images/structure.jpg">עיצוב מבנה</a></li>
+                                                <li><a href="ceramic_design.html"><img src="images/ceramic.jpg">עיצוב קרמי</a></li>
+                                                <li><a href="jewelry_design.html"><img src="images/jewelry.jpg">עיצוב תכשיטים</a></li>
+                                                <li><a href="industrial_design.html"><img src="images/industrial.jpg">עיצוב תעשייתי</a></li>
                                         </ul>
                                 </li>
                                 <li><a href="#">תכנים חזותיים</a>
@@ -102,7 +106,7 @@
 
                                 <li><a href="#">אישי</a>
                                         <ul>
-                                                <li><a href="private_collection.html">איסוף עבודות</a></li>
+                                                <li><a href="private_collection2.html">איסוף עבודות</a></li>
                                                 <li><a href="#">הערות</a></li>
                                                 <li><a href="#">מחולל מצגות</a></li>
                                                 <li><a href="#">שליחת עבודות</a></li>
@@ -116,19 +120,20 @@
                 </section>
                 
                 <!-- Search engine -->
-                <label id="search"> 
-                        <input type="search" class="text_input" name="search" placeholder=" חיפוש" >
-                </label>
+                <form action="" method="get" autocomplete>
+                        <label id="search"> 
+                                <input type="search" class="text_input" name="search" placeholder=" חיפוש" >
+                        </label>
+                </form>
+                
                 <br>
                 
                 <!-- Breadcrumbs -->
                 <section>
                 <ul id="breadcrumbs">
-                        <li><a href="index.html">על המכון</a></li>
+                        <li><a href="index.html">תחומי עיצוב</a></li>
                         <p> > </p>
-                        <li><a href="events.html">אירועים</a></li>
-                        <p> > </p>
-                        <li>שם האירוע</li>
+                        <li>עיצוב מבנה</li>
                 </ul>
                 <ul id="secondery_menu">
                         <li><a href="#">הבא</a></li>
@@ -136,54 +141,65 @@
                         <li><a href="#">הקודם</a></li>
                 </ul>
         </section>
-        </nav>          
+        </nav>  	
         <!-- End Navbar -->
         
         <br>
 
         <!-- Main section -->
         <section class="main_section">
-                <aside class="two_on_two">
-                        <h4 class="headline" style="background-color: #c2d8fe;">פתיחת המכון באינטרנט</h4>
+                <section class="two_on_one environmental_design_border"></section>
+                <p><a href="#"><img src="images/front/G-NaZ-Log-001.jpg"></a></p>
+                <p><a href="#"><img src="images/front/I-SoA-Cop-006.jpg"></a></p>
+                <section class="one_on_four environmental_design_border">
+                        <h4 class="headline environmental_design">עיצוב מבנה</h4>
                         <ul>
-                                <li>תאריך</li>
-                                <li>מקום</li>
-                                <li>פעילות</li>
-                                <li>משתתפים</li>
-                                <li style="border-bottom:0;">מכון שנקר לתיעוד וחקר העיצוב עוסק בהיסטוריית העיצוב מאז ההתישבות הראשונה בארץ ישראל ב-1882. המכון מתעד וחוקר את כל תחומי העיצוב: עיצוב אופנה, עיצוב גרפי, עיצוב טקסטיל, עיצוב תכשיטים, עיצוב קרמי ועיצוב תעשייתי.</li>
+                                <li><a href="#">חיפוש</a></li>
+                                <li><a href="#">מעצבים</a></li>
+                                <li><a href="#">קטגוריות</a></li>
+                                <li><a href="#">נושאים</a></li>
+                                <li><a href="#">שנים</a></li>
+                                <li><a href="#">סגנונות</a></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>   
                         </ul>
-                </aside>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
+                </section>
+                <p><a href="#"><img src="images/front/G-EnZ-Com-001.jpg"></a></p>
+                <p><a href="#"><img src="images/front/I-ShA-Equ-001.jpg"></a></p>
+                <p><a href="#"><img src="images/front/G-LaO-Pos-029.jpg"></a></p>
+                <p><a href="#"><img src="images/front/G-EnZ-Com-001.jpg"></a></p>
+                <p><a href="#"><img src="images/front/I-ShA-Equ-001.jpg"></a></p>
+                <p><a href="#"><img src="images/front/G-LaO-Pos-029.jpg"></a></p>
+                <p><a href="#"><img src="images/front/G-EnZ-Com-001.jpg"></a></p>
+                <p><a href="#"><img src="images/front/I-ShA-Equ-001.jpg"></a></p>
+                <p><a href="#"><img src="images/front/G-LaO-Pos-029.jpg"></a></p>
+                <p><a href="#"><img src="images/front/G-EnZ-Com-001.jpg"></a></p>
+                <p><a href="#"><img src="images/front/I-ShA-Equ-001.jpg"></a></p>
+                <p><a href="#"><img src="images/front/G-LaO-Pos-029.jpg"></a></p>
         </section>
         <div class="clear"></div>
 
         <!-- Footer -->
-       <footer class="links">
-                <p>מכון שנקר לתיעוד וחקר העיצוב בישראל, כל הזכויות שמורות 2013 &copy;</p>
+        <footer class="links">
+        	<p>מכון שנקר לתיעוד וחקר העיצוב בישראל, כל הזכויות שמורות 2013 &copy;</p>
                 <nav>
-                        <a href="#"><img src="images/facebook_icon.png"></a>
-                        <a href="#"><img src="images/Twitter.png"></a>
-                        <a href="#"><img src="images/google_plus.png"></a>
-                        <a href="#"><img src="images/itunesLogo.png"></a>
-                        <a href="#"><img src="images/RSS.png"></a>
-                        <a href="#"><img src="images/Logo_Youtube.png"></a>
+			<a href="#"><img src="images/facebook_icon.png"></a>
+			<a href="#"><img src="images/Twitter.png"></a>
+			<a href="#"><img src="images/google_plus.png"></a>
+			<a href="#"><img src="images/itunesLogo.png"></a>
+			<a href="#"><img src="images/RSS.png"></a>
+			<a href="#"><img src="images/Logo_Youtube.png"></a>
                 </nav>
         </footer>
-                </div>
-        </body>
+	</div>
+	</body>
 </html>
