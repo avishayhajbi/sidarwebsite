@@ -106,7 +106,7 @@
 
                                 <li><a href="#">אישי</a>
                                         <ul>
-                                                <li><a href="private_collection2.html">איסוף עבודות</a></li>
+                                                <li><a href="private_collection.html">איסוף עבודות</a></li>
                                                 <li><a href="#">הערות</a></li>
                                                 <li><a href="#">מחולל מצגות</a></li>
                                                 <li><a href="#">שליחת עבודות</a></li>
@@ -148,54 +148,52 @@
 
         <!-- Main section -->
         <section class="main_section">
-                <aside class="one_on_three">
-                       <ul>
-                                <li class="one">דף איסוף אישי</li>
-                                <form action="" method="post" autocomplete>
-                                    <label>
-                                        <li class="two">שם</li>
-                                        <li class="three">
-                                            <input type="text" name="existing_username" style="background:#A9FDFF;">
-                                        </li>                                    
-                                    </label>
-                                    <label>
-                                        <li class="four">סיסמא</li>
-                                        <li class="five">
-                                            <input type="password" name="existing_password" style="background:#B6FBB7;">
-                                        </li>
-                                    </label>
-                                    <li class="six">
-                                        <input type="submit" value="כניסה" style="background:#D5AEFF;">
-                                    </li>
-                                    <li class="seven">להרשמה</li>
-                                    <label>
-                                        <li class="eight">שם</li>
-                                        <li class="nine">
-                                            <input type="text" name="new_username">
-                                        </li>
-                                    </label>
-                                    <label>
-                                        <li class="ten">סיסמא</li>
-                                        <li class="eleven">
-                                            <input type="password" name="new_password">
-                                        </li>
-                                    </label>
-                                    <label>
-                                      <li class="twelve">דוא"ל</li>
-                                      <li class="thirteen">
-                                            <input type="email" name="mail">
-                                      </li>
-                                    </label>
-                                </form>
-                                <li><a href="#" class="fourteen">סדרן שקופיות</a></li>
-                                <li><a href="#" class="fifteen">הדפסה</a></li>
-                                <li><a href="#" class="sixteen">מצגת אוטומטית</a></li>
-                                <li><a href="#" class="seventeen">מצגת ידנית</a></li>
-                                <li><a href="#" class="eighteen">שמירה</a></li>
+                <aside class="one_on_four">
+                       <ul class="linearlistBg">
+                                <li>דף איסוף אישי</li>
+                                <li id="admission">כניסה</li>
+                                <li id="registration">הרשמה</li>
+                                <li><a href="#">סדרן שקופיות</a></li>
+                                <li><a href="#">הדפסה</a></li>
+                                <li><a href="#">מצגת אוטומטית</a></li>
+                                <li><a href="#">מצגת ידנית</a></li>
+                                <li><a href="#">שמירה</a></li>
+                                <li><a href="#">הסרה</a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
                         </ul>
                 </aside>
-                <p><a href="outcome_name.html"></a></p>
-                <p><a href="#"></a></p>
+                <section class="one_on_one" id="forms">
+                    <a href="outcome_name.html"></a>
+                    <section id="admission_form">
+                        <form action="#" method="post" autocomplete>
+                            <label>שם:
+                                <br><input type="text" name="existing_username">
+                            </label>
+                            <label>סיסמא:
+                                <br><input type="password" name="existing_password">
+                            </label>
+                            <input type="submit" value="כניסה">
+                        </form>
+                    </section>
+                    <section id="registration_form">
+                        <form action="#" method="post" autocomplete>
+                            <label>דוא"ל:
+                                <br><input type="email" name="mail">
+                            </label>
+                            <label>שם:
+                                <br><input type="text" name="new_username">
+                            </label>
+                            <label>סיסמא:
+                                <br><input type="password" name="new_password">
+                            </label>
+                            <label>הקש סיסמא שוב:
+                                <br><input type="password" name="verify_new_password">
+                            </label>
+                            <input type="submit" value="הירשם"> 
+                        </form>
+                    </section>
+                </section>
                 <p><a href="#"></a></p>
                 <p><a href="#"></a></p>
                 <p><a href="#"></a></p>

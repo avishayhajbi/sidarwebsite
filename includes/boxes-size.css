@@ -1,3 +1,10 @@
+/*-----------------------------------------------
+Purpose: Secondary CSS File
+Version: 0.2
+Author: Shimi Kahlon
+Date: 22-2-13
+-----------------------------------------------*/
+
 /* 3x2 side bar */
 .three_on_two 
 {
@@ -137,7 +144,49 @@
 	background: #D8D8D8;
 }
 
+.two_on_two hr 
+{
+	margin-top: 3px;
+}
 
+ul.column1, ul.column2, ul.column3
+{
+	width: 33%;
+	height: 100%;
+	float: right;
+	border-left: 1px solid #B8B8B8;
+	background: #FFFFFF;
+}
+
+
+ul.column3
+{
+	width: 33.46%;
+	border-left: 0;
+}
+
+ul.column1 li, ul.column2 li, ul.column3 li 
+{
+	height: 14px;
+}
+
+ul.column1 li a:link, ul.column1 li a:visited, ul.column2 li a:link, ul.column2 li a:visited, ul.column3 li a:link, ul.column3 li a:link
+{
+	width: 98%;
+	height: 100%;
+	margin-right: -2% !important;
+	margin-top: -2% !important;
+	padding: 2% !important;
+	color: blue;
+	opacity: 1;
+
+}
+
+ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
+{
+	background: none;
+	opacity: 0.5;
+}
 /* 3x1 */
 .three_on_one
 {
@@ -183,6 +232,8 @@
 	list-style: none;
 	display: block;
 	width: 100%;
+	background-image: url(../images/gradient5.jpg);
+	opacity: 0.4;
 }
 
 .one_on_three ul li 
@@ -196,81 +247,9 @@
 	font-size: 12px;
 	font-weight: bold;
 	position: relative;
-}
 
-/* List item pastel tags colors 
-.one_on_three ul li.one
-{
-	background: #87B1FB;
-} 
-.one_on_three ul li.two
-{
-	background: #C2D8FE;
-} 
-.one_on_three ul li.three
-{
-	background: #A9FDFF;
-} 
-.one_on_three ul li.four
-{
-	background: #81FF81;
-} 
-.one_on_three ul li.five
-{
-	background: #B6FBB7;
-} 
-.one_on_three ul li.six
-{
-	background: #D5AEFF;
-} 
-.one_on_three ul li.seven
-{
-	background: #FFB8DA;
-} 
-.one_on_three ul li.eight
-{
-	background: #FF7D7D;
-} 
-.one_on_three ul li.nine
-{
-	background: #FEAD82;
-} 
-.one_on_three ul li.ten
-{
-	background: #FFC9AB;
-} 
-.one_on_three ul li.eleven
-{
-	background: #FDE689;
-} 
-.one_on_three ul li.twelve
-{
-	background: #FAEBB6;
-} 
-.one_on_three ul li.thirteen
-{
-	background: #E1E0E0;
-} 
-.one_on_three ul li.fourteen
-{
-	background: #D2D1D1;
-} 
-.one_on_three ul li.fifteen
-{
-	background: #B9B9B9;
-} 
-.one_on_three ul li.sixteen
-{
-	background: #A5A4A4;
-} 
-.one_on_three ul li.seventeen
-{
-	background: #87B1FB;
-} 
-.one_on_three ul li.eighteen
-{
-	background: #C2D8FE;
-} */
+
+}
 
 .one_on_three ul li a:link, .one_on_three ul li a:visited 
 {
@@ -283,8 +262,9 @@
 	border: 0;
 	margin-right: -0.7em;
 	margin-top: -0.3em;
-	opacity: 1;
+	opacity: 1 !important;
 	font-size: 12px;
+	background: none !important;
 }
 
 .one_on_three ul li a:hover
@@ -292,238 +272,29 @@
 	opacity: 0.5;
 }
 
-/* Pastel tags colors */
-.one
+/* Gradient background */
+.linearlistBg
 {
-	background: #87B1FB !important;
-} 
-.two
-{
-	background: #C2D8FE !important;
-} 
-.three
-{
-	background: #A9FDFF !important;
-} 
-.four
-{
-	background: #81FF81 !important;
-} 
-.five
-{
-	background: #B6FBB7 !important;
-} 
-.six
-{
-	background: #D5AEFF !important;
-} 
-.seven
-{
-	background: #FFB8DA !important;
-} 
-.eight
-{
-	background: #FF7D7D !important;
-} 
-.nine
-{
-	background: #FEAD82 !important;
-} 
-.ten
-{
-	background: #FFC9AB !important;
-} 
-.eleven
-{
-	background: #FDE689 !important;
-} 
-.twelve
-{
-	background: #FAEBB6 !important;
-} 
-.thirteen
-{
-	background: #E1E0E0 !important;
-} 
-.fourteen
-{
-	background: #D2D1D1 !important;
-} 
-.fifteen
-{
-	background: #B9B9B9 !important;
-} 
-.sixteen
-{
-	background: #A5A4A4 !important;
-} 
-
-
-/* gradient items */
-.linearBg1 
-{
-	background: -webkit-gradient(linear, right top, left top, from(#87B1FB), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #87B1FB, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #87B1FB, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #87B1FB, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #87B1FB, #FFFFFF) !important;
-}
-
-.linearBg2
-{
-	background: -webkit-gradient(linear, right top, left top, from(#C2D8FE), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #C2D8FE, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #C2D8FE, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #C2D8FE, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #C2D8FE, #FFFFFF) !important;
-}
-.linearBg3
-{
-	background: -webkit-gradient(linear, right top, left top, from(#A9FDFF), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #A9FDFF, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #A9FDFF, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #A9FDFF, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #A9FDFF, #FFFFFF) !important;
-}
-.linearBg4
-{
-	background: -webkit-gradient(linear, right top, left top, from(#81FF81), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #81FF81, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #81FF81, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #81FF81, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #81FF81, #FFFFFF) !important;
-}
-.linearBg5
-{
-	background: -webkit-gradient(linear, right top, left top, from(#B6FBB7), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #B6FBB7, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #B6FBB7, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #B6FBB7, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #B6FBB7, #FFFFFF) !important;
-}
-.linearBg6
-{
-	background: -webkit-gradient(linear, right top, left top, from(#D5AEFF), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #D5AEFF, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #D5AEFF, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #D5AEFF, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #D5AEFF, #FFFFFF) !important;
-}
-.linearBg7
-{
-	background: -webkit-gradient(linear, right top, left top, from(#FFB8DA), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #FFB8DA, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #FFB8DA, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #FFB8DA, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #FFB8DA, #FFFFFF) !important;
-}
-.linearBg8
-{
-	background: -webkit-gradient(linear, right top, left top, from(#FF7D7D), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #FF7D7D, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #FF7D7D, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #FF7D7D, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #FF7D7D, #FFFFFF) !important;
-}
-.linearBg9
-{
-	background: -webkit-gradient(linear, right top, left top, from(#FEAD82), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #FEAD82, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #FEAD82, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #FEAD82, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #FEAD82, #FFFFFF) !important;
-}
-.linearBg10
-{
-	background: -webkit-gradient(linear, right top, left top, from(#FFC9AB), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #FFC9AB, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #FFC9AB, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #FFC9AB, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #FFC9AB, #FFFFFF) !important;
-}
-.linearBg11
-{
-	background: -webkit-gradient(linear, right top, left top, from(#FDE689), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #FDE689, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #FDE689, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #FDE689, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #FDE689, #FFFFFF) !important;
-}
-.linearBg12
-{
-	background: -webkit-gradient(linear, right top, left top, from(#FAEBB6), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #FAEBB6, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #FAEBB6, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #FAEBB6, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #FAEBB6, #FFFFFF) !important;
-}
-.linearBg13
-{
-	background: -webkit-gradient(linear, right top, left top, from(#E1E0E0), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #E1E0E0, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #E1E0E0, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #E1E0E0, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #E1E0E0, #FFFFFF) !important;
-}
-.linearBg14
-{
-	background: -webkit-gradient(linear, right top, left top, from(#D2D1D1), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #D2D1D1, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #D2D1D1, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #D2D1D1, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #D2D1D1, #FFFFFF) !important;
-}
-.linearBg15
-{
-	background: -webkit-gradient(linear, right top, left top, from(#B9B9B9), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #B9B9B9, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #B9B9B9, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #B9B9B9, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #B9B9B9, #FFFFFF) !important;
-}
-.linearBg16
-{
-	background: -webkit-gradient(linear, right top, left top, from(#A5A4A4), to(#FFFFFF)) !important;
-	background: -webkit-linear-gradient(right, #A5A4A4, #FFFFFF) !important;
-	background: -moz-linear-gradient(right, #A5A4A4, #FFFFFF) !important;
-	background: -ms-linear-gradient(right, #A5A4A4, #FFFFFF) !important;
-	background: -o-linear-gradient(right, #A5A4A4, #FFFFFF) !important;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(135,177,251,0.3)), to(rgba(165,164,164,0.3)),
+		color-stop(6.25%, rgba(194,216,254,0.3)), color-stop(12.5%, rgba(169, 253, 255,0.3)), color-stop(18.75%, rgba(129,255,129,0.3)), color-stop(25%, rgba(182,251,183,0.3)),
+		color-stop(31.25%, rgba(213,174,255,0.3)), color-stop(37.5%, rgba(255,184,218,0.3)), color-stop(43.75%, rgba(255,125,125,0.3)), color-stop(50%, rgba(254,173,130,0.3)),
+		color-stop(56.25%, rgba(255,201,171,0.3)), color-stop(62.5%, rgba(253,230,137,0.3)), color-stop(68.75%, rgba(250,235,182,0.3)), color-stop(75%, rgba(225,224,224,0.3)),
+		color-stop(81.25%, rgba(210,209,209,0.3)), color-stop(87.5%, rgba(185,185,185,0.3)));  /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(135,177,251,0.3) 0%, rgba(194,216,254,0.3) 6.25%, rgba(169, 253, 255,0.3) 12.5%, rgba(129,255,129,0.3) 18.75%, rgba(182,251,183,0.3) 25%, 
+		rgba(213,174,255,0.3) 31.25%, rgba(255,184,218,0.3) 37.5%, rgba(255,125,125,0.3) 43.75%, rgba(254,173,130,0.3) 50%, rgba(255,201,171,0.3) 56.25%, rgba(253,230,137,0.3) 62.5%, 
+		rgba(250,235,182,0.3) 68.75%, rgba(225,224,224,0.3) 75%, rgba(210,209,209,0.3) 81.25%, rgba(185,185,185,0.3) 87.5%, rgba(165,164,164,0.3) 93.75%);  /* Chrome10+,Safari5.1+ */
+	background: -moz-linear-gradient(top, rgba(135,177,251,0.3) 0%, rgba(194,216,254,0.3) 6.25%, rgba(169, 253, 255,0.3) 12.5%, rgba(129,255,129,0.3) 18.75%, rgba(182,251,183,0.3) 25%, 
+		rgba(213,174,255,0.3) 31.25%, rgba(255,184,218,0.3) 37.5%, rgba(255,125,125,0.3) 43.75%, rgba(254,173,130,0.3) 50%, rgba(255,201,171,0.3) 56.25%, rgba(253,230,137,0.3) 62.5%, 
+		rgba(250,235,182,0.3) 68.75%, rgba(225,224,224,0.3) 75%, rgba(210,209,209,0.3) 81.25%, rgba(185,185,185,0.3) 87.5%, rgba(165,164,164,0.3) 93.75%);  /* FF3.6+ */
+	background: -ms-linear-gradient(top, rgba(135,177,251,0.3) 0%, rgba(194,216,254,0.3) 6.25%, rgba(169, 253, 255,0.3) 12.5%, rgba(129,255,129,0.3) 18.75%, rgba(182,251,183,0.3) 25%, 
+		rgba(213,174,255,0.3) 31.25%, rgba(255,184,218,0.3) 37.5%, rgba(255,125,125,0.3) 43.75%, rgba(254,173,130,0.3) 50%, rgba(255,201,171,0.3) 56.25%, rgba(253,230,137,0.3) 62.5%, 
+		rgba(250,235,182,0.3) 68.75%, rgba(225,224,224,0.3) 75%, rgba(210,209,209,0.3) 81.25%, rgba(185,185,185,0.3) 87.5%, rgba(165,164,164,0.3) 93.75%);  /* IE10+ */
+	background: -o-linear-gradient(top, rgba(135,177,251,0.3) 0%, rgba(194,216,254,0.3) 6.25%, rgba(169, 253, 255,0.3) 12.5%, rgba(129,255,129,0.3) 18.75%, rgba(182,251,183,0.3) 25%, 
+		rgba(213,174,255,0.3) 31.25%, rgba(255,184,218,0.3) 37.5%, rgba(255,125,125,0.3) 43.75%, rgba(254,173,130,0.3) 50%, rgba(255,201,171,0.3) 56.25%, rgba(253,230,137,0.3) 62.5%, 
+		rgba(250,235,182,0.3) 68.75%, rgba(225,224,224,0.3) 75%, rgba(210,209,209,0.3) 81.25%, rgba(185,185,185,0.3) 87.5%, rgba(165,164,164,0.3) 93.75%);  /* Opera 11.10+ */
 }
 
 /* end gradient backgrounds */
-
-
-input[type="text"], input[type="password"], input[type="email"]
-{
-	width: 100%;
-	height: 109%;
-	margin-right: -0.7em;
-	margin-top: -0.3em;
-	background: none;
-}
-
-input[type="submit"].lists 
-{
-	width: 102%;
-	height: 115%;
-	font-weight: bold;
-	text-align: right;
-	padding-right: 5%;
-	margin-right: -0.7em;
-	margin-top: -0.2em;
-	font-family: arial;
-	font-size: 12px;
-}
-
-input[type="submit"].advanced_search
-{
-	width: 100%;
-	height: 20px;
-	font-weight: bold;
-	background: #F0F0F0;
-	margin-right: -0.01em;
-	margin-top: -0.01em;
-}
 
 /* 2x1 */
 .two_on_one
@@ -679,15 +450,14 @@ input[type="submit"].advanced_search
 /* 1x4 */
 .one_on_four
 {
-	float: left;
+	float: right;
 	width: 17.4%;
 	height: 765px;
-	/*margin-right: 2%;*/
-	margin-left: 2%;	
+	margin-right: 2%;	
 	margin-bottom: 2%;
 	background: #FFFFFF;
-	/*margin-left: 0.2%;*/
 	border: 1px solid #B8B8B8;
+	position: relative;
 }
 
 .one_on_four ul
@@ -695,37 +465,30 @@ input[type="submit"].advanced_search
 	list-style: none;
 	display: block;
 	width: 100%;
+	height: 100%;
 }
 
 .one_on_four ul li 
 {
-	/*width: 96%;*/
-	width: 100%;
+	width: 95%;
 	height: 20px;
 	color: #000000;
 	display: block;
+	padding: 2% 5% 0 0;
 	font-weight: bold;
-	/*padding: 0.3em 5% 0 0;*/
-	/*margin-bottom: 4.95%;*/
 	font-size: 12px;
-	border-bottom: 1px solid #B8B8B8;
-	/*position: relative;*/
 }
 
 .one_on_four ul li a:link, .one_on_four ul li a:visited 
 {
-	width: 95%;
+	width: 100% !important;
 	height: 18px;
 	color: #000000;
-	/*display: block;*/
 	text-decoration: none;
-	/*padding: 0.3em 5% 0 0;*/
-	padding-right: 5%;
-	padding-top: 1%;
 	border: 0;
-	/*margin-right: -0.7em;
-	margin-top: -0.2em;*/
-	margin: 0;
+	padding: 2% 5% 0 0;
+	margin-right: -5%;
+	margin-top: -1.3%;
 	opacity: 1;
 	font-size: 12px;
 	background: none;
@@ -734,36 +497,38 @@ input[type="submit"].advanced_search
 .one_on_four ul li a:hover
 {
 	opacity: 0.5;
-	background: #B8B8B8;
 }
 
-.list 
+.designer_categoried
 {
-	float: right !important;
-	margin-right: 2% !important;
-	margin-left: 0.2% !important;
+	width: 100% !important;
+	height: 5% !important;
+	position: absolute;
+	top: 46%;
+	font-size: 12px;
 	border: 0 !important;
+	margin: 0 !important;
 }
 
-.list ul li 
+.designer_categoried select
 {
-	padding: 0.3em 5% 0 0 !important;
-	margin-bottom: 4.95% !important;
-	border: 0 !important;
+	width: 99%;
 }
 
-.list ul li a:link, .list ul li a:visited
+.designer_link
 {
-	width: 90% !important;
-	height: 20px !important;
-	padding: 0.3em 5% 0 0 !important;
-	margin-right: -0.7em !important;
-	margin-top: -0.2em !important;
+	width: 100% !important;
+	position: absolute;
+	top: 51%;
+	margin: 0 !important;
+	margin-right: -0.5% !important;
+	border: 0 !important; 
 }
 
-.list ul li a:hover
+.design_area_section
 {
-	background: none !important;	
+	float: left !important;
+	margin-left: 2% !important;
 }
 
 /* Headlines */
@@ -776,4 +541,60 @@ input[type="submit"].advanced_search
 	padding-top: 0.2em;
 	padding-bottom: 0.2em;
 	font-size: 12px;
+}
+
+/* Forms definitions */
+#admission_form, #registration_form
+{
+	display: none;
+	width: 17.4%;
+	height: 174px;
+	position: absolute;
+	top: 0;
+	right: 21.7%;
+	background: #E8E8E8;
+	font-size: 12px;
+	margin-top: 1px;
+}
+
+/*#admission, #registration
+{
+	cursor: pointer;
+}*/
+
+#admission_form input[type="text"], #admission_form input[type="password"], #admission_form input[type="email"], 
+#registration_form input[type="text"], #registration_form input[type="password"], #registration_form input[type="email"]
+{
+	width: 96%;
+	height: 16px;
+	background: #B8B8B8;
+	margin-bottom: 2%;
+}
+
+#admission_form input[type="submit"], #registration_form input[type="submit"]  
+{
+	width: 99%;
+	font-weight: bold;
+	text-align: right;
+	padding: 0% 5%;
+	margin-right: 1%;
+	font-family: arial;
+	font-size: 12px;
+	position: absolute;
+	bottom: 1%;
+	right: 0;
+	background: #B8B8B8;
+}
+
+input[type="submit"].advanced_search
+{
+	width: 100%;
+	height: 22px;
+	font-weight: bold;
+	background: #000000;
+	margin-right: -0.01em;
+	margin-top: -0.01em;
+	font-family: arial;
+	color: #FFFFFF;
+	border-bottom: 2px solid #686868 ;
 }

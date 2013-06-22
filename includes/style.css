@@ -1,3 +1,10 @@
+/*-----------------------------------------------
+Purpose: Main CSS File
+Version: 0.2
+Author: Shimi Kahlon
+Date: 22-2-13
+-----------------------------------------------*/
+
 /* General definitions */
 *{
 	margin: 0;
@@ -339,6 +346,7 @@ ul#secondery_menu
 .main_section
 {
 	width: 100%;
+	position: relative;
 }
 
 .main_section p
@@ -350,6 +358,7 @@ ul#secondery_menu
 	margin-bottom: 2%;
 	border: 1px solid #B8B8B8;
 	text-align: center;
+	position: relative;
 }
 
 .main_section a:link, .main_section a:visited
@@ -372,17 +381,17 @@ ul#secondery_menu
 
 .opening_text 
 {
-	width: 89% !important;
-	height: 89% !important;
+	width: 80% !important;
+	height: 80% !important;
 	margin: 2% !important;
 	opacity: 1 !important;
 	border: 0 !important;
-	border-right: 2px solid #B8B8B8 !important;
-	border-bottom: 2px solid #B8B8B8 !important;
-	padding: 3% 2% 3% 4%!important;
+	border-right: 3px solid #B8B8B8 !important;
+	border-bottom: 3px solid #B8B8B8 !important;
+	padding: 5% 6% 9% 8%!important;
 	text-align: justify !important;
 	font-size: 13px !important;
-	background: #E8E8E8 !important;
+	background: #F8F8F8 !important;
 }
 
 
