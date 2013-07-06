@@ -530,3 +530,39 @@ ul#secondery_menu
 {
 	border: 1px solid #FCA649 !important;
 }
+
+/* Design ares border bottom */
+.fashion_design_border_bottom
+{
+	border-bottom: 1px solid #026CB9 !important;
+}
+
+.graphic_design_border_bottom
+{
+	border-bottom: 1px solid #80ACE9 !important;
+}
+
+.textile_design_border_bottom
+{
+	border-bottom: 1px solid #77AA50 !important;
+}
+
+.environmental_design_border_bottom
+{
+	border-bottom: 1px solid #9D6397 !important;
+}
+
+.ceramic_design_border_bottom
+{
+	border-bottom: 1px solid #D78EB8 !important;
+}
+
+.jewelry_design_border_bottom
+{
+	border-bottom: 1px solid #FC513F !important;
+}
+
+.industrial_design_border_bottom
+{
+	border-bottom: 1px solid #FCA649 !important;
+}

@@ -46,3 +46,13 @@ $(document).ready(function() {
         $("#registration_form").fadeToggle(3000);
     });
 });
+
+
+function goTo(choose)
+{
+    var selected = choose.options[choose.selectedIndex].value;
+    if(selected != "")
+    {
+        location.href = selected;
+    }
+}
