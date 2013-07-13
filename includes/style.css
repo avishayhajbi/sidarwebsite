@@ -349,7 +349,7 @@ ul#secondery_menu
 	position: relative;
 }
 
-.main_section p
+/*.main_section p
 {
 	width: 17.4%;
 	height: 175px;
@@ -359,6 +359,46 @@ ul#secondery_menu
 	border: 1px solid #B8B8B8;
 	text-align: center;
 	position: relative;
+}*/
+
+.main_section ul
+{
+	list-style-type: none;
+}
+
+.main_section li
+{
+	width: 17.4%;
+	height: 175px;
+	float: right;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	border: 1px solid #B8B8B8;
+	text-align: center;
+	position: relative;
+}
+
+.main_section ul li ul
+{
+	display: none;
+	list-style-type: none;
+}
+
+.main_section ul li ul li
+{
+	width: 95%;
+	height: 18px;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	position: relative;
+	top: -170px;
+	right: 110%;
+	margin-bottom: 2%;
+	border: 0;
+	text-align: right;
+	padding-right: 5%;
+
 }
 
 .main_section a:link, .main_section a:visited
@@ -371,12 +411,18 @@ ul#secondery_menu
 	text-decoration: none;
 	color: #000000;
 	font-size: 14px;
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 .main_section a:hover
 {
 	opacity: 1;
+}
+
+ul#mask
+{
+	/*display: none;*/
+	list-style-type: none;
 }
 
 .opening_text 
@@ -462,36 +508,43 @@ ul#secondery_menu
 .fashion_design
 {
 	background-color: #026CB9 !important;
+	color: #FFFFFF;
 }
 
 .graphic_design
 {
 	background-color: #80ACE9 !important;
+	color: #FFFFFF;
 }
 
 .textile_design
 {
 	background-color: #77AA50 !important;
+	color: #FFFFFF;
 }
 
 .environmental_design
 {
 	background-color: #9D6397 !important;
+	color: #FFFFFF;
 }
 
 .ceramic_design
 {
 	background-color: #D78EB8 !important;
+	color: #FFFFFF;
 }
 
 .jewelry_design
 {
 	background-color: #FC513F !important;
+	color: #FFFFFF;
 }
 
 .industrial_design
 {
 	background-color: #FCA649 !important;
+	color: #FFFFFF;
 }
 
 
