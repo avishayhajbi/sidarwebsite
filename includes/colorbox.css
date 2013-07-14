@@ -67,3 +67,9 @@
 .cboxIE #cboxMiddleRight {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 }
+
+
+#cboxOverlay
+{
+    opacity: 0.5 !important;
+}

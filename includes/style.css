@@ -398,7 +398,7 @@ ul#secondery_menu
 	border: 0;
 	text-align: right;
 	padding-right: 5%;
-
+	opacity: 1 !important;
 }
 
 .main_section a:link, .main_section a:visited
