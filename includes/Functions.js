@@ -28,10 +28,11 @@ $(document).ready(function() {
 
 
         $(".main_section ul li:nth-child(1)").mouseover(function() {
-            $(".main_section ul li:nth-child(1) ul").fadeToggle(700);
+            $(".main_section ul li:nth-child(1) ul").css({"display": "block"});
             $(".main_section ul li:nth-child(2) img").attr({src: "images/white.jpg"});
         });
         $(".main_section ul li:nth-child(1)").mouseout(function() {
+            $(".main_section ul li:nth-child(1) ul").css({"display": "none"});
             $(".main_section ul li:nth-child(2) img").attr({src: "images/I-SoA-Gam-009.jpg"});
         });
 
