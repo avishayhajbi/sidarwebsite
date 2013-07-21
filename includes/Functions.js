@@ -7,8 +7,7 @@ $(document).ready(function() {
         $elie.css({ WebkitTransform: 'rotateY(' + degree + 'deg)'});  
         $elie.css({ '-moz-transform': 'rotateY(' + degree + 'deg)'});
         $elie.css({ '-ms-transform': 'rotateY(' + degree + 'deg)'});
-        if(degree == 90)
-            $elie.innerHTML = "vdbhgjhnfgjn";            
+                  
         timer = setTimeout(function() {
             ++degree; 
             rotate();
@@ -22,9 +21,9 @@ $(document).ready(function() {
         clearTimeout(timer);
 
     }); 
-    $("#openElement").mouseover(function() {
-        rotate();
-    });
+    // $("#openElement").mouseover(function() {
+    //     rotate();
+    // });
 
 
         $(".main_section ul li:nth-child(1)").mouseover(function() {

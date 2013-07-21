@@ -271,8 +271,10 @@ Date: 22-2-13
 	text-align: right center;
 	width: 17.4%;
 	padding: 0;
-	margin-right: 2%;
+	margin-right: 2.1%;
 	font-family: arial;
+	/*background: #F8F8F8;*/
+	background: rgba(248, 248, 248, 0);
 }
 
 
@@ -382,6 +384,12 @@ ul#secondery_menu
 {
 	display: none;
 	list-style-type: none;
+	opacity: 1 !important;
+}
+
+#notOpacity
+{
+	opacity: 1 !important;
 }
 
 .main_section ul li ul li
@@ -390,15 +398,18 @@ ul#secondery_menu
 	height: 18px;
 	display: block;
 	font-size: 12px;
-	font-weight: bold;
 	position: relative;
-	top: -170px;
-	right: 110%;
-	margin-bottom: 2%;
+	top: -150px;
+	right: 115%;
+	margin-bottom: 5%;
 	border: 0;
 	text-align: right;
 	padding-right: 5%;
-	opacity: 1 !important;
+}
+
+.main_section ul li ul li span
+{
+	font-weight: bold;
 }
 
 .main_section a:link, .main_section a:visited
@@ -431,13 +442,16 @@ ul#mask
 	height: 80% !important;
 	margin: 2% !important;
 	opacity: 1 !important;
-	border: 0 !important;
+	/*border: 0 !important;*/
+	border-top: 1px solid #B8B8B8 !important;
+	border-left: 1px solid #B8B8B8 !important;
 	border-right: 3px solid #B8B8B8 !important;
 	border-bottom: 3px solid #B8B8B8 !important;
+	/*border: 1px 3px 3px 1px solid #B8B8B8 !important;*/
 	padding: 5% 6% 9% 8%!important;
 	text-align: justify !important;
 	font-size: 13px !important;
-	background: #F8F8F8 !important;
+	background: #FFFFFF !important;
 }
 
 
@@ -514,7 +528,7 @@ ul#mask
 .graphic_design
 {
 	background-color: #80ACE9 !important;
-	color: #FFFFFF;
+	color: #FFFFFF !important;
 }
 
 .textile_design
