@@ -60,7 +60,7 @@
                                         </ul>
                                 </li>
                                 <li><a href="#">תכנים חזותיים</a>
-                                        <ul style="width:5.8em;">
+                                        <ul>
                                                 <li><a href="general-collections.html">אוספים</a></li>
                                                 <li><a href="designers.html">מעצבים</a></li>
                                                 <li><a href="general-topics.html">נושאים</a></li>
@@ -73,14 +73,13 @@
                                 </li>
                                 <li><a href="#" style="margin-left:0;">תכנים עיוניים</a>
                                         <ul>
-                                                <li><a href="articles-in-newspapers.html">כתבות בעיתונים</a></li>
-                                                <li><a href="periodicals.html">כתבי עת</a></li>
+                                                <li><a href="articles-in-newspapers.html">כתבות</a></li>
                                                 <li><a href="articles.html">מאמרים</a></li>
-                                                <li><a href="#">סרטים</a></li>
-                                                <li><a href="#">פילוסופיות</a></li>
-                                                <li><a href="#">קישורים</a></li>
-                                                <li><a href="bibliography.html">ביבלוגרפיות</a></li>
-                                                <li><a href="#">תאוריות</a></li>
+                                                <li><a href="documents.html">מסמכים</a></li>
+                                                <li><a href="books.html">ספרים</a></li>
+                                                <li><a href="design_philosophy.html">פילוסופיות</a></li>
+                                                <li><a href="texts.html">טקסטים</a></li>
+                                                <li><a href="photography.html">צילום</a></li>
                                         </ul>
                                 </li>
                         </ul>
@@ -148,95 +147,75 @@
 
         <!-- Main section -->
         <section class="main_section">
-                <section class="one_on_one">
-                    <h4 class="headline">תחום</h4>
-                    <label>
-                        <input type="text" name="article_zone">
-                    </label>
-                    <article>
-                        <ul id="one">
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                        </ul>
-                    </article>
-                </section>
-                <section class="one_on_one">
-                    <h4 class="headline">כותב</h4>
-                    <label>
-                        <input type="text" name="article_author">
-                    </label>
-                    <article>
-                        <ul id="one">
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                        </ul>
-                    </article>
-                </section>
-                <section class="one_on_one">
-                    <h4 class="headline">שם</h4>
-                    <label>
-                        <input type="text" name="article_name">
-                    </label>
-                    <article>
-                        <ul id="one">
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                        </ul>
-                    </article>
-                </section>
-                <section class="one_on_one">
-                    <h4 class="headline">שנה</h4>
-                    <label>
-                        <input type="text" name="article_year">
-                    </label>
-                    <article>
-                        <ul id="one">
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                        </ul>
-                    </article>
-                </section>
-                <section class="one_on_one">
-                    <h4 class="headline">שנה</h4>
-                    <label>
-                        <input type="text" name="article_year">
-                    </label>
-                    <article>
-                        <ul id="one">
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                            <li>199</li>
-                        </ul>
-                    </article>
-                </section>
                 <ul>
+                <form action="#" method="get">
+                <section class="one_on_one">
+                    <h4 class="headline">מאמרים</h4>
+                    <label>
+                        <input type="text" name="newspapaer_article_zone">
+                    </label>
+                    <article>
+                        <!-- <form> -->
+                            <input type="checkbox" name="articles" value="all"> הכול<br>
+                            <input type="checkbox" name="articles" value="internet"> מאמרים עצמיים<br>
+                            <input type="checkbox" name="articles" value="newspapers"> מאמרים אקדמיים<br>
+                            <input type="checkbox" name="articles" value="internet"> אינטרנט<br>
+                            <input type="checkbox" name="articles" value="internet"> עיתונים וכתבי עת<br>
+                            <input type="checkbox" name="articles" value="internet"> קטלוגים<br>
+                        <!-- </form> -->
+                    </article>
+                </section>
+                <section class="one_on_one">
+                    <h4 class="headline">תחומי עיצוב וקטגוריות</h4>
+                    <label>
+                        <input type="text" name="reporter">
+                    </label>
+                    <article>
+                        <input type="checkbox" name="categories" value="all"> הכול<br>
+                        <input type="checkbox" name="categories" value="fashion"> עיצוב אופנה<br>
+                        <input type="checkbox" name="categories" value="graphic"> תקשורת חזותית<br>
+                        <input type="checkbox" name="categories" value="textile"> עיצוב טקסטיל<br>
+                        <input type="checkbox" name="categories" value="environmental"> עיצוב מבנה<br>
+                        <input type="checkbox" name="categories" value="ceramic"> עיצוב קרמי<br>
+                        <input type="checkbox" name="categories" value="jewelry"> עיצוב תכשיטים<br>
+                    </article>
+                </section>
+                <section class="one_on_one">
+                    <h4 class="headline">שם המחבר\ שם המעצב</h4>
+                    <label>
+                        <input type="text" name="reporter">
+                    </label>
+                    <article>
+                        <input type="checkbox" name="author" value="all"> הכול<br>
+                        <input type="checkbox" name="author" value="alef"> א<br>
+                        <input type="checkbox" name="author" value="bet"> ב<br>
+                        <input type="checkbox" name="author" value="gimel"> ג<br>
+                        <input type="checkbox" name="author" value="dalet"> ד<br>
+                        <input type="checkbox" name="author" value="hei"> ה<br>
+                        <!-- <input type="checkbox" name="author" value="vav"> ו<br>
+                        <input type="checkbox" name="author" value="zain"> ז<br>
+                        <input type="checkbox" name="author" value="chet"> ח<br> -->
+                    </article>
+                </section>
+                <section class="one_on_one">
+                    <h4 class="headline">נושא</h4>
+                    <label>
+                        <input type="text" name="newspapaer_article_year">
+                    </label>
+                    <article>
+                        <input type="checkbox" name="subject" value="all"> הכול<br>
+                        <input type="checkbox" name="subject" value="aa"> ביקורת<br>
+                        <input type="checkbox" name="subject" value="aa"> זיכרונות<br>
+                        <input type="checkbox" name="subject" value="aa"> ריאיון<br>
+                        <!-- <input type="checkbox" name="subject" value="aa"> אא<br>
+                        <input type="checkbox" name="subject" value="aa"> אא<br> -->
+                    </article>
+                </section>
+                    <li><input type="button" value="חפש"></li>
+                </form>
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li> 
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>

@@ -24,7 +24,7 @@ Date: 22-2-13
 	border-left: 1px solid #B8B8B8;
 }
 
-.three_on_two ul.keys li, .three_on_two ul.values li, .three_on_two ul.test li
+.three_on_two ul.keys li, .three_on_two ul.test li
 {
 	width: 95%;
 	height: 20px;
@@ -35,6 +35,19 @@ Date: 22-2-13
 	font-size: 12px;
 	text-align: right;
 	padding: 0.5% 5% 0.3% 0;
+}
+
+.three_on_two ul.values li 
+{
+	width: 95%;
+	height: 20px;
+	margin: 0;
+	margin-right: -0.1%;
+	border: 0;
+	border-bottom: 1px solid #B8B8B8;
+	font-size: 12px;
+	text-align: right;
+	padding: 0.5% 5% 0.1% 0;
 }
 
 .keys
@@ -378,7 +391,7 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 	background: #D8D8D8;
 }
 
-.one_on_one input
+.one_on_one input[type="text"]
 {
 	width: 97%;
 	height: 20px;
@@ -390,9 +403,20 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 
 .one_on_one article
 {
-	height: 72%;
+	height: 75.5%;
 	margin-top: -0.1em;
 	overflow: auto;
+	background: #F0F0F0;
+	font-size: 12px;
+	text-align: right;
+}
+
+.one_on_one article input[type="checkbox"]
+{
+	font-size: 10px;
+	color: red;
+	margin-right: 5%;
+	margin-top: 1%;
 }
 
 .one_on_one article img
@@ -500,7 +524,45 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 	position: relative;
 }
 
-.one_on_four ul
+.one_on_four ul#rightList
+{
+	list-style: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-top: 10%;
+}
+
+.one_on_four ul#rightList li 
+{
+	width: 90%;
+	height: 2%;
+	margin-right: -0.1%;
+	border: 0;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: right;
+	padding: 2% 5%;
+}
+
+.one_on_four ul#rightList li a:link, .one_on_four ul#rightList li a:visited 
+{
+	width: 100%;
+	height: 100%;
+	margin-right: -4%;
+	margin-top: -2%;	
+	padding: 2% 5%;
+	background: none;
+	opacity: 1;
+	font-size: 12px;
+}
+
+.one_on_four ul#rightList li a:hover
+{
+	opacity: 0.5;
+}
+
+.one_on_four ul#leftList
 {
 	list-style: none;
 	display: block;
@@ -508,33 +570,32 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 	height: 100%;
 }
 
-.one_on_four ul li 
+.one_on_four ul#leftList li 
 {
 	width: 90%;
-	height: 16.8px;
+	height: 2%;
 	margin-right: -0.1%;
-	margin-top: -0.3%;
 	border: 0;
+	margin: 0;
 	font-weight: bold;
-	/*border-bottom: 1px solid #B8B8B8;*/
 	font-size: 12px;
 	text-align: right;
-	padding: 0.9% 5%;
+	padding: 2% 5%;
 }
 
-.one_on_four ul li a:link, .one_on_four ul li a:visited 
+.one_on_four ul#leftList li a:link, .one_on_four ul#leftList li a:visited 
 {
-	width: 95%;
-	height: 16.8px;
+	width: 100%;
+	height: 100%;
 	margin-right: -4%;
-	margin-top: -0.1%;
-	padding: 0.8% 5%;
+	margin-top: -2%;	
+	padding: 2% 5%;
 	background: none;
 	opacity: 1;
 	font-size: 12px;
 }
 
-.one_on_four ul li a:hover
+.one_on_four ul#leftList li a:hover
 {
 	opacity: 0.5;
 }
@@ -548,7 +609,7 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 .designer_categories
 {
 	width: 100% !important;
-	height: 18px !important;
+	height: 3% !important;
 	font-size: 12px;
 	border: 0 !important;
 	margin: 0 !important;
@@ -557,12 +618,13 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 .designer_categories select
 {
 	width: 100%;
-	height: 21px;
+	/*height: 21px;*/
+	height: 100%;
 	line-height: 20px;
 	cursor: pointer;
 	margin-right: -5%;
 	/*margin: 0;*/
-	margin-top: -5%;
+	margin-top: -0.5%;
 	padding-top: 1%;
 }
 
@@ -610,7 +672,7 @@ option
 	font-weight: bold;
 	background: #F0F0F0;
 	border-bottom: 1px solid #B8B8B8;
-	padding-right: 0.5em;
+	padding-right: 0.85em;
 	padding-top: 0.2em;
 	padding-bottom: 0.2em;
 	font-size: 12px;
@@ -623,6 +685,14 @@ option
 	padding: 1% 5% 1% 0;
 	font-size: 12px;
 }*/
+
+#admission, #registration
+{
+	cursor: pointer;
+	height: 16px;
+	margin-top: 5%; 
+	margin-bottom: -2%;
+}
 
 /* Forms definitions */
 #admission_form, #registration_form
@@ -638,13 +708,11 @@ option
 	margin-top: 1px;
 }
 
-/*#admission, #registration
-{
-	cursor: pointer;
-}*/
+
 #admission_form label, #registration_form label
 {
 	padding-right: 5%;
+	line-height: 21px;
 }
 
 #admission_form input[type="text"], #admission_form input[type="password"], #admission_form input[type="email"], 
@@ -659,9 +727,10 @@ option
 #admission_form input[type="submit"], #registration_form input[type="submit"]  
 {
 	width: 98%;
+	height: 21px;
 	font-weight: bold;
 	text-align: right;
-	padding: 0% 4%;
+	padding: 0 4%;
 	margin-right: 1%;
 	font-family: arial;
 	font-size: 12px;
@@ -669,9 +738,9 @@ option
 	bottom: 1%;
 	right: 0;
 	background: #E8E8E8;
-	border-left: 2px solid #A0A0A0;
-	border-right: 0;
-	border-top: 2px solid #A0A0A0;
+	/*border-left: 2px solid #A0A0A0;*/
+	/*border-right: 0;*/
+	/*border-top: 2px solid #A0A0A0;*/
 }
 
 input[type="submit"].advanced_search
@@ -686,3 +755,4 @@ input[type="submit"].advanced_search
 	color: #FFFFFF;
 	border-bottom: 2px solid #686868 ;
 }
+

@@ -25,23 +25,19 @@ $(document).ready(function() {
     //     rotate();
     // });
 
+    // slideMenu();
 
+        var pos = $(".main_section ul li:nth-child(1) ul").position();
+        console.log(pos);
         $(".main_section ul li:nth-child(1)").mouseover(function() {
-            $(".main_section ul li:nth-child(1) ul").css({"display": "block"});
-            $(".main_section ul li:nth-child(2) img").attr({src: "images/white.jpg"});
+            $(".main_section ul li ul").css({"display": "block"}).animate({
+                left: '-=120'
+            }, 'fast', 'easeInOutSine');
         });
+        
         $(".main_section ul li:nth-child(1)").mouseout(function() {
             $(".main_section ul li:nth-child(1) ul").css({"display": "none"});
-            $(".main_section ul li:nth-child(2) img").attr({src: "images/I-SoA-Gam-009.jpg"});
         });
-
-    $(".main_section ul li:nth-child(6)").hover(function() {
-        $(".main_section ul li:nth-child(6) ul").fadeToggle(700, function() {
-            $(".main_section ul li:nth-child(6) ul li").animate({
-                right: '0%'
-            });
-        });
-    });
     
 });
 
@@ -103,4 +99,59 @@ $(document).ready(function(){
         return false;
     });
 });
+
+// Slides the main menue
+function slideMenu() {
+    
+    $("#right_menu ul li:nth-child(1)").hover(function() {
+        $("#right_menu ul li:nth-child(1) ul").slideToggle('slow');
+    });
+
+    $("#right_menu ul li:nth-child(2)").hover(function() {
+        $("#right_menu ul li:nth-child(2) ul").slideToggle('slow');
+    });
+    $("#right_menu ul li:nth-child(3)").hover(function() {
+        $("#right_menu ul li:nth-child(3) ul").slideToggle('slow');
+    });
+    $("#right_menu ul li:nth-child(4)").hover(function() {
+        $("#right_menu ul li:nth-child(4) ul").slideToggle('slow');
+    });
+
+    // $("#right_menu ul li:nth-child(1)").mouseover(function() {
+    //     $("#right_menu ul li:nth-child(1) ul").slideDown('slow');
+    // });
+
+    // $("#right_menu ul li:nth-child(1)").mouseout(function() {
+    //     $("#right_menu ul li:nth-child(1) ul").slideUp('slow');
+    // });
+
+    // $("#right_menu ul li:nth-child(2)").mouseover(function() {
+    //     $("#right_menu ul li:nth-child(2) ul").slideDown('slow');
+    // });
+
+    // $("#right_menu ul li:nth-child(2) ul").mouseout(function() {
+    //     $("#right_menu ul li:nth-child(2) ul").slideUp('slow');
+    // });
+
+    // $("#right_menu ul li:nth-child(3)").mouseover(function() {
+    //     $("#right_menu ul li:nth-child(3) ul").slideDown('slow');
+    // });
+
+    // $("#right_menu ul li:nth-child(3) ul").mouseout(function() {
+    //     $(this).slideUp('slow');
+    // });
+
+    // $("#right_menu ul li:nth-child(4)").mouseover(function() {
+    //     $("#right_menu ul li:nth-child(4) ul").slideDown('slow');
+    // });
+
+    // $("#right_menu ul li:nth-child(4) ul").mouseout(function() {
+    //     $(this).slideUp('slow');
+    // });    
+}
+
+
+
+
+
 
