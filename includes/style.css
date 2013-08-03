@@ -421,7 +421,7 @@ ul#secondery_menu
 
 .main_section a:hover
 {
-	/*opacity: 1;*/
+	opacity: 1;
 }
 
 ul#mask
