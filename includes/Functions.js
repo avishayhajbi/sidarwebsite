@@ -28,7 +28,7 @@ $(document).ready(function() {
     // slideMenu();
 
     
-        $(".main_section a").mouseover(function() {
+        $(".main_section ul li:nth-child(1)").mouseover(function() {
             $(".main_section ul li:nth-child(1) ul").css({"display": "block"});
         });
         
