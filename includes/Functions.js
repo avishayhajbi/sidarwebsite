@@ -25,14 +25,11 @@ $(document).ready(function() {
     //     rotate();
     // });
 
-    slideMenu();
+    // slideMenu();
 
-        var pos = $(".main_section ul li:nth-child(1) ul").position();
-        console.log(pos);
-        $(".main_section a").hover(function() {
-            $(".main_section ul li ul").css({"display": "block"}).animate({
-                right: '+=120'
-            }, 'fast', 'easeInOutSine');
+    
+        $(".main_section a").mouseover(function() {
+            $(".main_section ul li:nth-child(1) ul").css({"display": "block"});
         });
         
         $(".main_section ul li:nth-child(1)").mouseout(function() {
