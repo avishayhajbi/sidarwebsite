@@ -380,8 +380,8 @@ ul#secondery_menu
 	list-style-type: none;
 	opacity: 1;
 	position: absolute;
-	right: 112.5%;
-	/*right: 0px;*/
+	/*right: 112.5%;*/
+	right: 0px;
 	z-index: 1;
 	background: #FFFFFF;
 }
@@ -419,10 +419,10 @@ ul#secondery_menu
 	opacity: 0.6;
 }
 
-.main_section a:hover
+/*.main_section a:hover
 {
 	opacity: 1;
-}
+}*/
 
 ul#mask
 {
@@ -517,7 +517,7 @@ ul#mask
 .fashion_design
 {
 	background-color: #026CB9 !important;
-	color: #FFFFFF;
+	color: #FFFFFF !important;
 }
 
 .graphic_design
@@ -529,31 +529,31 @@ ul#mask
 .textile_design
 {
 	background-color: #77AA50 !important;
-	color: #FFFFFF;
+	color: #FFFFFF !important;
 }
 
 .environmental_design
 {
 	background-color: #9D6397 !important;
-	color: #FFFFFF;
+	color: #FFFFFF !important;
 }
 
 .ceramic_design
 {
 	background-color: #D78EB8 !important;
-	color: #FFFFFF;
+	color: #FFFFFF !important;
 }
 
 .jewelry_design
 {
 	background-color: #FC513F !important;
-	color: #FFFFFF;
+	color: #FFFFFF !important;
 }
 
 .industrial_design
 {
 	background-color: #FCA649 !important;
-	color: #FFFFFF;
+	color: #FFFFFF !important;
 }
 
 

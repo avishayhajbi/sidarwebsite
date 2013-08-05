@@ -25,13 +25,13 @@ $(document).ready(function() {
     //     rotate();
     // });
 
-    // slideMenu();
+    slideMenu();
 
         var pos = $(".main_section ul li:nth-child(1) ul").position();
         console.log(pos);
-        $(".main_section ul li:nth-child(1)").mouseover(function() {
+        $(".main_section a").hover(function() {
             $(".main_section ul li ul").css({"display": "block"}).animate({
-                left: '-=120'
+                right: '+=120'
             }, 'fast', 'easeInOutSine');
         });
         
@@ -103,27 +103,27 @@ $(document).ready(function(){
 // Slides the main menue
 function slideMenu() {
     
-    $("#right_menu ul li:nth-child(1)").hover(function() {
-        $("#right_menu ul li:nth-child(1) ul").slideToggle('slow');
-    });
-
-    $("#right_menu ul li:nth-child(2)").hover(function() {
-        $("#right_menu ul li:nth-child(2) ul").slideToggle('slow');
-    });
-    $("#right_menu ul li:nth-child(3)").hover(function() {
-        $("#right_menu ul li:nth-child(3) ul").slideToggle('slow');
-    });
-    $("#right_menu ul li:nth-child(4)").hover(function() {
-        $("#right_menu ul li:nth-child(4) ul").slideToggle('slow');
-    });
-
-    // $("#right_menu ul li:nth-child(1)").mouseover(function() {
-    //     $("#right_menu ul li:nth-child(1) ul").slideDown('slow');
+    // $("#right_menu ul li:nth-child(1)").hover(function() {
+    //     $("#right_menu ul li:nth-child(1) ul").slideToggle('slow');
     // });
 
-    // $("#right_menu ul li:nth-child(1)").mouseout(function() {
-    //     $("#right_menu ul li:nth-child(1) ul").slideUp('slow');
+    // $("#right_menu ul li:nth-child(2)").hover(function() {
+    //     $("#right_menu ul li:nth-child(2) ul").slideToggle('slow');
     // });
+    // $("#right_menu ul li:nth-child(3)").hover(function() {
+    //     $("#right_menu ul li:nth-child(3) ul").slideToggle('slow');
+    // });
+    // $("#right_menu ul li:nth-child(4)").hover(function() {
+    //     $("#right_menu ul li:nth-child(4) ul").slideToggle('slow');
+    // });
+
+    $("#right_menu ul li:nth-child(1)").mouseover(function() {
+        $("#right_menu ul li:nth-child(1) ul").slideDown(300);
+    });
+
+    $("#right_menu ul li:nth-child(1) ul").mouseout(function() {
+        $("#right_menu ul li:nth-child(1) ul").slideUp('slow');
+    });
 
     // $("#right_menu ul li:nth-child(2)").mouseover(function() {
     //     $("#right_menu ul li:nth-child(2) ul").slideDown('slow');
