@@ -25,16 +25,29 @@ $(document).ready(function() {
     //     rotate();
     // });
 
-    // slideMenu();
+    slideMenu();
+    //Load the slideshow
+    theRotator();
+    $('section.rotator').fadeIn(1000);
+    $('section.rotator ul li').fadeIn(1000); // tweek for IE
 
-    
-        $(".main_section ul li:nth-child(1)").mouseover(function() {
-            $(".main_section ul li:nth-child(1) ul").css({"display": "block"});
-        });
+
+    moveBox();
+        // $(".main_section ul li:nth-child(1)").mouseover(function() {
+        //     $(".main_section ul li:nth-child(1) ul").css({"display": "block"});
+        // });
         
-        $(".main_section ul li:nth-child(1)").mouseout(function() {
-            $(".main_section ul li:nth-child(1) ul").css({"display": "none"});
-        });
+        // $(".main_section ul li:nth-child(1)").mouseout(function() {
+        //     $(".main_section ul li:nth-child(1) ul").css({"display": "none"});
+        // });
+
+        // $(".main_section ul li:nth-child(4)").mouseover(function() {
+        //     $(".main_section ul li:nth-child(4) ul").css({"display": "block"});
+        // });
+        
+        // $(".main_section ul li:nth-child(4)").mouseout(function() {
+        //     $(".main_section ul li:nth-child(4) ul").css({"display": "none"});
+        // });
     
 });
 
@@ -99,56 +112,104 @@ $(document).ready(function(){
 
 // Slides the main menue
 function slideMenu() {
-    
-    // $("#right_menu ul li:nth-child(1)").hover(function() {
-    //     $("#right_menu ul li:nth-child(1) ul").slideToggle('slow');
-    // });
 
-    // $("#right_menu ul li:nth-child(2)").hover(function() {
-    //     $("#right_menu ul li:nth-child(2) ul").slideToggle('slow');
-    // });
-    // $("#right_menu ul li:nth-child(3)").hover(function() {
-    //     $("#right_menu ul li:nth-child(3) ul").slideToggle('slow');
-    // });
-    // $("#right_menu ul li:nth-child(4)").hover(function() {
-    //     $("#right_menu ul li:nth-child(4) ul").slideToggle('slow');
-    // });
-
-    $("#right_menu ul li:nth-child(1)").mouseover(function() {
+    $("#right_menu ul li:nth-child(1)").mouseenter(function() {
         $("#right_menu ul li:nth-child(1) ul").slideDown(300);
     });
 
-    $("#right_menu ul li:nth-child(1) ul").mouseout(function() {
-        $("#right_menu ul li:nth-child(1) ul").slideUp('slow');
+    // $("#right_menu ul li:nth-child(1)").click(function() {
+    //     $("#right_menu ul li:nth-child(1) ul").slideUp(300);
+    // });
+
+    // $("#right_menu ul li:nth-child(1)").mouseenter(function() {
+    //     $("#right_menu ul li:nth-child(1) ul").slideDown(300);
+    // });
+
+    $("#right_menu ul li:nth-child(1) ul").mouseleave(function() {
+        $(this).slideUp('slow');
     });
 
-    // $("#right_menu ul li:nth-child(2)").mouseover(function() {
-    //     $("#right_menu ul li:nth-child(2) ul").slideDown('slow');
+    // $("#right_menu ul li:nth-child(2)").mouseenter(function() {
+    //     $("#right_menu ul li:nth-child(2) ul").slideDown(300);
     // });
 
-    // $("#right_menu ul li:nth-child(2) ul").mouseout(function() {
-    //     $("#right_menu ul li:nth-child(2) ul").slideUp('slow');
-    // });
-
-    // $("#right_menu ul li:nth-child(3)").mouseover(function() {
-    //     $("#right_menu ul li:nth-child(3) ul").slideDown('slow');
-    // });
-
-    // $("#right_menu ul li:nth-child(3) ul").mouseout(function() {
+    // $("#right_menu ul li:nth-child(2) ul").mouseleave(function() {
     //     $(this).slideUp('slow');
     // });
 
-    // $("#right_menu ul li:nth-child(4)").mouseover(function() {
-    //     $("#right_menu ul li:nth-child(4) ul").slideDown('slow');
+    // $("#right_menu ul li:nth-child(3)").mouseenter(function() {
+    //     $("#right_menu ul li:nth-child(3) ul").slideDown(300);
     // });
 
-    // $("#right_menu ul li:nth-child(4) ul").mouseout(function() {
-    //     $(this).slideUp('slow');
-    // });    
+    // $("#right_menu ul li:nth-child(3) ul").mouseleave(function() {
+    //     $("#right_menu ul li:nth-child(3) ul").slideUp('slow');
+    // });
+
+    // $("#right_menu ul li:nth-child(4)").mouseenter(function() {
+    //     $("#right_menu ul li:nth-child(4) ul").slideDown(300);
+    // });
+
+    // $("#right_menu ul li:nth-child(4) ul").mouseleave(function() {
+    //     $("#right_menu ul li:nth-child(4) ul").slideUp('slow');
+    // });
 }
 
 
 
 
+function theRotator() {
+    //Set the opacity of all images to 0
+    $('section.rotator ul li').css({opacity: 0.0});
+    
+    //Get the first image and display it (gets set to full opacity)
+    $('section.rotator ul li:first').css({opacity: 1.0});
+        
+    //Call the rotator function to run the slideshow, 6000 = change to next image after 6 seconds
+    
+    setInterval('rotate()',3000);
+    
+}
+
+function rotate() { 
+    //Get the first image
+    var current = ($('section.rotator ul li.show')?  $('section.rotator ul li.show') : $('section.rotator ul li:first'));
+
+    if ( current.length == 0 ) current = $('section.rotator ul li:first');
+
+    //Get next image, when it reaches the end, rotate it back to the first image
+    var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('section.rotator ul li:first') :current.next()) : $('section.rotator ul li:first'));
+    
+    //Un-comment the 3 lines below to get the images in random order
+    
+    //var sibs = current.siblings();
+    //var rndNum = Math.floor(Math.random() * sibs.length );
+    //var next = $( sibs[ rundNum ] );
+            
+
+    //Set the fade in effect for the next image, the show class has higher z-index
+    next.css({opacity: 0.0})
+    .addClass('show')
+    .animate({opacity: 1.0}, 1000);
+
+    //Hide the current image
+    current.animate({opacity: 0.0}, 1000)
+    .removeClass('show');
+    
+};
 
 
+function moveBox() {
+    $(".main_section ul li:nth-child(1)").mouseenter(function() {
+        $(".main_section ul li:nth-child(1) ul").css({"display": "block"}).animate({
+            right: '+=112.6%'
+        }, 1000, 'linear');
+    });
+        
+    $(".main_section ul li:nth-child(1)").mouseleave(function() {
+        $(".main_section ul li:nth-child(1) ul").animate({
+            right: '-=112.6%'
+        }, 1000, 'linear', function() {
+            $(this).css({"display": "none"});
+        });
+    });
+}

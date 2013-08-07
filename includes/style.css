@@ -130,6 +130,7 @@ Date: 22-2-13
 #right_menu ul li:hover ul
 {
 	display: block;
+	border: 0;
 }
 
 #right_menu ul li ul li a:link, #right_menu ul li ul li a:visited 
@@ -372,6 +373,7 @@ ul#secondery_menu
 	position: relative;
 }
 
+
 .main_section ul li ul
 {
 	width: 100%;
@@ -380,8 +382,8 @@ ul#secondery_menu
 	list-style-type: none;
 	opacity: 1;
 	position: absolute;
-	right: 112.5%;
-	/*right: 0px;*/
+	/*right: 112.6%;*/
+	right: 0px;
 	z-index: 1;
 	background: #FFFFFF;
 }
@@ -627,4 +629,29 @@ ul#mask
 .industrial_design_border_bottom
 {
 	border-bottom: 1px solid #FCA649 !important;
+}
+
+
+/* rotator in-page placement */
+.rotator {
+	position:relative;
+	/*height:345px;*/
+	/*margin-left: 15px;*/
+	display: none;
+}
+/* rotator css */
+.rotator ul li {
+	float:left;
+	position:absolute;
+	list-style: none;
+}
+/* rotator image style */	
+/*.rotator ul li img {
+	border:1px solid #ccc;
+	padding: 4px;
+	background: #FFF;
+}*/
+    
+.rotator ul li.show {
+	z-index:500
 }

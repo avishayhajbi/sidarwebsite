@@ -83,14 +83,18 @@ Date: 22-2-13
 {
 	list-style: none;
 	display: block;
+	margin-top: 5%;
 }
 
 .one_on_two ul li 
 {
-	position: relative;
+	width: 100%;
+	height: 5%;
+	/*position: relative;*/
+	border: 0;
 	border-bottom: 1px solid #B8B8B8;
-	padding: 0.2em 4% 0.2em 0;
 	font-size: 12px;
+	margin: 0;
 }
 
 .one_on_two ul li a:link, .one_on_two ul li a:visited 
@@ -100,6 +104,7 @@ Date: 22-2-13
 	color: #000000;
 	display: block;
 	text-decoration: none;
+	text-align: right;
 	padding: 0.3em 4% 0 0;
 	font-size: 12px;
 	background: #FFFFFF;
@@ -110,6 +115,15 @@ Date: 22-2-13
 .one_on_two ul li a:hover
 {
 	background: #D8D8D8;
+}
+
+.one_on_two input[type="text"]
+{
+	width: 90%;
+	border: 0;
+	border-bottom: 1px dotted #B8B8B8;
+	margin-top: 10%;
+	margin-right: 5%;
 }
 
 
@@ -357,6 +371,16 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 	
 }
 
+.one_on_one p, .one_on_two p 
+{
+	width: 90%;
+	font-size: 12px;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-top: 5%;
+	text-align: justify;
+}
+
 .one_on_one ul#one 
 {
 	width: 100%;
@@ -530,28 +554,35 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 	display: block;
 	width: 100%;
 	height: 100%;
-	margin-top: 10%;
+	margin-top: 2%;
 }
 
 .one_on_four ul#rightList li 
 {
 	width: 90%;
 	height: 2%;
-	margin-right: -0.1%;
+	margin-right: -0.01%;
+	margin: 0;
 	border: 0;
-	font-weight: bold;
+	border-bottom: 1px solid #F0F0F0;
+	/*font-weight: bold;*/
 	font-size: 12px;
 	text-align: right;
-	padding: 2% 5%;
+	padding: 2% 5%; 
+}
+
+.one_on_four ul#rightList li:hover
+{
+	background: #F8F8F8;	
 }
 
 .one_on_four ul#rightList li a:link, .one_on_four ul#rightList li a:visited 
 {
 	width: 100%;
 	height: 100%;
-	margin-right: -4%;
+	margin-right: -5%;
 	margin-top: -2%;	
-	padding: 2% 5%;
+	padding: 2% 5%; 
 	background: none;
 	opacity: 1;
 	font-size: 12px;
@@ -559,7 +590,8 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 
 .one_on_four ul#rightList li a:hover
 {
-	opacity: 0.5;
+	/*opacity: 0.5;*/
+	background: #F8F8F8;
 }
 
 .one_on_four ul#leftList
@@ -688,10 +720,16 @@ option
 
 #admission, #registration
 {
+	width: 95%;
 	cursor: pointer;
 	height: 16px;
+	font-size: 12px;
 	margin-top: 5%; 
 	margin-bottom: -2%;
+	margin-right: 5%;
+	text-align: right;
+	border: 0;
+	font-weight: bold;	
 }
 
 /* Forms definitions */
