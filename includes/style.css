@@ -124,7 +124,7 @@ Date: 22-2-13
 {
 	float: none;
 	margin: 0;
-
+	clear: both;
 }
 
 #right_menu ul li:hover ul
@@ -158,6 +158,7 @@ Date: 22-2-13
 	width: 10px;
 	height: 10px;
 	padding-left: 0.3em;
+	border: 0;
 }
 
 /* Design areas colors */
@@ -395,17 +396,24 @@ ul#secondery_menu
 	display: block;
 	font-size: 12px;
 	position: relative;
-	top: 20px;
+	top: 25px;
 	margin-bottom: 5%;
 	border: 0;
 	text-align: right;
 	padding-right: 5%;
-	opacity: 1 !important;
+	/*z-index: -10;*/
 }
 
 .main_section ul li ul li span
 {
 	font-weight: bold;
+}
+
+.main_section ul li ul li img
+{
+	width: 10%;
+	height: 100%;
+	margin-left: 8%;
 }
 
 .main_section a:link, .main_section a:visited
@@ -450,6 +458,15 @@ ul#mask
 	background: #FFFFFF !important;
 }
 
+.secondary_text
+{
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+	display: none;
+	position: absolute;
+	top: 0;
+}
 
 .main_section a img
 {
@@ -562,75 +579,110 @@ ul#mask
 /* Design areas border */
 .fashion_design_border
 {
-	border: 1px solid #026CB9 !important;
+	border: 1px solid #67A7D5 !important;
 }
 
 .graphic_design_border
 {
-	border: 1px solid #80ACE9 !important;
+	border: 1px solid #B3C3DD !important;
 }
 
 .textile_design_border
 {
-	border: 1px solid #77AA50 !important;
+	border: 1px solid #ADCC96 !important;
 }
 
 .environmental_design_border
 {
-	border: 1px solid #9D6397 !important;
+	border: 1px solid #C4A1C1 !important;
 }
 
 .ceramic_design_border
 {
-	border: 1px solid #D78EB8 !important;
+	border: 1px solid #E7BBD4 !important;
 }
 
 .jewelry_design_border
 {
-	border: 1px solid #FC513F !important;
+	border: 1px solid #FD978C !important;
 }
 
 .industrial_design_border
 {
-	border: 1px solid #FCA649 !important;
+	border: 1px solid #F7BC78 !important;
 }
 
 /* Design ares border bottom */
 .fashion_design_border_bottom
 {
-	border-bottom: 1px solid #026CB9 !important;
+	border-bottom: 1px solid #67A7D5 !important;
 }
 
 .graphic_design_border_bottom
 {
-	border-bottom: 1px solid #80ACE9 !important;
+	border-bottom: 1px solid #B3C3DD !important;
 }
 
 .textile_design_border_bottom
 {
-	border-bottom: 1px solid #77AA50 !important;
+	border-bottom: 1px solid #ADCC96 !important;
 }
 
 .environmental_design_border_bottom
 {
-	border-bottom: 1px solid #9D6397 !important;
+	border-bottom: 1px solid #C4A1C1 !important;
 }
 
 .ceramic_design_border_bottom
 {
-	border-bottom: 1px solid #D78EB8 !important;
+	border-bottom: 1px solid #E7BBD4 !important;
 }
 
 .jewelry_design_border_bottom
 {
-	border-bottom: 1px solid #FC513F !important;
+	border-bottom: 1px solid #FD978C !important;
 }
 
 .industrial_design_border_bottom
 {
-	border-bottom: 1px solid #FCA649 !important;
+	border-bottom: 1px solid #F7BC78 !important;
 }
 
+/* Design areas hover */
+.one_on_four ul#leftList li.fashion_design_hover a:hover
+{
+	background: #B3D3EA !important;
+}
+
+.one_on_four ul#leftList li.graphic_design_hover a:hover
+{
+	background: #D9E1EE !important;
+}
+
+.one_on_four ul#leftList li.textile_design_hover a:hover
+{
+	background: #D6E5CA !important;
+}
+
+.one_on_four ul#leftList li.environmental_design_hover a:hover
+{
+	background: #E1D0E0 !important;
+}
+
+.one_on_four ul#leftList li.ceramic_design_hover a:hover
+{
+	background: #F3DDE9 !important;
+}
+
+.one_on_four ul#leftList li.jewelry_design_hover a:hover
+{
+	background: #FECBC5 !important;
+}
+
+.one_on_four ul#leftList li.industrial_design_hover a:hover
+{
+	background: #FBDDBB !important;
+}
 
 /* rotator in-page placement */
 .rotator {

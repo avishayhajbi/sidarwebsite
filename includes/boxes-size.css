@@ -387,6 +387,7 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 	list-style-type: none !important;
 	display: block !important;
 	overflow: hidden !important;
+	margin-top: 10%;
 }
 
 .one_on_one ul#one li
@@ -619,7 +620,7 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 {
 	width: 100%;
 	height: 100%;
-	margin-right: -4%;
+	margin-right: -5.5%;
 	margin-top: -2%;	
 	padding: 2% 5%;
 	background: none;
@@ -629,7 +630,7 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 
 .one_on_four ul#leftList li a:hover
 {
-	opacity: 0.5;
+	/*opacity: 0.5;*/
 }
 
 .one_on_four ul li a img
@@ -792,5 +793,21 @@ input[type="submit"].advanced_search
 	font-family: arial;
 	color: #FFFFFF;
 	border-bottom: 2px solid #686868 ;
+}
+
+.one_on_two textarea
+{
+	/*border-bottom: 1px dotted #E8E8E8;*/
+	margin-top: 10%;
+}
+
+.one_on_two input[type="submit"]
+{
+	width: 90%;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: bold;
+	margin-right: 4.5%;
+	margin-top: 10%;
 }
 
