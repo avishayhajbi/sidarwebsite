@@ -347,6 +347,16 @@ ul#secondery_menu
 	padding: 0 0.5% 0 0.5em;
 }
 
+#secondery_menu li img
+{
+	width: 45%;
+	height: 100%;
+}
+
+#secondery_menu li#example
+{
+	margin-left: -1%;
+}
 /* End Navbar style */
 
 
@@ -460,12 +470,13 @@ ul#mask
 
 .secondary_text
 {
-	width: 100%;
+	width: 10%;
 	height: 100%;
-	background: #FFFFFF;
+	background: red;
 	display: none;
 	position: absolute;
 	top: 0;
+	right: 0;
 }
 
 .main_section a img

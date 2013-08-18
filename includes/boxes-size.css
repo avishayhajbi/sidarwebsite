@@ -436,6 +436,11 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 	text-align: right;
 }
 
+.one_on_one article section 
+{
+	margin-top: 3%;
+}
+
 .one_on_one article input[type="checkbox"]
 {
 	font-size: 10px;
@@ -491,9 +496,14 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 
 .five_on_four ul li 
 {
-	padding: 0.1em 0.5em 0.1em 0;
+	width: 90%;
+	height: 18px;
+	margin-right: -0.5%;
+	margin-bottom: 0;
+	padding-right: 10%;
 	font-size: 12px;
-	/*border-bottom: 1px solid #B8B8B8;*/	
+	border: 0;
+	text-align: right;	
 }
 
 .author, .book_name, .publishing, .catalogue_num, .design_area, .bibliography_comments
@@ -606,7 +616,8 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 .one_on_four ul#leftList li 
 {
 	width: 90%;
-	height: 2%;
+	height: 2.01%;
+	/*height: 1%;*/
 	margin-right: -0.1%;
 	border: 0;
 	margin: 0;
@@ -642,7 +653,7 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 .designer_categories
 {
 	width: 100% !important;
-	height: 3% !important;
+	height: 2.01% !important;
 	font-size: 12px;
 	border: 0 !important;
 	margin: 0 !important;
@@ -651,14 +662,13 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 .designer_categories select
 {
 	width: 100%;
-	/*height: 21px;*/
-	height: 100%;
-	line-height: 20px;
+	height: 130%;
+	line-height: 10px;
 	cursor: pointer;
 	margin-right: -5%;
-	/*margin: 0;*/
-	margin-top: -0.5%;
-	padding-top: 1%;
+	margin-top: -1.8%;
+	/*padding-top: 1%;*/
+	margin-bottom: 0;
 }
 
 option

@@ -110,76 +110,6 @@ $(document).ready(function(){
     });
 });
 
-// Slides the main menue
-function slideMenu() {
-
-    $("#right_menu ul li:nth-child(1)").mouseover(function() {
-        $("#right_menu ul li:nth-child(1) ul").slideDown(300);
-    });
-
-    $("#right_menu ul li:nth-child(2)").mouseover(function() {
-        $("#right_menu ul li:nth-child(2) ul").slideDown(300);
-    });
-
-    $("#right_menu ul li:nth-child(3)").mouseover(function() {
-        $("#right_menu ul li:nth-child(3) ul").slideDown(300);
-    });
-
-    $("#right_menu ul li:nth-child(4)").mouseover(function() {
-        $("#right_menu ul li:nth-child(4) ul").slideDown(300);
-    });
-
-    // $("#right_menu ul li:nth-child(1)").hover(function() {
-    //     $("#right_menu ul li:nth-child(1) ul").slideToggle(300);
-    // });
-
-    // $("#right_menu ul li:nth-child(1)").mouseenter(function() {
-    //     $("#right_menu ul li:nth-child(1) ul").slideDown(300);
-    // });
-
-    $("#right_menu ul li:nth-child(1) ul").mouseleave(function() {
-        $(this).slideUp('slow');
-    });
-
-    $("#right_menu ul li:nth-child(2) ul").mouseleave(function() {
-        $(this).slideUp('slow');
-    });
-
-    $("#right_menu ul li:nth-child(3) ul").mouseleave(function() {
-        $(this).slideUp('slow');
-    });
-
-    $("#right_menu ul li:nth-child(4) ul").mouseleave(function() {
-        $(this).slideUp('slow');
-    });
-
-    // $("#right_menu ul li:nth-child(2)").mouseenter(function() {
-    //     $("#right_menu ul li:nth-child(2) ul").slideDown(300);
-    // });
-
-    // $("#right_menu ul li:nth-child(2) ul").mouseleave(function() {
-    //     $(this).slideUp('slow');
-    // });
-
-    // $("#right_menu ul li:nth-child(3)").mouseenter(function() {
-    //     $("#right_menu ul li:nth-child(3) ul").slideDown(300);
-    // });
-
-    // $("#right_menu ul li:nth-child(3) ul").mouseleave(function() {
-    //     $("#right_menu ul li:nth-child(3) ul").slideUp('slow');
-    // });
-
-    // $("#right_menu ul li:nth-child(4)").mouseenter(function() {
-    //     $("#right_menu ul li:nth-child(4) ul").slideDown(300);
-    // });
-
-    // $("#right_menu ul li:nth-child(4) ul").mouseleave(function() {
-    //     $("#right_menu ul li:nth-child(4) ul").slideUp('slow');
-    // });
-}
-
-
-
 
 function theRotator() {
     //Set the opacity of all images to 0
@@ -223,23 +153,6 @@ function rotate() {
 
 
 function moveBox() {
-    // $(".main_section ul li:nth-child(1)").mouseenter(function() {
-    //     $(".main_section ul li:nth-child(1) ul").animate({
-    //         right: '+=112.6%'
-    //     }, 1000, 'linear', function() {
-    //         $(this).css({"z-index": "1"});
-    //     });
-    //     $(".main_section ul li:nth-child(1) ul li").css({"opacity": "1"});
-    // });
-        
-    // $(".main_section ul li:nth-child(1)").mouseleave(function() {
-    //     $(".main_section ul li:nth-child(1) ul").animate({
-    //         right: '-=112.6%'
-    //     }, 1000, 'linear', function() {
-    //         $(this).css({"z-index": "-10"});
-    //     });
-    //     $(".main_section ul li:nth-child(1) ul li").css({"opacity": "1"}); 
-    // });
 
     $(".main_section ul li:nth-child(1)").mouseenter(function() {
         $(".main_section ul li:nth-child(1) ul").css({"display": "block"}).animate({
@@ -250,7 +163,7 @@ function moveBox() {
     $(".main_section ul li:nth-child(1)").mouseleave(function() {
         $(".main_section ul li:nth-child(1) ul").fadeOut('slow').animate({
             right: '-=112.6%'
-        }, 1000, 'linear');
+        }, 10, 'linear');
     });
 
     $(".main_section ul li:nth-child(8)").mouseenter(function() {
@@ -262,10 +175,12 @@ function moveBox() {
     $(".main_section ul li:nth-child(8)").mouseleave(function() {
         $(".main_section ul li:nth-child(8) ul").fadeOut('slow').animate({
             right: '-=112.6%'
-        }, 1000, 'linear');
+        }, 10, 'linear');
     });
 
-    $(".opening_text").mouseenter(function() {
-        $(".secondary_text").slideDown('slow');
-    })
+    $(".opening_text").mouseover(function() {
+        $(".secondary_text").animate({
+            top: '+=100'
+        }, 600, 'linear');
+    });
 }

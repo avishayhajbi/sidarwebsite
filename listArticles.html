@@ -10,17 +10,6 @@
                 <script src="includes/jquery-1.10.1.min.js"></script>
                 <script src="includes/Functions.js"></script>
 
-                <script type="text/javascript">
-                        function goTo(choose)
-                        {
-                            var selected = choose.options[choose.selectedIndex].value;
-                            if(selected != "")
-                            {
-                                location.href = selected;
-                            }
-                        }
-                </script>
-
         </head>
         <body>
                 <div id="wrapper">
@@ -142,145 +131,198 @@
                 <!-- Breadcrumbs -->
                 <section>
                 <ul id="breadcrumbs">
-                        <li><a href="index.html">תחומי עיצוב</a></li>
+                        <li><a href="index.html">תכנים עיוניים</a></li>
                         <p> > </p>
-                        <li><a href="graphic_design.html">תקשורת חזותית</a></li>
-                        <p> > </p>
-                        <li><a href="graphic_design_designers.html">מעצבים</a></li>
-                        <p> > </p>
-                        <li>שם התוצאה</li>
+                        <li>כתבות</li>
                 </ul>
                 <ul id="secondery_menu">
                         <li><a href="#">הבא</a></li>
                         <p> | </p>
                         <li><a href="#">הקודם</a></li>
+                        <li><a href="listArticles.html"><img src="images/IconList.jpg" alt="רשימה" title="רשימה"></a></li>
+                        <li id="example"><a href="articles-in-newspapers.html"><img src="images/IconPic.jpg" alt="תמונות" title="תמונות"></a></li>
                 </ul>
         </section>
-        </nav>  	
+        </nav>          
         <!-- End Navbar -->
         
         <br>
 
         <!-- Main section -->
         <section class="main_section">
-                <section class="two_on_two">
-                        <img src="images/daniKerman.jpg">
+            <ul>
+                    <form action="#" method="get">
+                <section class="one_on_one">
+                    <h4 class="headline">כתבות</h4>
+                    <label>
+                        <input type="text" name="newspapaer_article_zone">
+                    </label>
+                    <article>
+                        <section>
+                            <input type="checkbox" name="articles" value="all"> הכול<br>
+                            <input type="checkbox" name="articles" value="internet"> כתבות אינטרנט<br>
+                            <input type="checkbox" name="articles" value="newspapers"> כתבות בעיתונים ובכתבי עת<br>
+                        </section>
+                    </article>
                 </section>
-                <section class="two_on_two">
-                        <ul class="column1">
-                                <li>שם המעצב</li>
-                                <li>Designer</li>
-                                <li>ארץ לידה</li>
-                                <li>תאריך לידה</li>
-                                <li>תחומי עיצוב</li>
-                                <li>מס' עבודות באתר</li>
-                                <li>צלם</li>
-                                <li>תאריך הצילום</li>
-                                <li>מאוסף</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                        </ul>
-                        <ul class="column2">
-                                <li>קרמן דני</li>
-                                <li>Kerman Dani</li>
-                                <li>ישראל</li>
-                                <li>1940</li>
-                                <li>איור, עיצוב</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li>מכון שהקר</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                        </ul>
-                        <ul class="column3">
-                                <li><a href="#">מילות מפתח</a></li>
-                                <li><a href="#">קורות חיים</a></li>
-                                <li><a href="#">פילוסופיית עיצוב</a></li>
-                                <li><a href="#">תצלומים אישיים</a></li>
-                                <li><a href="#">כתבות</a></li>
-                                <li><a href="#">מאמרים</a></li>
-                                <li><a href="#">מסמכים</a></li>
-                                <li><a href="#">ספרים</a></li>
-                                <li><a href="#">וידאו</a></li>
-                                <li><a href="#">טקסטים</a></li>
-                                <li><a href="#">תערוכות באתר המכון</a></li>
-                                <li><a href="#">קישורים</a></li>
-                                <li><a href="#">אתר המעצב</a></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                        </ul>
+                <section class="one_on_one">
+                    <h4 class="headline">תחומי עיצוב וקטגוריות</h4>
+                    <label>
+                        <input type="text" name="reporter">
+                    </label>
+                    <article>
+                        <section>
+                            <input type="checkbox" name="categories" value="all"> הכול<br>
+                            <input type="checkbox" name="categories" value="fashion"> עיצוב אופנה<br>
+                            <input type="checkbox" name="categories" value="graphic"> תקשורת חזותית<br>
+                            <input type="checkbox" name="categories" value="textile"> עיצוב טקסטיל<br>
+                            <input type="checkbox" name="categories" value="environmental"> עיצוב מבנה<br>
+                            <input type="checkbox" name="categories" value="ceramic"> עיצוב קרמי<br>
+                            <input type="checkbox" name="categories" value="jewelry"> עיצוב תכשיטים<br>
+                        </section>
+                    </article>
                 </section>
-                <ul>
-                    <section class="one_on_four graphic_design_border design_area_section">
-                            <ul id="leftList">
-                                    <li class="headline graphic_design"><a href="graphic_design.html" class="graphic_design">תקשורת חזותית</a></li>
-                                    <li class="graphic_design_border_bottom"><a href="graphic_design_searching.html">חיפוש</a></li>
-                                    <li class="graphic_design_border_bottom"><a href="graphic_design_designers.html">מעצבים</a></li>
-                                    <li class="graphic_design_border_bottom"><a href="graphic_design_categories.html">קטגוריות</a></li>
-                                    <li class="graphic_design_border_bottom"><a href="graphic_design_topics.html">נושאים</a></li>
-                                    <li class="graphic_design_border_bottom"><a href="graphic_design_years.html">שנים</a></li>
-                                    <li class="graphic_design_border_bottom"><a href="#">סגנונות</a></li>
-                                    <li class="graphic_design_border_bottom"></li>
-                                    <li class="graphic_design_border_bottom"></li>
-                                    <li class="graphic_design_border_bottom"></li>
-                                    <li class="graphic_design_border_bottom"></li>
-                                    <li class="graphic_design_border_bottom"></li>
-                                    <li class="graphic_design_border_bottom"></li>
-                                    <li class="graphic_design_border_bottom"></li>
-                                    <li class="headline">קטגוריות זמינות למעצב זה</li>
-                                    <!-- <li style="border-bottom: 0;"></li> -->
-                                    <li class="designer_categories">
-                                            <select name="desingner_categories" onchange="location = this.options[this.selectedIndex].value;">
-                                                    <option value="1">new value 1</option>
-                                                    <option value="graphic_design_categories_results.html">ספרים</option>
-                                                    <option value="3">new value 3</option>
-                                                    <option value="4">new value 4</option>
-                                                    <option value="5">new value 5</option>
-                                                    <option value="6">new value 6</option>
-                                                    <option value="7">new value 7</option>
-                                                    <option value="8">new value 8</option>
-                                                    <option value="9">new value 9</option>
-                                            </select></label>
-                                    </li>   
-                            </ul>
-                    </section>
-                    <li><a href="#"><img src="images/front/G-LaO-Pos-029.jpg"></a></li>
-                    <li><a href="#"><img src="images/G-CArR-GrC-120a.jpg"></a></li>
-                    <section class="two_on_one">
-                        <p class="headline">תקציר פילוסופי</p>
-                    </section>
-                    <li><a href="#"><img src="images/G-CArR-GrC-1625.jpg"></a></li>
-                    <li><a href="#"><img src="images/G-EnZ-Com-002.jpg"></a></li>
-                    <li><a href="#"><img src="images/G-FiU-Com-025.jpg"></a></li>
-                    <li><a href="#"><img src="images/eged-1.jpg"></a></li>
-                </ul>
-        </section>
+                <section class="one_on_one">
+                    <h4 class="headline">שם המחבר\ שם המעצב</h4>
+                    <label>
+                        <input type="text" name="reporter">
+                    </label>
+                    <article>
+                        <section>
+                            <input type="checkbox" name="author" value="all"> הכול<br>
+                            <input type="checkbox" name="author" value="alef"> א<br>
+                            <input type="checkbox" name="author" value="bet"> ב<br>
+                            <input type="checkbox" name="author" value="gimel"> ג<br>
+                            <input type="checkbox" name="author" value="dalet"> ד<br>
+                            <input type="checkbox" name="author" value="hei"> ה<br>
+                        </section>
+                    </article>
+                </section>
+                <section class="one_on_one">
+                    <h4 class="headline">נושא</h4>
+                    <label>
+                        <input type="text" name="newspapaer_article_year">
+                    </label>
+                    <article>
+                        <section>
+                            <input type="checkbox" name="subject" value="all"> הכול<br>
+                            <input type="checkbox" name="subject" value="aa"> אא<br>
+                            <input type="checkbox" name="subject" value="aa"> אא<br>
+                            <input type="checkbox" name="subject" value="aa"> אא<br>
+                            <input type="checkbox" name="subject" value="aa"> אא<br>
+                            <input type="checkbox" name="subject" value="aa"> אא<br>
+                        </section>
+                    </article>
+                </section>
+                    <li><input type="button" value="חפש"></li>
+                </form>
+            </ul>
+                <div class="clear"></div>
+                <section class="five_on_four">
+                    <article class="author">
+                        <h4 class="headline">שם המחבר</h4>
+                        <ul>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                        </ul>
+                    </article>
+                    <article class="book_name">
+                        <h4 class="headline">שם הספר</h4>
+                        <ul>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                        </ul>
+                    </article>
+                    <article class="publishing">
+                    <h4 class="headline">הוצאה / מקום / שנה</h4>
+                        <ul>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                        </ul>
+                    </article>
+                    <article class="catalogue_num">
+                    <h4 class="headline">מס. קטלוגי</h4>
+                        <ul>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                        </ul>
+                    </article>
+                    <article class="design_area">
+                    <h4 class="headline">תחום עיצוב</h4>
+                        <ul>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                        </ul>
+                    </article>
+                    <article class="bibliography_comments">
+                    <h4 class="headline">הערות</h4>
+                        <ul>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                            <li>sample text</li>
+                        </ul>
+                    </article>
+                </section>
+                
         <div class="clear"></div>
 
         <!-- Footer -->
-        <footer class="links">
-        	<p>מכון שנקר לתיעוד וחקר העיצוב בישראל, כל הזכויות שמורות 2013 &copy;</p>
+       <footer class="links">
+                <p>מכון שנקר לתיעוד וחקר העיצוב בישראל, כל הזכויות שמורות 2013 &copy;</p>
                 <nav>
-			<a href="#"><img src="images/facebook_icon.png"></a>
-			<a href="#"><img src="images/Twitter.png"></a>
-			<a href="#"><img src="images/google_plus.png"></a>
-			<a href="#"><img src="images/itunesLogo.png"></a>
-			<a href="#"><img src="images/RSS.png"></a>
-			<a href="#"><img src="images/Logo_Youtube.png"></a>
+                        <a href="#"><img src="images/facebook_icon.png"></a>
+                        <a href="#"><img src="images/Twitter.png"></a>
+                        <a href="#"><img src="images/google_plus.png"></a>
+                        <a href="#"><img src="images/itunesLogo.png"></a>
+                        <a href="#"><img src="images/RSS.png"></a>
+                        <a href="#"><img src="images/Logo_Youtube.png"></a>
                 </nav>
         </footer>
-	</div>
-	</body>
+        </div>
+        </body>
 </html>
