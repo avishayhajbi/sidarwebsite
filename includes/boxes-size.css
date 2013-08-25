@@ -235,8 +235,34 @@ ul.column1 li a:link, ul.column1 li a:visited, ul.column2 li a:link, ul.column2 
 
 ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 {
-	background: none;
+	width: 98%;
+	height: 18px;
 	opacity: 0.5;
+}
+
+#keywords:hover
+{
+	background: #D9E1EE;
+}
+
+#keywords ul
+{
+	width: 99%;
+	height: 1830%;
+	background: #FFFFFF;
+	display: none;
+	position: absolute;
+	top: 105%;
+	right: 1% !important;
+	z-index: 1;
+}
+
+#keywords ul li 
+{
+	margin-top: 2%;
+	margin-right: 5%;
+	background: none !important;
+	border: 0;
 }
 /* 3x1 */
 .three_on_one

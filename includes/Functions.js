@@ -33,22 +33,7 @@ $(document).ready(function() {
 
 
     moveBox();
-        // $(".main_section ul li:nth-child(1)").mouseover(function() {
-        //     $(".main_section ul li:nth-child(1) ul").css({"display": "block"});
-        // });
-        
-        // $(".main_section ul li:nth-child(1)").mouseout(function() {
-        //     $(".main_section ul li:nth-child(1) ul").css({"display": "none"});
-        // });
-
-        // $(".main_section ul li:nth-child(4)").mouseover(function() {
-        //     $(".main_section ul li:nth-child(4) ul").css({"display": "block"});
-        // });
-        
-        // $(".main_section ul li:nth-child(4)").mouseout(function() {
-        //     $(".main_section ul li:nth-child(4) ul").css({"display": "none"});
-        // });
-    
+    showKeyWords();
 });
 
 /* Forms functions  */
@@ -155,25 +140,25 @@ function rotate() {
 function moveBox() {
 
     $(".main_section ul li:nth-child(1)").mouseenter(function() {
-        $(".main_section ul li:nth-child(1) ul").css({"display": "block"}).animate({
+        $(".main_section ul li:nth-child(1) ul.sld").css({"display": "block"}).animate({
             right: '+=112.6%'
         }, 1000, 'linear');
     });
         
     $(".main_section ul li:nth-child(1)").mouseleave(function() {
-        $(".main_section ul li:nth-child(1) ul").fadeOut('slow').animate({
+        $(".main_section ul li:nth-child(1) ul.sld").fadeOut('slow').animate({
             right: '-=112.6%'
         }, 10, 'linear');
     });
 
     $(".main_section ul li:nth-child(8)").mouseenter(function() {
-        $(".main_section ul li:nth-child(8) ul").css({"display": "block"}).animate({
+        $(".main_section ul li:nth-child(8) ul.sld").css({"display": "block"}).animate({
             right: '+=112.6%'
         }, 1000, 'linear');
     });
         
     $(".main_section ul li:nth-child(8)").mouseleave(function() {
-        $(".main_section ul li:nth-child(8) ul").fadeOut('slow').animate({
+        $(".main_section ul li:nth-child(8) ul.sld").fadeOut('slow').animate({
             right: '-=112.6%'
         }, 10, 'linear');
     });
@@ -182,5 +167,11 @@ function moveBox() {
         $(".secondary_text").animate({
             top: '+=100'
         }, 600, 'linear');
+    });
+}
+
+function showKeyWords() {
+    $("#keywords").click(function() {
+        $("#keywords ul").slideToggle('slow');
     });
 }
