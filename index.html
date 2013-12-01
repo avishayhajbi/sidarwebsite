@@ -11,6 +11,7 @@
                 <script src="includes/jquery-1.10.1.min.js"></script>
                 <script src="includes/Functions.js"></script>
                 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+                
 
         </head>
         <body>
@@ -36,29 +37,35 @@
                 <!-- End Header -->
 
                 <!-- Nav bar -->
-                <nav>
-                        <br>
-                        <section id="right_menu">
+                <nav> 
+                	<!-- insert iframe 
+                <div id="navStyle">
+                	<iframe id="navigation" src="navigation.html" frameborder="0" ></iframe>
+                </div>
+                <br>
+                <br>-->
+                     <br>
+                        <section id="right_menu"> <!-- onmouseover="this.className='inNav'" onmouseout="this.className='outNav'" -->
                         <ul>
-                                <li><a href="#" style="padding-right:0; margin-right:0;">על המכון</a>
-                                        <ul>
-                                                <li><a href="about_us.html">אודותינו</a></li>
+                                <li ><a href="#" style="padding-right:0; margin-right:0;">על המכון</a>
+                                        <ul id="a">	
+                                                <li><a href="about_us.html" >אודותינו</a></li>
                                                 <li><a href="events.html">אירועים</a></li>
                                                 <li><a href="messages.html">הודעות</a></li>
                                                 <li><a href="targets.html">מטרות המכון</a></li>
                                                 <li><a href="contact.html">צור קשר</a></li>
-                                                <li><a href="#">תורמים</a></li>
+                                                <li><a href="donors.html">תורמים</a></li>
                                         </ul>
                                 </li>
                                 <li><a href="#">תחומי עיצוב</a>
                                         <ul>
-                                                <li><a href="fashion_design.html"><img src="images/fashion.jpg">עיצוב אופנה</a></li>
-                                                <li><a href="graphic_design.html"><img src="images/graphic.jpg">תקשורת חזותית</a></li>
-                                                <li><a href="textile_design.html"><img src="images/textile.jpg">עיצוב טקסטיל</a></li>
-                                                <li><a href="environmental_design.html"><img src="images/structure.jpg">עיצוב מבנה</a></li>
-                                                <li><a href="ceramic_design.html"><img src="images/ceramic.jpg">עיצוב קרמי</a></li>
-                                                <li><a href="jewelry_design.html"><img src="images/jewelry.jpg">עיצוב תכשיטים</a></li>
-                                                <li><a href="industrial_design.html"><img src="images/industrial.jpg">עיצוב תעשייתי</a></li>
+                                                <li><a href="fashion_design.html"><img src="images/fashion.jpg" >עיצוב אופנה</a></li>
+                                                <li><a href="graphic_design.html"><img src="images/graphic.jpg" >תקשורת חזותית</a></li>
+                                                <li><a href="textile_design.html"><img src="images/textile.jpg" >עיצוב טקסטיל</a></li>
+                                                <li><a href="environmental_design.html"><img src="images/structure.jpg" >עיצוב מבנה</a></li>
+                                                <li><a href="ceramic_design.html"><img src="images/ceramic.jpg" >עיצוב קרמי</a></li>
+                                                <li><a href="jewelry_design.html"><img src="images/jewelry.jpg" >עיצוב תכשיטים</a></li>
+                                                <li><a href="industrial_design.html"><img src="images/industrial.jpg" >עיצוב תעשייתי</a></li>
                                         </ul>
                                 </li>
                                 <li><a href="#">תכנים חזותיים</a>
@@ -69,19 +76,20 @@
                                                 <li><a href="general-categories.html">קטגוריות</a></li>
                                                 <li><a href="searching_by_years.html">לפי שנים</a></li>
                                                 <li><a href="general-styles.html">סגנונות</a></li>
-                                                <li><a href="general-effects.html">השפעות</a></li>
-                                                <li><a href="exhibitions.html">תערוכות</a></li>
+                                                <!--<li><a href="general-effects.html">השפעות</a></li>-->
+                                                <li><a href="exhibitions.html"target="_parent">תערוכות</a></li>
+                                                <li><a href="photography.html">מדיה</a></li>
                                         </ul>
                                 </li>
                                         <li><a href="#" style="margin-left:0;">תכנים עיוניים</a>
                                                 <ul>
                                                         <li><a href="articles-in-newspapers.html">כתבות</a></li>
                                                         <li><a href="articles.html">מאמרים</a></li>
-                                                        <li><a href="documents.html">מסמכים</a></li>
-                                                        <li><a href="books.html">ספרים</a></li>
+                                                        <li><a href="documents.html"target="_parent">מסמכים</a></li>
+                                                        <li><a href="bibliography.html">ביבליוגרפיה</a></li>
                                                         <li><a href="design_philosophy.html">פילוסופיות</a></li>
                                                         <li><a href="texts.html">טקסטים</a></li>
-                                                        <li><a href="photography.html">צילום</a></li>
+                                                        <li><a href="sites.html">אתרים</a></li>
                                                 </ul>
                                         </li>
                         </ul>
@@ -95,7 +103,7 @@
        
                                         <li><a href="#">עזרה</a>
                                         <ul>
-                                                <li><a href="#">ביטויים ומושגים</a></li>
+                                                <li><a href="phrases_and_concepts.html">ביטויים ומושגים</a></li>
                                                 <li><a href="#">הדרכה למעצבים</a></li>
                                                 <li><a href="#">מחולל הערות</a></li>
                                                 <li><a href="#">מבנה האתר</a></li>
@@ -107,14 +115,10 @@
 
                                 <li><a href="#">אישי</a>
                                         <ul>
-                                                <li><a href="registration.html">הרשמה וכניסה</a></li>
-                                                <li><a href="private_collection.html">איסוף עבודות</a></li>
-                                                <li><a href="comments.html">הערות</a></li>
-                                                <li><a href="#">מחולל מצגות</a></li>
+                                                <li><a href="registration.html"target="_parent">הרשמה וכניסה</a></li>
+                                                <li><a href="private_collection.html"target="_parent">איסוף עבודות</a></li>
+                                                <li><a href="comments.html"target="_parent">הערות</a></li>        
                                                 <li><a href="#">שליחת עבודות</a></li>
-                                                <li><a href="#">עריכה 1</a></li>
-                                                <li><a href="#">עריכה 2</a></li>
-                                                <li><a href="#">עריכה 3</a></li>
                                         </ul>
                                 </li>
                                 <li><a href="advanced_search.html" style="margin-right:0;">חיפוש מתקדם</a></li>
@@ -129,7 +133,7 @@
                 </form>
                 
                 <br>
-                
+
                 <!-- Breadcrumbs -->
                 <section>
                 <ul id="breadcrumbs">
@@ -150,46 +154,48 @@
         <section class="main_section">
         <ul>
                 <li class="graphic_design_border"><a href="graphic_paper_name.html"><img src="images/front/copy G-KeD-Boo-756.jpg"></a>
-                        <ul class="sld">
-                                <li><span>מעצב:</span> קרמן דני</li>
-                                <li>Kerman Dani <span>: Designer</span></li>
-                                <li><span>קטגוריה:</span> ספרים</li>
-                                <li><span>שנה:</span> 1980</li>
-                                <li><img src="images/graphic.jpg"><img src="images/soundIcon1.jpg"></li>
+                        <ul class="sld2">
+                        		
+                                <li ><span>מעצב:</span> קרמן דני</li>
+                                <!--<li ><img src="images/soundIcon1.jpg" class="sld2soundIcone"></li>--><br>
+                                <li ><span>קטגוריה:</span> ספרים</li><br> 
+                                <li ><img src="images/graphic.jpg" class="sld2imgColor"></li>          
+                                <li ><span>שנה:</span> 1980 </li>
+                                
                         </ul>
                 </li>
-                <li><a href="#"><img src="images/F-ByR-TrF-014.jpg"></a>
-                        <!-- <ul>
-                                <li><span>מעצב:</span> בן יוסף רוז'י</li>
-                                <li>Ben Yosef Roji <span>: Designer</span></li>
-                                <li><span>קטגוריה:</span> בגדי ים</li>
-                                <li><span>שנה:</span> 1980</li>
-                                <li><img src="images/fashion.jpg"></li>
-                        </ul> -->
+                <li class="fashion_design_border"><a href="fashion_paper_name.html"><img src="images/F-ByR-TrF-014.jpg"></a>
+                         <ul class="sld2">
+                                <li ><span>מעצב:</span> בן יוסף רוז'י</li>
+                                <li ></li><br>
+                                <li ><span>קטגוריה:</span> בגדי נשים</li><br>           
+                                <li ><span>שנה:</span> 1980 </li>
+                                <li ><img src="images/fashion.jpg" class="sld2imgColor"></li><br>
+                        </ul>
                 </li>
                     <section class="one_on_one">
-                        <p class="opening_text" id="openElement">מכון שנקר לתיעוד וחקר העיצוב מתעד וחוקר את היסטוריית העיצוב מאז ההתישבות הראשונה בארץ ישראל. המכון מתעד וחוקר את כל תחומי העיצוב: עיצוב אופנה, עיצוב גרפי, עיצוב טקסטיל, עיצוב תכשיטים, עיצוב קרמי ועיצוב תעשייתי.
-                        </p>
+                        <a  href="about_us.html"><p class="opening_text" id="openElement">מכון שנקר לתיעוד וחקר העיצוב מתעד וחוקר את היסטוריית העיצוב מאז ההתישבות הראשונה בארץ ישראל. המכון מתעד וחוקר את כל תחומי העיצוב: עיצוב אופנה, עיצוב גרפי, עיצוב טקסטיל, עיצוב תכשיטים, עיצוב קרמי ועיצוב תעשייתי.
+                        </p></a>
                         <p class="secondary_text">חדשות</p>
                     </section>
-                </li>
+             
                 <!-- <li>
                     מכון שנקר לתיעוד וחקר העיצוב מתעד וחוקר את היסטוריית העיצוב מאז ההתישבות הראשונה בארץ ישראל. המכון מתעד וחוקר את כל תחומי העיצוב: עיצוב אופנה, עיצוב גרפי, עיצוב טקסטיל, עיצוב תכשיטים, עיצוב קרמי ועיצוב תעשייתי.
                     <ul>
                         <li>fgjghkhjljk</li>
                     </ul>
                 </li> -->
-
-                <li class="jewelry_design_border"><a href="#"><img src="images/front/jewelry1.bmp"></a>
-                        <!-- <ul class="sld">
-                                <li><span>מעצב:</span> בן יוסף רוז'י</li>
-                                <li>Ben Yosef Roji <span>: Designer</span></li>
-                                <li><span>קטגוריה:</span> בגדי ים</li>
-                                <li><span>שנה:</span> 1980</li>
-                                <li><img src="images/fashion.jpg"></li>
-                        </ul> -->
-                </li>
-                
+				<li class="industrial_design_border"><a href="industrial_paper_name.html"><img src="images/I-ReD-Veh-002.jpg"></a>
+					  <ul class="sld2">
+                                <li ><span>מעצב:</span> רגב דורי</li>
+                                <li ></li><br>
+                                <li ><span>קטגוריה:</span> מכוניות</li><br>           
+                                <li ><span>שנה:</span> 1980 </li>
+                                <li ><img src="images/industrial.jpg" class="sld2imgColor"></li><br>
+                        </ul>
+				</li>
+               
+               
                 <!-- <section class="rotator">
                         <ul>
                                                
@@ -201,27 +207,49 @@
                          </ul>
                 </section> --> 
                 
-                <li class="graphic_design_border"><a href="#"><img src="images/front/fashion1.gif"></a></li>
-                <li class="graphic_design_border"><a href="#"><img src="images/G-BoP-Log-072.jpg"></a></li>
+                <li class="jewelry_design_border"><a href="jewelry_paper_name.html"><img src="images/J-StD-Bra-001a.jpg"></a>
+                	  <ul class="sld2">
+                                <li ><span>מעצב:</span> בן דוד משה</li>
+                                <li ></li><br>
+                                <li ><span>קטגוריה:</span> צמידים</li><br>           
+                                <li ><span>שנה:</span> 1980 </li>
+                                <li ><img src="images/jewelry.jpg" class="sld2imgColor"></li><br>
+                        </ul>
+                </li>
+                
+                
+                <li class="graphic_design_border"><a href="#"><img src="images/G-BoP-Log-072.jpg"></a>
+                		
+                </li>
+                
                 <li><a href="#"><img src="images/eged-1.jpg"></a></li>
+                
                 <li class="fashion_design_border"><a href="#"><img src="images/F-ByR-WsW-004.jpg"></a>
-                        <ul class="sld"> 
-                                <li><span>מעצב:</span> בן יוסף רוז'י</li>
-                                <li>Ben Yosef Roji <span>: Designer</span></li>
-                                <li><span>קטגוריה:</span> בגדי ים</li>
-                                <li><span>שנה:</span> 1980</li>
-                                <li><img src="images/fashion.jpg"><img src="images/soundIcon1.jpg"></li>
+                        <ul class="sld2" > 
+                                <li ><span>מעצב:</span> בן יוסף רוז'י</li>
+                                <li ><img src="images/soundIcon1.jpg" class="sld2soundIcone"></li><br>
+                                <li ><span>קטגוריה:</span> בגדי ים</li><br>           
+                                <li ><span>שנה:</span> 1980 </li>
+                                <li ><img src="images/fashion.jpg" class="sld2imgColor"></li><br>
+
                         </ul>
                 </li>
                 
                 <li><a href="#"><img src="images/1976_LaFavorita.jpg"></a></li>
                 <li><a href="#"><img src="images/G-KrF-Pos-074.jpg"></a></li>
                 <li><a href="#"><img src="images/G-ShB-Pos-013.jpg"></a></li>
-                <li><a href="#"><img src="images/I-ReD-Veh-002.jpg"></a></li>
-                <li><a href="#"><img src="images/J-StD-Bra-001a.jpg"></a></li>
+                <li><a href="#"><img src="images/G-CArR-GrC-120a.jpg"></a></li>
+                <li><a href="#"><img src="images/front/fashion1.gif"></a></li>
                 <li><a href="#"><img src="images/G-Dav-P-14.jpg"></a></li>
-                <li class="industrial_design_border"><a href="#"><img src="images/G-CArR-GrC-120a.jpg"></a></li>
-                <li><a href="#"><img src="images/G-BoP-Pac-024.jpg"></a></li>
+ 				<li class="jewelry_design_border"><a href="#"><img src="images/front/jewelry1.bmp"></a>
+                        <!-- <ul class="sld">
+                                <li><span>מעצב:</span> בן יוסף רוז'י</li>
+                                <li>Ben Yosef Roji <span>: Designer</span></li>
+                                <li><span>קטגוריה:</span> בגדי ים</li>
+                                <li><span>שנה:</span> 1980</li>
+                                <li><img src="images/fashion.jpg"></li>
+                        </ul> -->
+                </li>                <li><a href="#"><img src="images/G-BoP-Pac-024.jpg"></a></li>
                 <li><a href="#"><img src="images/G-KrF-Pos-035.jpg"></a></li>
                 <li><a href="#"><img src="images/G-FiU-Com-025.jpg"></a></li>
                 <li><a href="#"><img src="images/G-EzO-Pos-010.jpg"></a></li>
