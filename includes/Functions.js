@@ -31,10 +31,14 @@ $(document).ready(function() {
     $('section.rotator').fadeIn(1000);
     $('section.rotator ul li').fadeIn(1000); // tweek for IE
 
-
+	
     moveBox();
     showKeyWords();
+    
+    browserNavigator();
 });
+
+
 
 /* Forms functions  */
 $(document).ready(function() {
@@ -181,12 +185,4 @@ function showKeyWords() {
     });
 }
 
-function nav()
-{
-     document.getElementById("navigation").style.height="300px";
-} 
-function navout()
-{
-     document.getElementById("navigation").style.height="40px";
-     
-} 
+
