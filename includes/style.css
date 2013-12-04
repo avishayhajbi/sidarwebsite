@@ -715,15 +715,22 @@ ul#mask
 /* rotator in-page placement */
 .rotator {
 	position:relative;
+	width:1000px;
 	/*height:345px;*/
 	/*margin-left: 15px;*/
 	display: none;
+	padding:0;
+	margin:0;
+	
 }
+
 /* rotator css */
 .rotator ul li {
 	float:left;
 	position:absolute;
 	list-style: none;
+	padding:0;
+	margin:0;
 }
 /* rotator image style */	
 /*.rotator ul li img {
@@ -854,3 +861,12 @@ ul#mask
 	
 }
 
+.slider
+{
+	width:1000px;
+}
+.slider li
+{
+	width:174px;
+	
+}
