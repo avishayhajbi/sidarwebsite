@@ -316,7 +316,7 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 #keywords ul
 {
 	width: 99%;
-	height: 1830%;
+	height: 1080%;
 	background: #FFFFFF;
 	display: none;
 	position: absolute;
@@ -701,7 +701,134 @@ ul.column1 li a:hover, ul.column2 li a:hover, ul.column3 li a:hover
 	border: 1px solid #B8B8B8;
 	position: relative;
 }
+/**************for categories and topics*******************************/
 
+.one_on_two_general
+{
+	float: right;
+	width: 17.4%;
+	height: 765px;
+	border: 1px solid #B8B8B8;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
+.one_on_two_general ul
+{
+	list-style: none;
+	display: block;
+	margin-top: 5%;
+}
+
+.one_on_two_general ul li 
+{
+	width: 100%;
+	height: 5%;
+	/*position: relative;*/
+	border: 0;
+	border-bottom: 1px solid #B8B8B8;
+	font-size: 12px;
+	margin: 0;
+}
+
+.one_on_two_general ul li a:link, .one_on_two_general ul li a:visited 
+{
+	width: 96%;
+	height: 16px;
+	color: #000000;
+	display: block;
+	text-decoration: none;
+	text-align: right;
+	padding: 0.3em 4% 0 0;
+	font-size: 12px;
+	background: #FFFFFF;
+	border: 0;
+	margin: 0;
+}
+
+.one_on_two_general ul li a:hover
+{
+	background: #D8D8D8;
+}
+.one_on_two_general ul#rightList
+{
+	list-style: none;
+	display: block;
+	width: 100%;
+
+	margin-top: 2%;
+}
+.one_on_two_general ul#rightList li 
+{
+	width: 90%;
+	height: 2%;
+	margin-right: -0.01%;
+	margin: 0;
+	border: 0;
+	//border-bottom: 1px solid #F0F0F0;
+	/*font-weight: bold;*/
+	font-size: 12px;
+	text-align: right;
+	padding: 2% 5%; 
+}
+
+.one_on_two_general ul#rightList li:hover
+{
+	background: #F8F8F8;	
+}
+
+.one_on_two_general ul#rightList li a:link, .one_on_two_general ul#rightList li a:visited 
+{
+	width: 100%;
+	height: 100%;
+	margin-right: -5%;
+	margin-top: -2%;	
+	padding: 2% 5%; 
+	background: none;
+	opacity: 1;
+	font-size: 12px;
+}
+
+.one_on_two_general ul#rightList li a:hover
+{
+	/*opacity: 0.5;*/
+	background: #F8F8F8;
+}
+
+.one_on_two_general ul#leftList
+{
+	list-style: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.one_on_two_general ul#leftList li 
+{
+	width: 90%;
+	height: 14px;
+	/*height: 1%;*/
+	margin-right: -0.1%;
+	border: 0;
+	margin: 0;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: right;
+	padding: 2% 5%;
+}
+
+.one_on_two_general ul#leftList li a:link, .one_on_two_general ul#leftList li a:visited 
+{
+	width: 100%;
+	height: 100%;
+	margin-right: -5.5%;
+	margin-top: -2%;	
+	padding: 2% 5%;
+	background: none;
+	opacity: 1;
+	font-size: 12px;
+}
+/***************************************************/
 .one_on_four ul#rightList
 {
 	list-style: none;
