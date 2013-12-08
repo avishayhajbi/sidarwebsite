@@ -870,3 +870,8 @@ ul#mask
 	width:174px;
 	
 }
+#wrapper .address
+{
+	font-size: 12px;
+	margin-bottom: 10px;
+}

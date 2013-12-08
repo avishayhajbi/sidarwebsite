@@ -10,22 +10,32 @@
 		<script src="includes/jquery-1.10.1.min.js"></script>
 		<script src="includes/Functions.js"></script>
 		<style>
-			#keywords:hover {
+			#keywords:hover
+			{
 				background: #D9E1EE;
 			}
-
-			#keywords ul {
+			
+			#keywords ul
+			{
 				width: 99%;
-				height: 1080%;
-				background: #FFFFFF;
+				height: 560%;
+				background: #F0F0F0;
 				display: none;
 				position: absolute;
-				top: 99%;
+				top: 90%;
 				right: 1% !important;
 				z-index: 1;
 			}
-			#keywords ul li {
+			#wrapper #keywords a
+			{
+				
+				background: none !important;
+				border: 0;
+			}
+			#wrapper #keywords ul li 
+			{
 				margin-top: 2%;
+				margin-bottom:10px;
 				margin-right: 5%;
 				background: none !important;
 				border: 0;
@@ -87,10 +97,10 @@
 			<section class="main_section">
 				<ul>
 					<aside class="one_on_two_general">
-						<h4 class="headline">1</h4>
+						<h4 class="headline">קטגוריות עיצוב</h4>
 						<ul id="rightList" style="height: 880px"	>
-							<li id="keywords">
-								<a href="#">אותות</a>
+							<li id="keywords" >
+								<a href="#" onclick="mark(this)">אותות</a>
 								<ul>
 									<li>
 										<a href="#">שויתי</a>
@@ -203,6 +213,9 @@
 									<li>
 										<a href="#">פיסול</a>
 									</li>
+									<li>
+										<a href="#">חפצי נוי</a>
+									</li>
 								</ul>
 							</li>
 							<li id="keywords1">
@@ -217,7 +230,21 @@
 									<li>
 										<a href="#">תוויות</a>
 									</li>
-
+									<li>
+										<a href="#">בקבוקים</a>
+									</li>
+									<li>
+										<a href="#">שקיות</a>
+									</li>
+									<li>
+										<a href="#">צנצנות</a>
+									</li>
+									<li>
+										<a href="#">קופסאות</a>
+									</li>
+									<li>
+										<a href="#">פחיות</a>
+									</li>
 								</ul>
 							</li>
 							<li id="keywords1">
@@ -303,6 +330,15 @@
 								</ul>
 							</li>
 							<li id="keywords1">
+								<a href="#">דת</a>
+								<ul>
+									<li>
+										<a href="#"> יודאיקה</a>
+									</li>
+							
+								</ul>
+							</li>	
+							<li id="keywords1">
 								<a href="#">היגיינה</a>
 								<ul>
 									<li>
@@ -313,6 +349,20 @@
 									</li>
 									<li>
 										<a href="#">ניקיון בייתי</a>
+									</li>
+								</ul>
+							</li>
+									<li id="keywords1">
+								<a href="#">חקלאות</a>
+								<ul>
+									<li>
+										<a href="#">מכונות </a>
+									</li>
+									<li>
+										<a href="#"> כלי רכב חקלאיים</a>
+									</li>
+									<li>
+										<a href="#"> ציוד נלווה לחקלאות</a>
 									</li>
 								</ul>
 							</li>
@@ -484,6 +534,18 @@
 									</li>
 								</ul>
 							</li>
+								<li id="keywords1">
+								<a href="#">מדע ורפואה</a>
+								<ul>
+									<li>
+										<a href="#">ציוד מעבדה</a>
+									</li>
+									<li>
+										<a href="#"> ציוד רפואי</a>
+									</li>
+							
+								</ul>
+							</li>
 							<li id="keywords1">
 								<a href="#">מסמכים</a>
 								<ul>
@@ -498,6 +560,29 @@
 									</li>
 									<li>
 										<a href="#">תעודות</a>
+									</li>
+								</ul>
+							</li>
+							<li id="keywords1">
+								<a href="#">מרחב ציבורי</a>
+								<ul>
+									<li>
+										<a href="#">ספסלים</a>
+									</li>
+									<li>
+										<a href="#">תחנות אוטובוס</a>
+									</li>
+									<li>
+										<a href="#">סביביתי</a>
+									</li>
+									<li>
+										<a href="#">שילוט</a>
+									</li>
+									<li>
+										<a href="#">גנים</a>
+									</li>
+									<li>
+										<a href="#">תיבות דואר</a>
 									</li>
 								</ul>
 							</li>
@@ -529,11 +614,53 @@
 									</li>
 								</ul>
 							</li>
+										<li id="keywords1">
+								<a href="#">ספורט </a>
+								<ul>
+									<li>
+										<a href="#">ציוד ספורט</a>
+									</li>
+									<li>
+										<a href="#">מכשירי כושר </a>
+									</li>
+									<li>
+										<a href="#">התעמלות אמנותית </a>
+									</li>
+									<li>
+										<a href="#">ספורט אתגרי </a>
+									</li>
+									<li>
+										<a href="#"> אמנויות לחימה </a>
+									</li>
+								</ul>
+							</li>
+						
+							
+							
+						</ul>
+					</aside>
+					<aside class="one_on_two_general" style="height: 568px">
+						<h4 class="headline">קטגוריות עיצוב</h4>
+						<ul id="rightList" style="height: 796px">
 							<li id="keywords1">
 								<a href="#">פילוסופיות עיצוב</a>
 								<ul>
 									<li>
 										<a href="#">פילוסופיות עיצוב</a>
+									</li>
+								</ul>
+							</li>
+								<li id="keywords1">
+								<a href="#">פנאי</a>
+								<ul>
+									<li>
+										<a href="#">ציוד קמפינג</a>
+									</li>
+									<li>
+										<a href="#">מתקני מים </a>
+									</li>
+									<li>
+										<a href="#">ציוד למים  </a>
 									</li>
 								</ul>
 							</li>
@@ -592,10 +719,56 @@
 								</ul>
 							</li>
 							<li id="keywords1">
+								<a href="#">ריהוט</a>
+								<ul>
+									<li>
+										<a href="#">ריהוט אמבטיה</a>
+									</li>
+									<li>
+										<a href="#">ריהוט בייתי</a>
+									</li>
+									<li>
+										<a href="#">ריהוט משרדי</a>
+									</li>
+									<li>
+										<a href="#">ריהוט מטבח</a>
+									</li>
+									<li>
+										<a href="#">ריהוט רחוב</a>
+									</li>
+									<li>
+										<a href="#">ריהוט ילדים</a>
+									</li>
+									<li>
+										<a href="#">ריהוט גן</a>
+									</li>
+								</ul>
+							</li>
+						<li id="keywords1">
+
 								<a href="#">קולינריה</a>
 								<ul>
 									<li>
-										<a href="#">מוצרי מזון תעשייתיים</a>
+										<a href="#"> ריהוט בייתי </a>
+									</li>
+										<li>
+										<a href="#"> ריהוט משרדי </a>
+									</li>
+								</ul>
+							</li>
+							<li id="keywords1">
+
+								<a href="#">תאורה</a>
+								<ul>
+									<li>
+										<a href="#"> תאורת רחוב </a>
+									</li>
+										<li>
+										<a href="#">  תאורה לצילום </a>
+									</li>
+									</li>
+										<li>
+										<a href="#">  תאורה  </a>
 									</li>
 								</ul>
 							</li>
@@ -613,11 +786,6 @@
 									</li>
 								</ul>
 							</li>
-						</ul>
-					</aside>
-					<aside class="one_on_two_general" style="height: 568px">
-						<h4 class="headline">2</h4>
-						<ul id="rightList" style="height: 796px">
 								<li id="keywords1">
 								<a href="#">תהליכים</a>
 								<ul>
@@ -635,39 +803,43 @@
 									</li>
 								</ul>
 							</li>
-							<li>
-								<a href="#">אאאאאאאא</a>
+									<li id="keywords1">
+								<a href="#">תחבורה</a>
+								<ul>
+									<li>
+										<a href="#">כלי רכב פרטיים</a>
+									</li>
+									<li>
+										<a href="#">כלי רכב ימיים</a>
+									</li>
+									<li>
+										<a href="#">כלי תעופה</a>
+									</li>
+									<li>
+										<a href="#">כלי רכב מסחריים </a>
+									</li>
+									<li>
+										<a href="#"> תחבורה ציבורית  </a>
+									</li>
+									<li>
+										<a href="#"> ציוד נלווה לתחבורה   </a>
+									</li>
+									<li>
+										<a href="#"> תשתית תחבורה   </a>
+									</li>
+								</ul>
 							</li>
-							<li>
-								<a href="#">אאאאאאאא</a>
+								<li id="keywords1">
+								<a href="#">תקשורת</a>
+								<ul>
+									<li>
+										<a href="#">תקשורת קווית/לווינית/אלחוטית</a>
+									</li>
+							
+								</ul>
 							</li>
-							<li>
-								<a href="#">אאאאאאאא</a>
-							</li>
-							<li>
-								<a href="#">אאאאאאאא</a>
-							</li>
-							<li>
-								<a href="#">אאאאאאאא</a>
-							</li>
-							<li>
-								<a href="#">אאאאאאאא</a>
-							</li>
-							<li>
-								<a href="#">אאאאאאאא</a>
-							</li>
-							<li>
-								<a href="#">אאאאאאאא</a>
-							</li>
-							<li>
-								<a href="#">אאאאאאאא</a>
-							</li>
-							<li>
-								<a href="#">אאאאאאאא</a>
-							</li>
-							<li>
-								<a href="#">אאאאאאאא</a>
-							</li>
+							
+							
 							<li>
 								<a href="#">אאאאאאאא</a>
 							</li>
@@ -706,7 +878,7 @@
 					</aside>
 
 					<aside class="one_on_two_general" style="height: 372px">
-						<h4 class="headline" >3</h4>
+						<h4 class="headline" >קטגוריות עיצוב</h4>
 						<ul id="rightList" style="height: 850px">
 							<li>
 								<a href="#">אאאאאאאא</a>
@@ -754,7 +926,7 @@
 						</ul>
 					</aside>
 					<aside class="one_on_two_general" style="height: 173px">
-						<h4 class="headline">4</h4>
+						<h4 class="headline">קטגוריות עיצוב</h4>
 						<ul id="rightList" style="height: 840px">
 							<li>
 								<a href="#">אאאאאאאא</a>

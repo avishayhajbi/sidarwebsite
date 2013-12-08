@@ -176,4 +176,17 @@ function showKeyWords() {
     });
 }
 
+function mark(obj)
+{
+	
+	if (obj.style.fontWeight != "bold") 
+		{
+			obj.style.fontWeight="bold";
+		}
+		else
+		{
+			obj.style.fontWeight="normal";
+		}
+}
+
 

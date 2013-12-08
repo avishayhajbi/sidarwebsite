@@ -9,95 +9,113 @@
                 <script type="text/javascript" src="includes/modernizr-2.6.2.min.js"></script>
                 <script src="includes/jquery-1.10.1.min.js"></script>
                 <script src="includes/Functions.js"></script>
-				<script>
-				$(document).ready(function() {
+         
+				<script type="text/javascript">
+                    function goTo(choose)
+                        {
+                            var selected = choose.options[choose.selectedIndex].value;
+                            if(selected != "")
+                            {
+                                location.href = selected;
+                            }
+                        }
+                        
+                $(document).ready(function() {
 					browserNavigator();
 				});
+
+				
 function browserNavigator()
 {
-var nVer = navigator.appVersion;
-var nAgt = navigator.userAgent;
-var browserName  = navigator.appName;
-var fullVersion  = ''+parseFloat(navigator.appVersion); 
-var majorVersion = parseInt(navigator.appVersion,10);
-var nameOffset,verOffset,ix;
+	var nVer = navigator.appVersion;
+	var nAgt = navigator.userAgent;
+	var browserName  = navigator.appName;
+	var fullVersion  = ''+parseFloat(navigator.appVersion); 
+	var majorVersion = parseInt(navigator.appVersion,10);
+	var nameOffset,verOffset,ix;
+	
+	// In Opera, the true version is after "Opera" or after "Version"
+	if ((verOffset=nAgt.indexOf("Opera"))!=-1) {
+	 browserName = "Opera";
+	 fullVersion = nAgt.substring(verOffset+6);
+	 if ((verOffset=nAgt.indexOf("Version"))!=-1) 
+	   fullVersion = nAgt.substring(verOffset+8);
+	}
+	// In MSIE, the true version is after "MSIE" in userAgent
+	else if ((verOffset=nAgt.indexOf("MSIE"))!=-1) {
+	 browserName = "Microsoft Internet Explorer";
+	 fullVersion = nAgt.substring(verOffset+5);
+	alert(browserName);
+	}
+	// In explorer, the true version is after "Netscape" 
+	else if ((verOffset=nAgt.indexOf("Netscape"))!=-1) {
+	 browserName = "Netscape";
+	 fullVersion = nAgt.substring(verOffset+7);
+	alert(browserName);
+	}
+	// In Chrome, the true version is after "Chrome" 
+	else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
+	 browserName = "Chrome";
+	 fullVersion = nAgt.substring(verOffset+7);
+	
+	/* css tables*/
+	var spans = document.getElementsByTagName("ul");
+	for (var i = 0; i < spans.length; i++) {
+	    if (spans[i].className == 'column2') {
+	        spans[i].className = 'ccolumn2';  
+	    }
+	     if (spans[i].className == 'column1') {
+	        spans[i].className = 'ccolumn1';  
+	    }
+	     if (spans[i].className == 'column3') {
+	        spans[i].className = 'ccolumn3';  
+	    }
+	}
+		document.getElementByClassName('column1').className = 'ccolumn1';
+		document.getElementByClassName('column2').className = 'ccolumn2';
+		document.getElementByClassName('column3').className = 'ccolumn3';
+	}
+	// In Safari, the true version is after "Safari" or after "Version" 
+	else if ((verOffset=nAgt.indexOf("Safari"))!=-1) {
+	 browserName = "Safari";
+	 fullVersion = nAgt.substring(verOffset+7);
+	 if ((verOffset=nAgt.indexOf("Version"))!=-1) 
+	   fullVersion = nAgt.substring(verOffset+8);
+	}
+	// In Firefox, the true version is after "Firefox" 
+	else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
+	 browserName = "Firefox";
+	 fullVersion = nAgt.substring(verOffset+8);
+	 
+	}
+	// In most other browsers, "name/version" is at the end of userAgent 
+	else if ( (nameOffset=nAgt.lastIndexOf(' ')+1) < 
+	          (verOffset=nAgt.lastIndexOf('/')) ) 
+	{
+	 browserName = nAgt.substring(nameOffset,verOffset);
+	 fullVersion = nAgt.substring(verOffset+1);
+	 
+	 if (browserName.toLowerCase()==browserName.toUpperCase()) {
+	  browserName = navigator.appName;
+	 }
+	}
+	// trim the fullVersion string at semicolon/space if present
+	if ((ix=fullVersion.indexOf(";"))!=-1)
+	   fullVersion=fullVersion.substring(0,ix);
+	if ((ix=fullVersion.indexOf(" "))!=-1)
+	   fullVersion=fullVersion.substring(0,ix);
+	
+	majorVersion = parseInt(''+fullVersion,10);
+	if (isNaN(majorVersion)) {
+	 fullVersion  = ''+parseFloat(navigator.appVersion); 
+	 majorVersion = parseInt(navigator.appVersion,10);
+	}
+	
+}
 
-// In Opera, the true version is after "Opera" or after "Version"
-if ((verOffset=nAgt.indexOf("Opera"))!=-1) {
- browserName = "Opera";
- fullVersion = nAgt.substring(verOffset+6);
- if ((verOffset=nAgt.indexOf("Version"))!=-1) 
-   fullVersion = nAgt.substring(verOffset+8);
-}
-// In MSIE, the true version is after "MSIE" in userAgent
-else if ((verOffset=nAgt.indexOf("MSIE"))!=-1) {
- browserName = "Microsoft Internet Explorer";
- fullVersion = nAgt.substring(verOffset+5);
-
-}
-// In explorer, the true version is after "Netscape" 
-else if ((verOffset=nAgt.indexOf("Netscape"))!=-1) {
- browserName = "Netscape";
- fullVersion = nAgt.substring(verOffset+7);
-
-}
-// In Chrome, the true version is after "Chrome" 
-else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
- browserName = "Chrome";
- fullVersion = nAgt.substring(verOffset+7);
- var wrapper = document.getElementById("wrapper");
- var ul=wrapper.getElementByTagName("ul");
- ul.getClass("column1").style.width="1150px";
- 
- 
-}
-// In Safari, the true version is after "Safari" or after "Version" 
-else if ((verOffset=nAgt.indexOf("Safari"))!=-1) {
- browserName = "Safari";
- fullVersion = nAgt.substring(verOffset+7);
- if ((verOffset=nAgt.indexOf("Version"))!=-1) 
-   fullVersion = nAgt.substring(verOffset+8);
-}
-// In Firefox, the true version is after "Firefox" 
-else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
- browserName = "Firefox";
- fullVersion = nAgt.substring(verOffset+8);
- 
-}
-// In most other browsers, "name/version" is at the end of userAgent 
-else if ( (nameOffset=nAgt.lastIndexOf(' ')+1) < 
-          (verOffset=nAgt.lastIndexOf('/')) ) 
-{
- browserName = nAgt.substring(nameOffset,verOffset);
- fullVersion = nAgt.substring(verOffset+1);
- 
- if (browserName.toLowerCase()==browserName.toUpperCase()) {
-  browserName = navigator.appName;
- }
-}
-// trim the fullVersion string at semicolon/space if present
-if ((ix=fullVersion.indexOf(";"))!=-1)
-   fullVersion=fullVersion.substring(0,ix);
-if ((ix=fullVersion.indexOf(" "))!=-1)
-   fullVersion=fullVersion.substring(0,ix);
-
-majorVersion = parseInt(''+fullVersion,10);
-if (isNaN(majorVersion)) {
- fullVersion  = ''+parseFloat(navigator.appVersion); 
- majorVersion = parseInt(navigator.appVersion,10);
-}
-
-/*document.write(''
- +'Browser name  = '+browserName+'<br>'
- +'Full version  = '+fullVersion+'<br>'
- +'Major version = '+majorVersion+'<br>'
- +'navigator.appName = '+navigator.appName+'<br>'
- +'navigator.userAgent = '+navigator.userAgent+'<br>'
-);*/
-}
 				</script>
         </head>
-        <body>
+        <body onload="browserNavigator()">
                 <div id="wrapper">
                         <!-- Header -->
                         <header>
@@ -153,6 +171,7 @@ if (isNaN(majorVersion)) {
                         <img src="images/front/copy G-KeD-Boo-756.jpg">
                 </section>
                 <section class="two_on_two">
+                
                         <ul class="column1">
                                 <li>שם המעצב</li>
                                 <li>Designer</li>
@@ -172,6 +191,8 @@ if (isNaN(majorVersion)) {
                                 <li></li>
                                 <li></li>
                         </ul>
+                     
+                  
                         <ul class="column2">
                                 <li><a href="graphic_design_designer_outcome.html">קרמן דני</a></li>
                                 <li><a href="graphic_design_designer_outcome.html">Kerman Dani</a></li>
@@ -191,6 +212,7 @@ if (isNaN(majorVersion)) {
                                 <li></li>
                                 <li></li>
                         </ul>
+                     
                         <ul class="column3">
                                 <li id="keywords" class="graphic_design_bgr"><a href="#">מילות מפתח</a>
                                         <ul>
@@ -254,7 +276,7 @@ if (isNaN(majorVersion)) {
                                 <!-- <li></li>    -->
                         </ul>
                 </section>
-                
+               
                              <section class="one_on_four graphic_design_border design_area_section">
                                 <ul id="leftList">
                                         <li class="headline graphic_design"><a href="graphic_design.html" class="graphic_design">תקשורת חזותית</a></li>

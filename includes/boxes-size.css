@@ -197,7 +197,7 @@ Date: 22-2-13
 {
 	margin-top: 3px;
 }
-/* columns css*/
+/********** columns css*************/
  ul.column2
 {
 	width: 42%;
@@ -228,12 +228,106 @@ ul.column3
 	width: 32%;
 	border-left: 0;
 }
-/*end column css*/
+/*************end column css************/
+
+
+/********other browsers*************/
+
+ul.column2 li
+{
+        width: 93%;
+        height: 15.75px;
+        margin-right: -1%;
+        margin-top: -0.5%;
+        border: 0;
+        border-bottom: 1px solid #B8B8B8;
+        font-size: 12px;
+        text-align: right;
+        padding: 1% 5%;
+        
+}
+ ul.column3 li 
+{
+        width: 93%;
+        height: 16.99px;
+        margin-right: -1%;
+        margin-top: -0.5%;
+        border: 0;
+        border-bottom: 1px solid #B8B8B8;
+        font-size: 12px;
+        text-align: right;
+        padding: 1% 5%;
+        
+}
+ul.column1 li
+{
+        width: 91%;
+        height: 17.76px;
+        margin-right: -1%;
+        margin-top: -0.5%;
+        border: 0;
+        border-bottom: 1px solid #B8B8B8;
+        font-size: 12px;
+        text-align: right;
+        padding: 1% 5%;
+        font-weight:bold;
+}
 
 
 /****************************/
 
- ul.column2 li
+/******chrome browser tables******/
+ul.ccolumn1 li a:link, ul.ccolumn1 li a:visited, ul.ccolumn2 li a:link, ul.ccolumn2 li a:visited, ul.ccolumn3 li a:link, ul.ccolumn3 li a:visited
+{
+	width: 95%;
+	height: 15px;
+	margin-right: -4%;
+	margin-top: -0.1%;
+	padding: 0.8% 5%;
+	color: blue;
+	background: none;
+	opacity: 1;
+	font-size: 12px;
+
+}
+
+ul.ccolumn1 li a:hover, ul.ccolumn2 li a:hover, ul.ccolumn3 li a:hover
+{
+	width: 98%;
+	height: 18px;
+	opacity: 0.5;
+}
+ ul.ccolumn2
+{
+	width: 42%;
+	height: 100%;
+	float: right;
+	border-left: 1px solid #B8B8B8;
+	background: #FFFFFF;
+	white-space: nowrap;
+	
+}
+ul.ccolumn1 
+{
+	white-space: nowrap;
+ 	width: 25%;
+	height: 100%;
+	float: right;
+	border-left: 1px solid #B8B8B8;
+	background: #FFFFFF;
+}
+ul.ccolumn3
+{
+
+	height: 100%;
+	float: right;
+	border-left: 1px solid #B8B8B8;
+	background: #FFFFFF;
+	white-space: nowrap;
+	width: 32%;
+	border-left: 0;
+}
+ ul.ccolumn2 li
 {
 	width: 93%;
 	height: 16.3px;
@@ -246,7 +340,7 @@ ul.column3
 	padding: 1% 5%;
 	
 }
- ul.column3 li 
+ ul.ccolumn3 li 
 {
 	width: 93%;
 	height: 16.9px;
@@ -259,7 +353,7 @@ ul.column3
 	padding: 1% 5%;
 	
 }
-ul.column1 li
+ul.ccolumn1 li
 {
 	width: 91%;
 	height: 17.7px;
@@ -273,7 +367,7 @@ ul.column1 li
 	font-weight:bold;
 }
 
-/****************************/
+/*****************************/
 /*ul.column1 li, ul.column2 li, ul.column3 li 
 {
 	width: 93%;
