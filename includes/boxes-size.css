@@ -200,7 +200,7 @@ Date: 22-2-13
 /********** columns css*************/
  ul.column2
 {
-	width: 42%;
+	width: 40%;
 	height: 100%;
 	float: right;
 	border-left: 1px solid #B8B8B8;
@@ -211,7 +211,7 @@ Date: 22-2-13
 ul.column1 
 {
 	white-space: nowrap;
- 	width: 25%;
+ 	width: 27%;
 	height: 100%;
 	float: right;
 	border-left: 1px solid #B8B8B8;
@@ -219,13 +219,12 @@ ul.column1
 }
 ul.column3
 {
-
+	width: 32%;
 	height: 100%;
 	float: right;
 	border-left: 1px solid #B8B8B8;
 	background: #FFFFFF;
 	white-space: nowrap;
-	width: 32%;
 	border-left: 0;
 }
 /*************end column css************/
@@ -235,8 +234,8 @@ ul.column3
 
 ul.column2 li
 {
-        width: 93%;
-        height: 15.75px;
+        width: 91%;
+        height: 16px;
         margin-right: -1%;
         margin-top: -0.5%;
         border: 0;
@@ -262,7 +261,7 @@ ul.column2 li
 ul.column1 li
 {
         width: 91%;
-        height: 17.76px;
+        height: 17.6px;
         margin-right: -1%;
         margin-top: -0.5%;
         border: 0;
