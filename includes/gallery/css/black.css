@@ -1,5 +1,5 @@
 body{
-	background-color: #111;
+	background-color: #FFFFFF;
 	color: #bbb;
 }
 a{
@@ -16,7 +16,9 @@ div#footer {
 	color: #888;
 }
 div.caption-container {
-	color: #eee;
+	color: black;
+	font-weight: bold;
+	font-size: 1.4em;
 }
 div.image-title {
 	font-weight: bold;
@@ -54,4 +56,15 @@ div.pagination span.current {
 	background-color: #fff;
 	border-color: #fff;
 	color: #000;
+}
+
+/***********tabel info********/
+.gallery_info{
+	margin-right: 150px;
+}
+.gallery_info .ccolumn1{
+	
+}
+.gallery_info .ccolumn2{
+	
 }

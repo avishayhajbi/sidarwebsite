@@ -195,3 +195,25 @@ div.gallery-gutter {
 	clear: both;
 	padding-bottom: 20px;
 }
+.pageLink
+{
+	background-color: black ;
+	height: 18px;
+	
+}
+div.navigation a.pageLink.prev
+{
+	margin-top: 18.5px;
+	margin-left:486px;
+	position:absolute;
+	height: 18px;
+}
+div.navigation a.pageLink.next
+{ 
+	margin-top: 85px;
+	margin-left:486px;
+	position:absolute;
+	height: 18px;
+	
+}
+

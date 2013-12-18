@@ -4,7 +4,8 @@
 		<title>Galleriffic | Custom layout with external controls</title>
 		<link rel="stylesheet" href="includes/gallery/css/basic.css" type="text/css" />
 		<link rel="stylesheet" href="includes/gallery/css/galleriffic-5.css" type="text/css" />
-		
+		                <link rel="stylesheet" type="text/css" href="includes/boxes-size.css">
+
 		<!-- <link rel="stylesheet" href="css/white.css" type="text/css" /> -->
 		<link rel="stylesheet" href="includes/gallery/css/black.css" type="text/css" />
 		
@@ -22,25 +23,66 @@
 		<!-- end slideshow-->
 	</head>
 	<body>
-		<div id="page">
-			<div id="container">
+		<div id="page" style="background-color: white; border: 0;">
+			<div id="container" style="padding: 0px;">
 
 
 				<!-- Start Advanced Gallery Html Containers -->				
 				<div class="navigation-container">
 					<div id="thumbs" class="navigation">
-						<a class="pageLink prev" style="visibility: hidden;" href="#" title="Previous Page"></a>
+						<a class="pageLink prev" style="visibility: hidden; " href="#" title="Previous Page"> </a>
 					
-						<ul class="thumbs noscript">
+						<ul class="thumbs noscript" style="margin-right: 410px;">
 							<li>
 								<a class="thumb" name="leaf" href="http://farm4.static.flickr.com/3261/2538183196_8baf9a8015.jpg" title="Title #0">
 									<img src="http://farm4.static.flickr.com/3261/2538183196_8baf9a8015_s.jpg" alt="Title #0" />
 								</a>
 								<div class="caption">
-									<div class="image-title">Title #0</div>
-									<div class="image-desc">Description</div>
-									<div class="download">
-									</div>
+									פרטים אודות התמונה
+				<!-- <ul >
+                <section class="two_on_two">
+                        <ul class="ccolumn1">
+                                <li>שם המעצב</li>
+                                <li>Designer</li>
+                                <li>שם העבודה</li>
+                                <li>שנה</li>
+                                <li>נושא</li>
+                                <li>קטגוריה</li>
+                                <li>לקוח</li>
+                                 <li>עונות</li>
+                                 <li>מעצב טקסטיל</li>
+                                 <li>מעצב פרינט</li>
+                                <li>טכניקה</li>
+                                <li>חומרים</li>                         
+                                <li>פריט</li>
+                                <li>ארץ</li>
+                                <li>צלם</li>
+                                <li>באדיבות</li>
+                               
+                                
+                        </ul>
+                        <ul class="ccolumn2">
+                                <li><a href="fashion_design_designer_outcome.html">רוז'י בן יוסף</a></li>
+                                <li><a href="fashion_design_designer_outcome.html">Rojy Ben Yoseph</a></li>
+                                <li>דגרדה</li>
+                                <li>1952</li>
+                                <li>אופנה, אתני, נשים</li>
+                                <li>לבוש יומיומי לנשים</li>
+                                <li></li>
+                                <li>קיץ</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                 <li>ישראל</li>
+                                <li>לא ידוע</li>
+                                <li><a href="fashion_design_designer_outcome.html">רוז'י בן יוסף</a></li>
+                               
+                        </ul>
+                        </section>
+                  </ul>
+                 -->
 								</div>
 							</li>
 	
@@ -91,7 +133,7 @@
 									</div>
 								</div>
 							</li>
-	
+
 							<li>
 								<a class="thumb" href="http://farm4.static.flickr.com/3204/2537348699_bfd38bd9fd.jpg" title="Title #5">
 									<img src="http://farm4.static.flickr.com/3204/2537348699_bfd38bd9fd_s.jpg" alt="Title #5" />
@@ -104,7 +146,7 @@
 									</div>
 								</div>
 							</li>
-	
+		<br>
 							<li>
 								<a class="thumb" href="http://farm4.static.flickr.com/3124/2538164582_b9d18f9d1b.jpg" title="Title #6">
 									<img src="http://farm4.static.flickr.com/3124/2538164582_b9d18f9d1b_s.jpg" alt="Title #6" />
@@ -130,7 +172,7 @@
 									</div>
 								</div>
 							</li>
-	
+							
 							<li>
 								<a class="thumb" href="http://farm4.static.flickr.com/3211/2538163540_c2026243d2.jpg" title="Title #8">
 									<img src="http://farm4.static.flickr.com/3211/2538163540_c2026243d2_s.jpg" alt="Title #8" />
@@ -339,11 +381,11 @@
 								</div>
 							</li>
 						</ul>
-						<a class="pageLink next" style="visibility: hidden;" href="#" title="Next Page"></a>
+						<a class="pageLink next" style="visibility: hidden;" href="#" title="Next Page"> </a>
 					</div>
 				</div>
-				<div class="content">
-					<div class="slideshow-container">
+				<div class="content" >
+					<div class="slideshow-container" >
 						<div id="controls" class="controls"></div>
 						<div id="loading" class="loader"></div>
 						<div id="slideshow" class="slideshow"></div>
@@ -354,9 +396,8 @@
 				</div>
 				<!-- End Gallery Html Containers -->
 				<div style="clear: both;"></div>
-			</div>
-		</div>
-		<div id="footer">&copy; 2009 Trent Foley</div>
+		
+		
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				// We only want these styles applied when javascript is enabled
@@ -375,8 +416,8 @@
 				// Initialize Advanced Galleriffic Gallery
 				var gallery = $('#thumbs').galleriffic({
 					delay:                     2500,
-					numThumbs:                 10,
-					preloadAhead:              10,
+					numThumbs:                 12,
+					preloadAhead:              12,
 					enableTopPager:            false,
 					enableBottomPager:         false,
 					imageContainerSel:         '#slideshow',
