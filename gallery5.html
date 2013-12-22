@@ -2,14 +2,15 @@
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<title>Galleriffic | Custom layout with external controls</title>
+		
 		<link rel="stylesheet" href="includes/gallery/css/basic.css" type="text/css" />
 		<link rel="stylesheet" href="includes/gallery/css/galleriffic-5.css" type="text/css" />
-		                <link rel="stylesheet" type="text/css" href="includes/boxes-size.css">
+						<link rel="stylesheet" href="includes/style.css" type="text/css" />
 
 		<!-- <link rel="stylesheet" href="css/white.css" type="text/css" /> -->
 		<link rel="stylesheet" href="includes/gallery/css/black.css" type="text/css" />
-		
-	<!-- slideshow-->
+
+	<!-- slideshow -->
 		<link rel="stylesheet" href="includes/gallery/css/galleriffic-5.css" type="text/css" />
 		<script type="text/javascript" src="includes/gallery/js/jquery-1.3.2.js"></script>
 		<script type="text/javascript" src="includes/gallery/js/jquery.history.js"></script>
@@ -19,11 +20,101 @@
 		<script type="text/javascript">
 			document.write('<style>.noscript { display: none; }</style>');
 		</script>
-		
 		<!-- end slideshow-->
+<script type="text/javascript">
+                    
+function browserNavigator()
+{
+	var nVer = navigator.appVersion;
+	var nAgt = navigator.userAgent;
+	var browserName  = navigator.appName;
+	var fullVersion  = ''+parseFloat(navigator.appVersion); 
+	var majorVersion = parseInt(navigator.appVersion,10);
+	var nameOffset,verOffset,ix;
+	
+	// In Opera, the true version is after "Opera" or after "Version"
+	if ((verOffset=nAgt.indexOf("Opera"))!=-1) {
+	 browserName = "Opera";
+	 fullVersion = nAgt.substring(verOffset+6);
+	 if ((verOffset=nAgt.indexOf("Version"))!=-1) 
+	   fullVersion = nAgt.substring(verOffset+8);
+	}
+	// In MSIE, the true version is after "MSIE" in userAgent
+	else if ((verOffset=nAgt.indexOf("MSIE"))!=-1) {
+	 browserName = "Microsoft Internet Explorer";
+	 fullVersion = nAgt.substring(verOffset+5);
+	alert(browserName);
+	}
+	// In explorer, the true version is after "Netscape" 
+	else if ((verOffset=nAgt.indexOf("Netscape"))!=-1) {
+	 browserName = "Netscape";
+	 fullVersion = nAgt.substring(verOffset+7);
+	alert(browserName);
+	}
+	// In Chrome, the true version is after "Chrome" 
+	else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
+	 browserName = "Chrome";
+	 fullVersion = nAgt.substring(verOffset+7);
+	
+	/* css tables*/
+	var spans = document.getElementsByTagName("ul");
+	for (var i = 0; i < spans.length; i++) {
+	    if (spans[i].className == 'column2') {
+	        spans[i].className = 'ccolumn2';  
+	    }
+	     if (spans[i].className == 'column1') {
+	        spans[i].className = 'ccolumn1';  
+	    }
+	     if (spans[i].className == 'column3') {
+	        spans[i].className = 'ccolumn3';  
+	    }
+	}
+		document.getElementByClassName('column1').className = 'ccolumn1';
+		document.getElementByClassName('column2').className = 'ccolumn2';
+		document.getElementByClassName('column3').className = 'ccolumn3';
+	}
+	// In Safari, the true version is after "Safari" or after "Version" 
+	else if ((verOffset=nAgt.indexOf("Safari"))!=-1) {
+	 browserName = "Safari";
+	 fullVersion = nAgt.substring(verOffset+7);
+	 if ((verOffset=nAgt.indexOf("Version"))!=-1) 
+	   fullVersion = nAgt.substring(verOffset+8);
+	}
+	// In Firefox, the true version is after "Firefox" 
+	else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
+	 browserName = "Firefox";
+	 fullVersion = nAgt.substring(verOffset+8);
+	 
+	}
+	// In most other browsers, "name/version" is at the end of userAgent 
+	else if ( (nameOffset=nAgt.lastIndexOf(' ')+1) < 
+	          (verOffset=nAgt.lastIndexOf('/')) ) 
+	{
+	 browserName = nAgt.substring(nameOffset,verOffset);
+	 fullVersion = nAgt.substring(verOffset+1);
+	 
+	 if (browserName.toLowerCase()==browserName.toUpperCase()) {
+	  browserName = navigator.appName;
+	 }
+	}
+	// trim the fullVersion string at semicolon/space if present
+	if ((ix=fullVersion.indexOf(";"))!=-1)
+	   fullVersion=fullVersion.substring(0,ix);
+	if ((ix=fullVersion.indexOf(" "))!=-1)
+	   fullVersion=fullVersion.substring(0,ix);
+	
+	majorVersion = parseInt(''+fullVersion,10);
+	if (isNaN(majorVersion)) {
+	 fullVersion  = ''+parseFloat(navigator.appVersion); 
+	 majorVersion = parseInt(navigator.appVersion,10);
+	}
+	
+}
+
+				</script>
 	</head>
-	<body>
-		<div id="page" style="background-color: white; border: 0;">
+	<body onload="browserNavigator()">
+		<div id="page" style="background-color: white; border: 0; z-index: -1;">
 			<div id="container" style="padding: 0px;">
 
 
@@ -39,9 +130,11 @@
 								</a>
 								<div class="caption">
 									פרטים אודות התמונה
-				<!-- <ul >
-                <section class="two_on_two">
-                        <ul class="ccolumn1">
+<!------------------------------------------------------------------------------------------------------------------------------------->
+
+					<ul>
+						 <section class="Gtwo_on_two">
+                        <ul class="column1">
                                 <li>שם המעצב</li>
                                 <li>Designer</li>
                                 <li>שם העבודה</li>
@@ -57,11 +150,16 @@
                                 <li>פריט</li>
                                 <li>ארץ</li>
                                 <li>צלם</li>
-                                <li>באדיבות</li>
-                               
-                                
+                                <li>באדיבות</li>   
+                                 <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>                            
                         </ul>
-                        <ul class="ccolumn2">
+
+                        <ul class="column2">
                                 <li><a href="fashion_design_designer_outcome.html">רוז'י בן יוסף</a></li>
                                 <li><a href="fashion_design_designer_outcome.html">Rojy Ben Yoseph</a></li>
                                 <li>דגרדה</li>
@@ -75,14 +173,20 @@
                                 <li></li>
                                 <li></li>
                                 <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
                                  <li>ישראל</li>
                                 <li>לא ידוע</li>
                                 <li><a href="fashion_design_designer_outcome.html">רוז'י בן יוסף</a></li>
+                                 <li></li>
+                                <li></li>
+                                <li></li>
                                
                         </ul>
                         </section>
                   </ul>
-                 -->
+<!------------------------------------------------------------------------------------------------------------------------------------->
 								</div>
 							</li>
 	
