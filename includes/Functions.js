@@ -188,5 +188,20 @@ function mark(obj)
 			obj.style.fontWeight="normal";
 		}
 }
+var interviewcheck=1;
+function interview()
+{
+	
+	if (interviewcheck==1)
+	{
+		document.getElementById("interview").style.display="block";
+		document.getElementById("protoImg").style.display="none";
 
-
+		interviewcheck =0;
+	}
+	else{
+		document.getElementById("interview").style.display="none";
+		document.getElementById("protoImg").style.display="block";
+		interviewcheck=1;
+	}
+}

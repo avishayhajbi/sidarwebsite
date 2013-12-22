@@ -1283,3 +1283,14 @@ input[type="submit"].advanced_search
 	border-bottom: 0;
 	padding-top: 6px;
 }
+/*interview*/
+#interview
+{
+	display: none;
+}
+.main_section .two_on_two img
+{
+	display: block;
+}
+/*end interview*/
+

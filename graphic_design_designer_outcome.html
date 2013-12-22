@@ -168,7 +168,12 @@ function browserNavigator()
         <!-- Main section -->
         <section class="main_section">
                 <section class="two_on_two">
-                        <img src="images/daniKerman.jpg">
+                	<video id="interview" width="371" height="371" controls>
+					  <source src="videos/G-KeD-Int-001.mov" type="video/mp4">
+					  <source src="videos/G-KeD-Int-001.mov" type="video/ogg">
+					</video>
+                	<img id="protoImg" src="images/daniKerman.jpg">
+             
                 </section>
                 <section class="two_on_two">
                         <ul class="column1">
@@ -211,7 +216,7 @@ function browserNavigator()
                                 <li><a href="#">מילות מפתח</a></li>
                                 <li><a href="#">קורות חיים</a></li>
                                 <li><a href="#">תצלומים אישיים</a></li>
-                                <li><a href="#">ריאיון מצולם</a></li>
+                                <li><a href="#" onclick="interview()">ריאיון מצולם</a></li>
                                 <li id="keywords" class="graphic_design_bgr"><a href="#">מדיה</a>
                                 	  <ul>
                                         <li><a href="#">אירועים</a></li>
@@ -241,7 +246,7 @@ function browserNavigator()
                                 <li></li>
                                 <li></li>
                                 <li></li>
-                                  <li></li>
+                                <li></li>
                                 <li></li>
                                 <li></li>
                         </ul>
