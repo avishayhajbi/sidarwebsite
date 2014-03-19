@@ -9,7 +9,52 @@
                 <script type="text/javascript" src="includes/modernizr-2.6.2.min.js"></script>
                 <script src="includes/jquery-1.10.1.min.js"></script>
                 <script src="includes/Functions.js"></script>
-
+<style>
+			#keywords:hover
+			{
+				background: #D9E1EE;
+			}
+			
+			#keywords ul
+			{
+				width: 99%;
+				height: 560%;
+				background: #F0F0F0;
+				display: none;
+				position: absolute;
+				top: 90%;
+				right: 1% !important;
+				z-index: 1;
+			}
+			#wrapper #keywords a
+			{
+				
+				background: none !important;
+				border: 0;
+			}
+			#wrapper #keywords ul li 
+			{
+				margin-top: 2%;
+				margin-bottom:10px;
+				margin-right: 5%;
+				background: none !important;
+				border: 0;
+			}
+			#keywords1 ul
+			{
+				display: none;
+			}
+			.one_on_two_general ul#rightList li 
+			{
+				width: 90%;
+				height: 2.4%;
+				margin-right: -0.01%;
+				margin: 0;
+				border: 0;
+				font-size: 12px;
+				text-align: right;
+			}
+		</style>
         </head>
         <body>
                 <div id="wrapper">
@@ -62,78 +107,195 @@
         <!-- Main section -->
         <section class="main_section">
                 <ul>
-                        <section class="one_on_one">
-                <h4 class="headline">אותות</h4>
-                <label>
-                    <input type="text" name="signs">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="jewelry_design_categories_results.html">קישור לדף תוצאות</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="one_on_one">
-                <h4 class="headline">איור</h4>
-                <label>
-                    <input type="text" name="illustration">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="one_on_one">
-                <h4 class="headline">אינטרנט</h4>
-                <label>
-                    <input type="text" name="internet">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="one_on_one">
-                <h4 class="headline">אישי</h4>
-                <label>
-                    <input type="text" name="private">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
+					<aside class="one_on_two_general">
+						<h4 class="headline">קטגוריות עיצוב</h4>
+						<ul id="rightList" style="height: 880px;">
+							<li id="keywords" >
+								<a href="#" onclick="mark(this)">אובייקטים</a>
+								<ul>
+									<li>
+										<a href="general-categories-singleObject-results.html">אובייקט בודד</a>
+									</li>
+									<li>
+										<a href="#">אובייקט מורכב</a>
+									</li>
+									<li>
+										<a href="#">אובייקט לכף יד</a>
+									</li>
+								
+								</ul>
+							</li>
+							<li id="keywords1">
+								<a href="#">אישי</a>
+								<ul>
+									<li>
+										<a href="#">תצלומים אישיים</a>
+									</li>
+
+								</ul>
+							</li>
+
+								<li id="keywords1">
+								<a href="#">טבעות</a>
+								<ul>
+									<li>
+										<a href="#">טבעות נישואין </a>
+									</li>
+									<li>
+										<a href="#"> טבעות אירוסין</a>
+									</li>
+									<li>
+										<a href="#"> טבעות למספר אצבעות</a>
+									</li>
+								</ul>
+							</li>
+											<li id="keywords1">
+								<a href="#">סיכות </a>
+								<ul>
+									<li>
+										<a href="#">פיבולה</a>
+									</li>
+									<li>
+										<a href="#">סיכות ללא מחט </a>
+									</li>
+									<li>
+										<a href="#">סיכות עם מחט </a>
+									</li>
+									<li>
+										<a href="#">מנגנון סגירה </a>
+									</li>
+									
+								</ul>
+							</li>
+								<li id="keywords1">
+								<a href="#">צמידים</a>
+								<ul>
+									<li>
+										<a href="#">צמידי חוליות</a>
+									</li>
+									<li>
+										<a href="#">תכשיט ליד</a>
+									</li>
+									<li>
+										<a href="#">תכשיט לרגל</a>
+									</li>
+								</ul>
+							</li>
+							<li id="keywords1">
+								<a href="#">קמעות</a>
+								<ul>
+									<li>
+										<a href="#"> קמעות </a>
+									</li>
+								</ul>
+							</li>
+							<li id="keywords1">
+								<a href="#">מדיה</a>
+								<ul><br /><li>
+										<a href="#">אירועים</a>
+									</li>
+									<li>
+										<a href="#">תיעוד תערוכות</a>
+									</li>
+									<li>
+										<a href="#">תוכנית טלוויזיה</a>
+									</li>
+									<li>
+										<a href="#">תצוגות אופנה</a>
+									</li>
+									<li>
+										<a href="#">תצלומים מעיתונים</a>
+									</li>
+								</ul>
+							</li>
+						
+							<li id="keywords1">
+
+								<a href="#">שעונים</a>
+								<ul>
+									<li>
+										<a href="#"> פנים </a>
+									</li>
+										<li>
+										<a href="#">  מנגנון </a>
+									</li>
+									</li>
+										<li>
+										<a href="#">  רצועה  </a>
+									</li>
+								</ul>
+							</li>
+							
+								<li id="keywords1">
+								<a href="#">תהליכים</a>
+								<ul>
+							
+									<li>
+										<a href="#">דגמים</a>
+									</li>
+									<li>
+										<a href="#">סקיצה</a>
+									</li>
+									
+									<li>
+										<a href="#">תהליכי עבודה</a>
+									</li>
+									
+								</ul>
+							</li>
+										<li id="keywords1">
+								<a href="#">תכשיטי צוואר</a>
+								<ul>
+									<li>
+										<a href="#">שרשרת</a>
+									</li>
+									<li>
+										<a href="#">קולר</a>
+									</li>
+									<li>
+										<a href="#">מחרוזת</a>
+									</li>
+									<li>
+										<a href="#">ענק</a>
+									</li>
+								</ul>
+							</li>
+											<li id="keywords1">
+								<a href="#">תכשיטי ראש ופנים</a>
+								<ul>
+									<li>
+										<a href="#">נזר</a>
+									</li>
+									<li>
+										<a href="#">כתר</a>
+									</li>
+									<li>
+										<a href="#">נזם</a>
+									</li>
+									<li>
+										<a href="#">עגילים</a>
+									</li>
+								</ul>
+							</li>
+											<li id="keywords1">
+								<a href="#">תכשיטי שיער</a>
+								<ul>
+									<li>
+										<a href="#">משרקות</a>
+									</li>
+									<li>
+										<a href="#">תליונים</a>
+									</li>
+									<li>
+										<a href="#">תליון</a>
+									</li>
+									<li>
+										<a href="#">משכית</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</aside>
                         <section class="one_on_four jewelry_design_border design_area_section">
                                 <ul id="leftList">
                                         <li class="headline jewelry_design"><a href="jewelry_design.html" class="jewelry_design">עיצוב תכשיטים</a></li>
@@ -154,222 +316,20 @@
                                         <li class="jewelry_design_border_bottom"></li> 
                                 </ul>
                         </section>
-                        <section class="one_on_one">
-                <h4 class="headline">אמנות ועיצוב</h4>
-                <label>
-                    <input type="text" name="art_and_design">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="one_on_one">
-                <h4 class="headline">אריזות</h4>
-                <label>
-                    <input type="text" name="packings">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="one_on_one">
-                <h4 class="headline">דברי דואר</h4>
-                <label>
-                    <input type="text" name="mail">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="one_on_one">
-                <h4 class="headline">טיפוגרפיה</h4>
-                <label>
-                    <input type="text" name="typography">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="one_on_one">
-                <h4 class="headline">כסף</h4>
-                <label>
-                    <input type="text" name="money">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="one_on_one">
-                <h4 class="headline">כרזות</h4>
-                <label>
-                    <input type="text" name="posters">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="one_on_one">
-                <h4 class="headline">לוגו וסמל</h4>
-                <label>
-                    <input type="text" name="logo">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="one_on_one">
-                <h4 class="headline">לוחות שנה</h4>
-                <label>
-                    <input type="text" name="calendars">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="one_on_one">
-                <h4 class="headline">סביבתי ותלת מימד</h4>
-                <label>
-                    <input type="text" name="environmental">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="one_on_one">
-                <h4 class="headline">פרסום</h4>
-                <label>
-                    <input type="text" name="publicity">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="one_on_one">
-                <h4 class="headline">תדמית</h4>
-                <label>
-                    <input type="text" name="image">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="one_on_one">
-                <h4 class="headline">תהליכים</h4>
-                <label>
-                    <input type="text" name="processes">
-                </label>
-                <article>
-                    <ul id="one">
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                        <li><a href="#">199</a></li>
-                    </ul>
-                </article>
-            </section>    
+                  				<li class="jewelry_design_border"><a href="#"><img src="images/G-ShB-Pos-013.jpg"></a></li>
+                        <li class="jewelry_design_border"><a href="#"><img src="images/G-EnZ-Com-002.jpg"></a></li>
+                        <li class="jewelry_design_border"><a href="#"><img src="images/G-EzO-Pos-010.jpg"></a></li>
+                        <li class="jewelry_design_border"><a href="#"><img src="images/eged-1.jpg"></a></li>
+                        <li class="jewelry_design_border"><a href="#"><img src="images/G-CArR-GrC-1625.jpg"></a></li>
+                        <li class="jewelry_design_border"><a href="#"><img src="images/G-BoP-Log-072.jpg"></a></li>
+                        <li class="jewelry_design_border"><a href="#"><img src="images/G-FiU-Com-025.jpg"></a></li>
+                        <li class="jewelry_design_border"><a href="#"><img src="images/eged-1.jpg"></a></li>
+                        <li class="jewelry_design_border"><a href="#"><img src="images/G-CArR-GrC-1625.jpg"></a></li>
+                        <li class="jewelry_design_border"><a href="#"><img src="images/G-EnZ-Com-002.jpg"></a></li>
+                        <li class="jewelry_design_border"><a href="#"><img src="images/G-FiU-Com-025.jpg"></a></li>
+                        <li class="jewelry_design_border"><a href="#"><img src="images/eged-1.jpg"></a></li>
+
+				</ul>
         </section>
         <div class="clear"></div>
         <!-- Footer -->
