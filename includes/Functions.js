@@ -38,6 +38,8 @@ $(document).ready(function() {
     showKeyWords2();
     showKeyWords3();
     showKeyWords4();
+    showKeyWords5();
+    showKeyWords6();
 });
 
 /* Forms functions  */
@@ -204,6 +206,20 @@ function showKeyWords3() {
 function showKeyWords4() {
     $("#keywords4").click(function() {
         $("#keywords4 ul").slideToggle('slow');
+    });
+}
+///
+///
+function showKeyWords5() {
+    $("#keywords5").click(function() {
+        $("#keywords5 ul").slideToggle('slow');
+    });
+}
+///
+///
+function showKeyWords6() {
+    $("#keywords6").click(function() {
+        $("#keywords6 ul").slideToggle('slow');
     });
 }
 ///
