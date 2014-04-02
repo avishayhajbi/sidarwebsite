@@ -34,6 +34,10 @@ $(document).ready(function() {
 
     moveBox();
     showKeyWords();
+    showKeyWords1();
+    showKeyWords2();
+    showKeyWords3();
+    showKeyWords4();
 });
 
 /* Forms functions  */
@@ -175,7 +179,34 @@ function showKeyWords() {
         $("#keywords ul").slideToggle('slow');
     });
 }
-
+///
+function showKeyWords1() {
+    $("#keywords1").click(function() {
+        $("#keywords1 ul").slideToggle('slow');
+    });
+}
+///
+///
+function showKeyWords2() {
+    $("#keywords2").click(function() {
+        $("#keywords2 ul").slideToggle('slow');
+    });
+}
+///
+///
+function showKeyWords3() {
+    $("#keywords3").click(function() {
+        $("#keywords3 ul").slideToggle('slow');
+    });
+}
+///
+///
+function showKeyWords4() {
+    $("#keywords4").click(function() {
+        $("#keywords4 ul").slideToggle('slow');
+    });
+}
+///
 function mark(obj)
 {
 	
