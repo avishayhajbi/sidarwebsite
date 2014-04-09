@@ -876,3 +876,45 @@ ul#mask
 	font-size: 12px;
 	margin-bottom: 10px;
 }
+
+
+.arrowRight{
+            			position: absolute;
+            			display: inline-block;
+            			margin-left: 150px;
+            			width: 8px;
+            			height: 30px;
+            			top: 165px;
+            			right:22px;
+            		}
+            		.arrowLeft{
+            			position: absolute;
+            			display: inline-block;
+            			margin-left: 150px;
+            			width: 8px;
+            			height: 30px;
+            			top: 165px;
+            			right:385px;
+            			transform:rotate(180deg);
+						-ms-transform:rotate(180deg); /* IE 9 */
+						-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+            		}
+            		
+            		.icon{
+                                		
+                                		position:relative;
+                                		display: inline-block;
+                                		bottom: 2px;
+                                		left:4px;
+                                	}
+.play{
+	position: relative;
+	z-index:10;
+	width: 50px;
+	height:50px;
+	position: block;
+	float: left;
+	left:10px;
+	bottom: 60px;
+};
+

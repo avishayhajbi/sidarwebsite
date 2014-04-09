@@ -252,3 +252,29 @@ function interview()
 		interviewcheck=1;
 	}
 }
+
+
+function displayPlayButton(obj){
+	var displayImage = document.getElementById("displayImage");
+	if (displayImage.getElementsByClassName("play").length == 0)
+	{
+	var play = document.createElement("img");
+	play.src="images/play.jpg";
+	play.className="play";
+	play.style.width="50px";
+	play.style.height="50px";
+	displayImage.appendChild(play);
+	}
+	else {
+		displayImage.getElementsByClassName("play")[0].remove();
+	}
+}
+function onmouseleave(obj){
+	var nodes = document.getElementsByClassName("play");
+	
+	for (var i=0; i<nodes.length; i++){
+		if (nodes[i].className == "play"){
+			nodes[i].className="dissPlay";
+		}
+	}
+}

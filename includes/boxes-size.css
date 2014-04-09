@@ -188,8 +188,10 @@ Date: 22-2-13
 
 .two_on_two img 
 {
-	width: 100%;
-	height: 100%;
+	width: 94%;
+	height: 94%;
+	margin: auto;
+	margin-top: 3%;
 	border: 0;
 }
 
