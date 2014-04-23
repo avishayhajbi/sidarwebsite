@@ -9,7 +9,18 @@
                 <script type="text/javascript" src="includes/modernizr-2.6.2.min.js"></script>
                 <script src="includes/jquery-1.10.1.min.js"></script>
                 <script src="includes/Functions.js"></script>
-
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="includes/changePic/jquery.cycle.all.js"></script>
+		<script language="javascript">
+			$(document).ready(function() {
+				$('.slider').cycle({
+					fx : 'fade', //'scrollLeft,scrollDown,scrollRight,scrollUp',blindX, blindY, blindZ, cover, curtainX, curtainY, fade, fadeZoom, growX, growY, none, scrollUp,scrollDown,scrollLeft,scrollRight,scrollHorz,scrollVert,shuffle,slideX,slideY,toss,turnUp,turnDown,turnLeft,turnRight,uncover,ipe ,zoom
+					speed : '2500',
+					timeout : 4000
+				});
+			});
+		</script>
         </head>
         <body>
                 <div id="wrapper">
@@ -35,11 +46,12 @@
 
                 <!-- Nav bar -->
                 <nav>
-                                    	<!-- insert iframe -->
-                <iframe id="navigation" src="navigation.html" frameborder="0"></iframe>
+                        	<!-- insert iframe -->
+                <iframe id="navigation" src="navigation.html" frameborder="0" scrolling="no" > </iframe>
+        
                 <br>
-                <br>                   
-                <!-- Breadcrumbs -->
+                <br>
+                                <!-- Breadcrumbs -->
                 <section>
                 <ul id="breadcrumbs">
                         <li><a href="index.html">על המכון</a></li>
@@ -59,43 +71,183 @@
 
         <!-- Main section -->
         <section class="main_section">
-            <ul>
-                <section class="three_on_one">
-                            <p class="headline">הודעות</p>
-                    </section>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>       
+        	<section class="two_on_one">
+                        <!-- <ul>
+                                <li class="headline">אודות מכון שנקר</li>
+                        </ul> -->
+                        <p class="headline">הודעות </p>
+                </section>
+                <ul>
+                      <li>
+						<a href="#"><img src="images/G-ShB-Pos-013.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/G-CArR-GrC-120a.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/front/fashion1.gif"></a>
+					</li>
+					<li>
+						<section >
+							<ul class="slider">
+
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/1976_LaFavorita.jpg"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/G-ShB-Pos-013.jpg"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/front/jewelry1.bmp"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/front/G-DaR-Pos-027.jpg"></a>
+								</li>
+
+								<li class="jewelry_design_border ">
+									<a href="#"><img src="images/front/jewelry1.bmp"></a>
+								</li>
+							</ul>
+						</section>
+					</li>
+
+					<li>
+						<section >
+							<ul class="slider">
+								<li class="jewelry_design_border ">
+									<a href="#"><img src="images/front/jewelry1.bmp"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/1976_LaFavorita.jpg"></a>								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/G-CArR-GrC-120a.jpg"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/front/jewelry1.bmp"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/front/G-DaR-Pos-027.jpg"></a>
+								</li>
+							</ul>
+						</section>
+					</li>
+					<li>
+						<section >
+							<ul class="slider">
+
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/G-FiU-Com-025.jpg"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/I-StA-ChF-001.jpg"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/G-ShB-Pos-013.jpg"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/front/G-DaR-Pos-027.jpg"></a>
+								</li>
+
+								<li class="jewelry_design_border ">
+									<a href="#"><img src="images/front/jewelry1.bmp"></a>
+								</li>
+							</ul>
+						</section>
+					</li>
+
+					<li>
+						<section >
+							<ul class="slider">
+								<li class="jewelry_design_border ">
+									<a href="#"><img src="images/front/jewelry1.bmp"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/G-Dav-P-14.jpg"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/G-CArR-GrC-120a.jpg"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/1976_LaFavorita.jpg"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/front/G-DaR-Pos-027.jpg"></a>
+								</li>
+							</ul>
+						</section>
+					</li>
+
+					<li>
+						<section >
+							<ul class="slider">
+
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/G-CArR-GrC-120a.jpg"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/I-StA-ChF-001.jpg"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/front/jewelry1.bmp"></a>
+								</li>
+								<li class="jewelry_design_border">
+									<a href="#"><img src="images/G-Dav-P-14.jpg"></a>
+								</li>
+
+								<li class="jewelry_design_border ">
+									<a href="#"><img src="images/G-ShB-Pos-013.jpg"></a>
+								</li>
+							</ul>
+						</section>
+					</li>
+					<li>
+						<a href="#"><img src="images/G-Dav-P-14.jpg"></a>
+					</li>
+					<li class="jewelry_design_border">
+						<a href="#"><img src="images/front/jewelry1.bmp"></a>
+					</li>
+					
+					<li>
+						<a href="#"><img src="images/G-FiU-Com-025.jpg"></a>
+					</li>
+                      <li>
+						<a href="#"><img src="images/G-ShB-Pos-013.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/G-CArR-GrC-120a.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/front/fashion1.gif"></a>
+					</li>
+					
+					<li>
+						<a href="#"><img src="images/G-CArR-GrC-120a.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/front/fashion1.gif"></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/G-Dav-P-14.jpg"></a>
+					</li>
+					<li class="jewelry_design_border">
+						<a href="#"><img src="images/front/jewelry1.bmp"></a>
+					</li>
+                </ul> 
         </section>
         <div class="clear"></div>
 
         <!-- Footer -->
-       <footer class="links">
-                <p>מכון שנקר לתיעוד וחקר העיצוב בישראל, כל הזכויות שמורות 2013 &copy;</p>
+        <footer class="links">
+        	<p>מכון שנקר לתיעוד וחקר העיצוב בישראל, כל הזכויות שמורות 2013 &copy;</p>
                 <nav>
-                        <a href="#"><img src="images/facebook_icon.png"></a>
-                        <a href="#"><img src="images/Twitter.png"></a>
-                        <a href="#"><img src="images/google_plus.png"></a>
-                        <a href="#"><img src="images/itunesLogo.png"></a>
-                        <a href="#"><img src="images/RSS.png"></a>
-                        <a href="#"><img src="images/Logo_Youtube.png"></a>
+			<a href="#"><img src="images/facebook_icon.png"></a>
+			<a href="#"><img src="images/Twitter.png"></a>
+			<a href="#"><img src="images/google_plus.png"></a>
+			<a href="#"><img src="images/itunesLogo.png"></a>
+			<a href="#"><img src="images/RSS.png"></a>
+			<a href="#"><img src="images/Logo_Youtube.png"></a>
                 </nav>
         </footer>
-                </div>
-        </body>
+		</div>
+	</body>
 </html>
