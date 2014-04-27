@@ -253,28 +253,88 @@ function interview()
 	}
 }
 
-
+var playButton=0;
 function displayPlayButton(obj){
-	var displayImage = document.getElementById("displayImage");
-	if (displayImage.getElementsByClassName("play").length == 0)
-	{
-	var play = document.createElement("img");
-	play.src="images/play.jpg";
-	play.className="play";
-	play.style.width="50px";
-	play.style.height="50px";
-	displayImage.appendChild(play);
+	// var displayImage = document.getElementById("displayImage");
+	// if (displayImage.getElementsByClassName("play").length == 0)
+	// {
+	// var play = document.createElement("img");
+	// play.src="images/play.jpg";
+	// play.className="play";
+	// play.style.width="50px";
+	// play.style.height="50px";
+	// displayImage.appendChild(play);
+	// }
+	// else {
+		// displayImage.getElementsByClassName("play")[0].remove();
+	// }
+	if(playButton == 0){
+	var playImage = document.getElementById("play");
+	playImage.style.display="block";
+	playButton=1;
 	}
-	else {
-		displayImage.getElementsByClassName("play")[0].remove();
+	else{
+		var playImage = document.getElementById("play");
+		playImage.style.display="none";
+		playButton=0;
 	}
 }
-function onmouseleave(obj){
-	var nodes = document.getElementsByClassName("play");
+
+
+var playCheck=0;
+var imageNumber =1;
+var interval=null;
+
+function startDisplay(obj){
 	
-	for (var i=0; i<nodes.length; i++){
-		if (nodes[i].className == "play"){
-			nodes[i].className="dissPlay";
-		}
+	if (playCheck == 0 ){
+		obj.src="includes/images/stop.jpg";
+		var nodes = document.getElementsByClassName("changePicture");
+		var img = nodes[0];
+		var images = new Array;
+		images[1] = "images/eged-1.jpg";
+		images[2] = "images/front/fashion1.gif";
+		images[3] = "images/F-ByR-TrF-014.jpg";
+		playCheck =1;
+				
+		interval=setInterval(function(){
+			$('.changePicture').fadeOut( function() {
+					img.src=images[imageNumber];
+					$('.changePicture').fadeIn();
+				});
+			
+				
+				imageNumber+=1;
+				if(imageNumber == 4){
+					imageNumber=1;
+				}
+		},3000);
+	
+	}
+	else{
+		obj.src="images/play.jpg";
+		clearInterval (interval);
+		playCheck=0;
 	}
 }
+
+var paperName=1;
+function changePic(){
+		var images = new Array;
+		images[1] = "images/G-FiU-Com-025.jpg";
+		images[2] = "images/front/copy G-KeD-Boo-756.jpg";
+		
+		var nodes = document.getElementsByClassName("paperName");
+		var img = nodes[0];
+		$('.paperName').fadeOut( function() {
+					img.src=images[paperName];
+					$('.paperName').fadeIn();
+				});
+				paperName+=1;
+				if(paperName == 3){
+					paperName=1;
+
+			}
+}
+
+

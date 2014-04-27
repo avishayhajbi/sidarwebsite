@@ -63,8 +63,11 @@
         <section class="main_section">
             <ul>
     
-            	<img class="arrowRight" src="includes/images/arrowRight.jpg">
-                <section class="two_on_two" id="displayImage"><img src="images/F-ByR-TrF-014.jpg" onmouseover="displayPlayButton(this);" onmouseleave="displayPlayButton(this);" ></section>
+            	<img class="arrowRight" src="includes/images/arrowRight.jpg" >
+                <section class="two_on_two" id="displayImage" onmouseover="displayPlayButton(this);" onmouseout="displayPlayButton(this);">
+                	<img class="changePicture" src="images/F-ByR-TrF-014.jpg"  > 
+                	<img id="play" src="images/play.jpg" onclick="startDisplay(this)" width="50" height="50"> 
+                </section>
                 <img class="arrowLeft" src="includes/images/arrowRight.jpg">
                 <section class="three_on_two">
                         <ul class="keys">
