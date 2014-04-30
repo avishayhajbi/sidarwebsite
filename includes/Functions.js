@@ -318,21 +318,21 @@ function startDisplay(obj){
 	}
 }
 
-var paperName=1;
+var paperName=6;
 function changePic(){
 		var images = new Array;
 		images[1] = "images/G-FiU-Com-025.jpg";
 		images[2] = "images/front/copy G-KeD-Boo-756.jpg";
-		
+		images = $("img");
 		var nodes = document.getElementsByClassName("paperName");
 		var img = nodes[0];
 		$('.paperName').fadeOut( function() {
-					img.src=images[paperName];
+					img.src=images[paperName].src;
 					$('.paperName').fadeIn();
 				});
 				paperName+=1;
-				if(paperName == 3){
-					paperName=1;
+				if(paperName == images.length){
+					paperName=6;
 
 			}
 }
