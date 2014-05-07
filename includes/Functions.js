@@ -255,19 +255,6 @@ function interview()
 
 var playButton=0;
 function displayPlayButton(obj){
-	// var displayImage = document.getElementById("displayImage");
-	// if (displayImage.getElementsByClassName("play").length == 0)
-	// {
-	// var play = document.createElement("img");
-	// play.src="images/play.jpg";
-	// play.className="play";
-	// play.style.width="50px";
-	// play.style.height="50px";
-	// displayImage.appendChild(play);
-	// }
-	// else {
-		// displayImage.getElementsByClassName("play")[0].remove();
-	// }
 	if(playButton == 0){
 	var playImage = document.getElementById("play");
 	playImage.style.display="block";
@@ -282,7 +269,7 @@ function displayPlayButton(obj){
 
 
 var playCheck=0;
-var imageNumber =1;
+var imageNumber =6;
 var interval=null;
 
 function startDisplay(obj){
@@ -295,18 +282,20 @@ function startDisplay(obj){
 		images[1] = "images/eged-1.jpg";
 		images[2] = "images/front/fashion1.gif";
 		images[3] = "images/F-ByR-TrF-014.jpg";
+		images = $("img");
 		playCheck =1;
 				
 		interval=setInterval(function(){
 			$('.changePicture').fadeOut( function() {
-					img.src=images[imageNumber];
+					img.src=images[imageNumber].src;
 					$('.changePicture').fadeIn();
+					document.getElementsByClassName("designer_value")[0].innerHTML="designer name "+(imageNumber-5);
 				});
 			
 				
 				imageNumber+=1;
-				if(imageNumber == 4){
-					imageNumber=1;
+				if(imageNumber == images.length){
+					imageNumber=6;
 				}
 		},3000);
 	
