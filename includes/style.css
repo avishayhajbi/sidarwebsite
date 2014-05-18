@@ -894,7 +894,7 @@ ul#mask
             			width: 8px;
             			height: 30px;
             			top: 165px;
-            			right:385px;
+            			right:384px;
             			transform:rotate(180deg);
 						-ms-transform:rotate(180deg); /* IE 9 */
 						-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */

@@ -18,7 +18,9 @@
                                 location.href = selected;
                             }
                         }
-   				
+   				$(document).ready(function() {
+					//browserNavigator();
+				});
 function browserNavigator()
 {
 	var nVer = navigator.appVersion;
@@ -109,7 +111,7 @@ function browserNavigator()
 
 				</script>
         </head>
-        <body onload="browserNavigator()">
+        <body >
                 <div id="wrapper">
 
                         <!-- Header -->
