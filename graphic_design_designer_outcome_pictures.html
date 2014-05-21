@@ -21,7 +21,7 @@
                         }
                         
                      $(document).ready(function() {
-					browserNavigator();
+					//browserNavigator();
 				});
 
 				
@@ -115,7 +115,7 @@ function browserNavigator()
 
 				</script>
         </head>
-        <body onload="browserNavigator()">
+        <body >
                 <div id="wrapper">
 
                         <!-- Header -->
@@ -167,7 +167,7 @@ function browserNavigator()
 
         <!-- Main section -->
         <section class="main_section">
-        	<img class="arrowRight" src="includes/images/arrowRight.jpg">
+        	<img class="arrowRight" src="includes/images/arrowRight.jpg" onclick="changePic()">
                 <section class="two_on_two">
                 	<video id="interview" width="371" height="371" controls>
 					  <source src="videos/G-KeD-Int-001.mov" type="video/mp4">
@@ -175,9 +175,9 @@ function browserNavigator()
 					 <source src="videos/G-KeD-Int-001FF.webm" type="video/webm">
 					</video>
 					
-                	<img id="protoImg" src="includes/dani_kerman/images/G-KeD-PeP-001.JPG">
+                	<img id="protoImg" class="paperName" src="includes/dani_kerman/images/G-KeD-PeP-001.JPG">
                 </section>
-                <img class="arrowLeft" src="includes/images/arrowRight.jpg">
+                <img class="arrowLeft" src="includes/images/arrowRight.jpg" onclick="changePic()">
                 <section class="two_on_two">
                         <ul class="column1">
                                 <li>שם המעצב</li>

@@ -320,10 +320,12 @@ function changePic(){
 					$('.paperName').fadeIn();
 				});
 				paperName+=1;
-				if(paperName == images.length){
+				if(paperName == images.length-6){
 					paperName=6;
 
 			}
 }
 
-
+function search(obj){
+	alert("avishay");
+}
