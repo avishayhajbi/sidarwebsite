@@ -37,8 +37,7 @@
         if (typeof e == 'undefined' && window.event) { e = window.event; }
         if (e.keyCode == 13)
         {
-        	("redirect");
-        	//window.location.replace("http://127.0.0.1:8020/sidarwebsite/search.html");
+        	 //window.location.replace("search.html");
         }
     }
 
@@ -243,7 +242,7 @@
 				</section>
 
 				<!-- Search engine -->
-				<form action="" method="get" autocomplete="on">
+				<form action="search.html" method="get" autocomplete="on">
 					<label id="search" onkeypress="searchKeyPress(event);">
 						<input type="search" class="text_input" name="search" placeholder=" חיפוש" >
 					</label>
