@@ -919,3 +919,25 @@ ul#mask
 	display: none;
 };
 
+.values{
+	    width: 91%;
+        height: 16px;
+        margin-right: -1%;
+        margin-top: -0.5%;
+        border: 0;
+        border-bottom: 1px solid #B8B8B8;
+        font-size: 12px;
+        text-align: right;
+        padding: 1% 5%;
+}
+ul.values li a:link, ul.values li a:visited{
+width: 95%;
+	height: 15px;
+	margin-right: -4%;
+	margin-top: -0.1%;
+	padding: 0.8% 5%;
+	color: blue;
+	background: none;
+	opacity: 1;
+	font-size: 12px;
+}
