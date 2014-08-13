@@ -11,19 +11,9 @@
 
 
   <script>
-   function handleFileSelect(evt) {
-    var files = evt.target.files; // FileList object
-
-    // files is a FileList of File objects. List some properties.
-    var output = [];
-    for (var i = 0, f; f = files[i]; i++) {
-      output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ',
-                  f.size, ' bytes, last modified: ',
-                  f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
-                  '</li>');
-    }
-  }
-	document.getElementById('files').addEventListener('change', handleFileSelect, false);
+  /* my cookies*/
+ 
+/* end my cookies */
 
   $(function() {
     $( "#sortable" ).sortable();
@@ -34,9 +24,9 @@
 
         </head>
         <body>
-        	<!-- -->
+            <!-- -->
 
-		<!-- -->
+        <!-- -->
                 <div id="wrapper">
 
                         <!-- Header -->
@@ -60,7 +50,7 @@
 
                 <!-- Nav bar -->
                 <nav>
-                                    	<!-- insert iframe -->
+                                        <!-- insert iframe -->
                 <iframe id="navigation" src="navigation.html" frameborder="0"></iframe>
                 <br>
                 <br>                   
@@ -69,9 +59,7 @@
                 <ul id="breadcrumbs">
                         <li><a href="index.html">אישי</a></li>
                         <p> > </p>
-                        <li><a href="sendwork.html">שליחת עבודות</a></li>
-                        <p> > </p>
-                        <li>מילוי טופס אישי</li>
+                        <li>שליחת עבודות</li>
                 </ul>
                 <ul id="secondery_menu">
                         <li><a href="#">הבא</a></li>
@@ -90,33 +78,66 @@
                 <aside class="one_on_four">
                         <h4 class="headline">  סדר פעולות  <b>שליחת עבודת</b> </h4>
                        <ul id="rightList">
-                                <li><a href="#">שם המעצב</a></li>
-                                <li><a href="#">שם באנגלית</a></li>
-                                <li><a href="#">דוא"ל</a></li>
-                                <li><a href="#">טלפון נייד</a></li>
-                                 <li><a href="#">כתובת מלאה</a></li>
-                                <li><a href="#" >תחום עיצוב</a></li>
-                                <li><a href="#">קורות חיים במסמך וורד</a></li>
-                                <li><a href="#"> צילום פורטרט אישי</a></li>
-                                <li><a href="#"> קוד אישי יתקבל בדוא"ל</a></li>
-                                 <li><a href="#"> </a></li>
-                                 <li><a href="#"> </a></li>
- 								  <li><a href="#"> </a></li>
- 								   <li><a href="#"> </a></li>
-                                 <li><a href="#"> </a></li>
- 								  <li><a href="#"> </a></li>
-                        </ul>
-                </aside>
-                  <aside class="one_on_two">
-                        <h4 class="headline">  מלא פרטים </h4>
-                        <textarea style="width: 171px;height:276px;margin-left:1px;line-height: 23px">  </textarea>
-                       <ul id="rightList">
-                                <li><a href="#">הזן מסמך וורד</a></li>
-                                <li ><a href="#">הזן תמונה</a></li>
-                                <li><a href="sendwork.html"> שלח טופס</a></li>
+                                <li><a href="fillpesonalform.html">מילוי ושליחת טופס הרשמה</a></li>
+                                <li><a href="#">אישור מראש המכון</a></li>
+                                <li><a href="#">חתימת חוזה וקבלת קוד</a></li>
+                                <li><a href="insert_designer_page.html">הזנת קוד אישי</a></li>
+                                 <li><a href="insertDesignerPage.html">מילוי דף מעצב</a></li>
+                                <li><a href="#" >שליחת קורות חיים וצילום אישי</a></li>
+                                <li><a href="insert_work.html">הזנת דפי עבודה</a></li>
+                                <li><a href="#"> שליחת עבודות</a></li>
+                                <li><a href="#"> </a></li>
+
                         </ul>
                 </aside>
                 <ul>
+                          <section class="one_on_one" id="forms" style="height:569px">
+                  <section id="admission_form" style="display: block;height:569px">
+                      <style>
+                          #admission_form label input[type="file"]{width: 174px}
+                          #admission_form label input[type="tel"]{width: 167px}
+                      </style>
+                        <form action="sendwork.html" method="post" autocomplete>
+                             <h4 class="headline"> מילוי פרטי הרשמה  </h4>
+                            <label>שם המעצב:
+                                <br><input type="text" name="existing_username" style="background-color: white">
+                            </label>
+                            <label>שם באנגלית:
+                                <br><input type="text" name="existing_password" style="background-color: white">
+                            </label>
+                            <label>דוא"ל:
+                                <br><input type="email" name="existing_password" style="background-color: white">
+                            </label>
+                            <label>טלפון נייד:
+                                <br><input type="tel" name="existing_password" style="background-color: white">
+                            </label>
+                            <label>כתובת מלאה:
+                                <br><input type="text" name="existing_password" style="background-color: white">
+                            </label>
+                            <label>תחום עיצוב:
+                                <br><input type="text" name="existing_password" style="background-color: white">
+                            </label>
+                            <label><br></label>
+                            <label >קורות חיים במסמך וורד:
+                                <br><input type="file" name="existing_password" style="background-color: white">
+                            </label>
+                            <label><br></label>
+                            <label >צילום פורטרט אישי:
+                                <br><input type="file" name="existing_password" style="background-color: white">
+                            </label>
+                            <label><br></label>
+                            <label><br></label>
+                            <label><br></label>
+                            <label><br></label>
+                            <label>
+                                <a href="#" style="opacity: 0.5"> קוד אישי יתקבל בדוא"ל</a>
+                            </label>
+                            <input type="submit" value="כניסה">
+                        </form>
+                    </section>
+                </section>
+                <li class="graphic_design_border"><a href="outcome_name.html"><img src="images/F-ByR-TrF-014.jpg"></a></li>
+                <li ><a href="#"><img src="images/front/copy G-KeD-Boo-756.jpg"></a></li>
                 <li class="jewelry_design_border"><a href="#"><img src="images/front/jewelry1.bmp"></a></li>
                 <li class="graphic_design_border"><a href="#"><img src="images/F-ByR-WsW-004.jpg"></a></li>
                 <li class="graphic_design_border"><a href="#"><img src="images/G-BoP-Log-072.jpg"></a></li>
@@ -128,19 +149,16 @@
                 <li><a href="#"><img src="images/G-EzO-Pos-010.jpg"></a></li>
                 <li><a href="#"><img src="images/G-EnZ-Com-002.jpg"></a></li>
                 <li><a href="#"><img src="images/G-ShB-Pos-013.jpg"></a></li>
-                <li><a href="#"><img src="images/I-ReD-Veh-002.jpg"></a></li>
-                <li><a href="#"><img src="images/G-KrF-Pos-035.jpg"></a></li>
-                <li><a href="#"><img src="images/G-FiU-Com-025.jpg"></a></li>
             <!--
-		  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s graphic_design "></span>Item 1</li>
-		  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s fashion_design"></span>Item 2</li>
-		  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
-		  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
-		  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
-		  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
-		  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
-		  -->
-			</ul>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s graphic_design "></span>Item 1</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s fashion_design"></span>Item 2</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+          -->
+            </ul>
         </section>
         <div class="clear"></div>
 
