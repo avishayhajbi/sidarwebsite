@@ -27,10 +27,18 @@
 			function mousehovertext(){
 			    
 			    var column= document.getElementsByClassName("column2")[0];
-			    var li= document.getElementsByTagName("li");
-                //console.log(li);
-                li.forEach(function(entry) {
-                    console.log(entry);
+			    var li= column.getElementsByTagName("li");
+                //console.log(li[5].innerText);
+               $.each(li ,function(i,v) {
+                   if (v.innerText.length > 23){
+                         var temp = v.innerText;
+                         temp = v.innerText.slice(0).substring(0,23);
+                         temp=temp.replace(temp.substring(temp.length ,temp.length - 3)," . . .");
+                         v.title=v.innerText;
+                         this.innerText=temp;
+                         //console.log(v);
+                         
+                    }
                 });
             }
 		</script>
@@ -255,7 +263,7 @@ function browserNavigator()
                         <ul class="column2">
                                 <li><a href="graphic_design_designer_outcome.html">קרמן דני</a></li>
                                 <li><a href="graphic_design_designer_outcome.html">Kerman Dani</a></li>
-                                <li>הלילה הוא יבוא</li>
+                                <li>הלילה הוא יבוא הלילה הזה יבוא כל היום ואנחנו נחכה לו</li>
                                 <li>1952</li>
                                 <li>ספרי ילדים</li>
                                 <li>ספרים</li>
