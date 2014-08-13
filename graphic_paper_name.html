@@ -20,7 +20,19 @@
 					speed : '2500',
 					timeout : 4000
 				});
+				
+				mousehovertext();
 			});
+			
+			function mousehovertext(){
+			    
+			    var column= document.getElementsByClassName("column2")[0];
+			    var li= document.getElementsByTagName("li");
+                //console.log(li);
+                li.forEach(function(entry) {
+                    console.log(entry);
+                });
+            }
 		</script>
 				<script type="text/javascript">
                     function goTo(choose)
@@ -239,7 +251,6 @@ function browserNavigator()
                                 <li></li>
                                 <li></li>
                         </ul>
-                     
                   
                         <ul class="column2">
                                 <li><a href="graphic_design_designer_outcome.html">קרמן דני</a></li>
