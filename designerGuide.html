@@ -76,7 +76,7 @@
                             }
                         </style>
                        <section id="admission_form">
-                        <form action="designerGuide2.html" method="post" autocomplete>
+                        <form action="#" onsubmit="return toSubmit();" method="post" autocomplete>
                             <label>שם:
                                 <br><input type="text" name="existing_username" style="background-color: white">
                             </label>
@@ -85,6 +85,12 @@
                             </label>
                             <input type="submit" value="כניסה">
                         </form>
+                        <script>
+                       function toSubmit(){
+                          window.location = "designerGuide2.html";
+                          return false;
+                       }
+                        </script>
                     </section>
                 </aside>
             <!-- <section class="two_on_two">
