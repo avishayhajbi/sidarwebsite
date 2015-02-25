@@ -384,7 +384,7 @@ function browserNavigator()
                                         </li>
                                         <li class="headline aboveDesignerPic" >קטגוריות זמינות למעצב זה</li>       
                                         <!-- <li style="border-bottom: 0;"></li> -->
-                                        <li class="designer_categories">
+                                        <li class="designer_categories" style="padding-bottom: 0px">
                                                
                                              <select name="desingner_categories" onchange="location = this.options[this.selectedIndex].value;">
                                                  <option value="graphic_paper_name.html"> קטגוריות נוספות</option>
@@ -394,8 +394,31 @@ function browserNavigator()
                                              
                                             </select></label>
                                         </li>
-                                    
-                                        <li class="graphic_design_border_bottom graphic_design_hover"><a href="graphic_design_designer_outcome.html">שם מעצב</a></li>
+                                    <style>
+                                    	ul#leftList #link_to a:link,ul#leftList #link_to a:visited{
+										width: 95%;
+										height: 15px;
+										margin-right: -4%;
+										margin-top: -0.1%;
+										padding: 0.8% 5%;
+										color: blue;
+										/*background: none;*/
+										opacity: 1;
+										font-size: 12px;
+										font-weight: 100 !important;
+										}
+										ul#leftList #link_to a:hover{
+											width: 95%;
+										height: 15px;
+										margin-right: -4%;
+										margin-top: -0.1%;
+										padding: 0.8% 5%;
+										opacity: 0.5;
+										font-size: 12px;
+										font-weight: 100 !important;
+										}
+										     </style>
+                                        <li id="link_to" class="graphic_design_border_bottom " style=""><a href="graphic_design_designer_outcome.html">שם מעצב</a></li>
                                          <li class="designerPic" ></li>
                                         <li class="designer_link graphic_design_border"><a href="graphic_design_designer_outcome.html"><img src="images/daniKerman.jpg"></a></li>
                                         <li class="designerPic"></li>
